@@ -58,7 +58,7 @@ def upsert_product(data):
 # ======================
 def crawl_healthtop():
     print('\n=== Crawling Healthtop ===' )
-        return  # TODO: Fix Healthtop URL structure - should be /products_en?page=N
+    return  # TODO: Fix Healthtop URL structure - should be /products_en?page=N
     base_url = 'https://healthtop.com.hk'
     categories = [
         ('Wheelchairs-and-Walking-Aids', 'wheelchair'),
