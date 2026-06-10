@@ -298,7 +298,7 @@ def crawl_justmed():
     try:
         url = 'https://www.justmed.com.hk/product-list.php?name=Power%20Wheelchair'
         r = requests.get(url, headers=HEADERS, timeout=10)
-        soup = BeautifulSoup(r.text, 'htlparser')
+        soup = BeautifulSoup(r.text, 'html.parser')
         # Placeholder - to be refined after testing
         print('  Just Med crawler - needs site structure analysis')
     except Exception as e:
