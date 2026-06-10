@@ -294,7 +294,7 @@ def crawl_easy66():
 
 
 def crawl_justmed():
-    print('\n=== Crawling Just Med =='))
+    print('\n=== Crawling Just Med ===='))
     try:
         url = 'https://www.justmed.com.hk/product-list.php?name=Power%20Wheelchair'
         r = requests.get(url, headers=HEADERS, timeout=10)
