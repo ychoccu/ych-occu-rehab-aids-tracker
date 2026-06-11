@@ -22,22 +22,45 @@
     /* === Header with logo === */
     .header {
       text-align: center; color: white;
-      padding: 20px 20px 14px;
+      padding: 24px 20px 18px;
       display: flex; flex-direction: column;
-      align-items: center; gap: 8px;
+      align-items: center; gap: 12px;
     }
     .header .logo-wrap {
-      background: white; border-radius: 16px;
-      padding: 10px 18px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.18);
-      max-width: 92%;
+      background: white; border-radius: 20px;
+      padding: 18px 28px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.20);
+      max-width: 96%;
+      display: flex; align-items: center; justify-content: center;
+      gap: 22px;
     }
-    .header .logo-wrap img {
+    /* ZH mode: show the full combined logo (seal + Chinese text) */
+    .header .logo-zh { display: block; }
+    .header .logo-zh img {
       display: block;
-      max-height: 90px;
+      max-height: 170px;
       max-width: 100%;
       height: auto; width: auto;
     }
+    /* EN mode: show seal + English department name */
+    .header .logo-en {
+      display: none;
+      align-items: center; gap: 22px;
+    }
+    .header .logo-en img {
+      display: block;
+      height: 160px; width: auto;
+      flex-shrink: 0;
+    }
+    .header .logo-en .dept-text {
+      color: #b91c1c; font-weight: 700;
+      font-size: 1.6em; line-height: 1.25;
+      text-align: left;
+      letter-spacing: 0.01em;
+    }
+    /* Switch which logo block is visible based on <html lang> */
+    html[lang="en"] .header .logo-zh { display: none; }
+    html[lang="en"] .header .logo-en { display: flex; }
     .header h2 { font-size: 1.3em; font-weight: normal; margin-top: 4px; }
     .header p  { font-size: 0.9em; opacity: 0.9; }
 
@@ -161,7 +184,10 @@
     @media (max-width: 600px) {
       .settings-bar { flex-direction: column; align-items: stretch; }
       .settings-group { justify-content: center; }
-      .header .logo-wrap img { max-height: 70px; }
+      .header .logo-wrap { padding: 14px 16px; gap: 14px; }
+      .header .logo-zh img { max-height: 110px; }
+      .header .logo-en img { height: 95px; }
+      .header .logo-en .dept-text { font-size: 1.05em; }
     }
   </style>
 </head>
@@ -169,7 +195,13 @@
 
 <div class="header">
   <div class="logo-wrap">
-    <img src="images/yan_chai_logo.jpeg" alt="仁濟醫院職業治療部 / Yan Chai Hospital — OT Dept." />
+    <div class="logo-zh">
+      <img src="images/yan_chai_logo_full.png" alt="仁濟醫院職業治療部" />
+    </div>
+    <div class="logo-en">
+      <img src="images/yan_chai_seal.png" alt="Yan Chai Hospital" />
+      <div class="dept-text">Yan Chai Hospital<br/>Occupational Therapy Department</div>
+    </div>
   </div>
   <h2 data-i18n="title_app">輔助工具</h2>
   <p data-i18n="title_subtitle">價格只作參考，詳情請查詢相關的復康公司</p>
