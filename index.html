@@ -104,39 +104,37 @@
     }
     .home-tile {
       background: white; border-radius: 16px;
-      padding: 18px 12px;
+      padding: 28px 16px;
       text-align: center;
       box-shadow: 0 4px 14px rgba(0,0,0,0.18);
       cursor: pointer;
-      transition: transform 0.15s, box-shadow 0.15s;
-      text-decoration: none; color: #2c3e50;
-      display: flex; flex-direction: column; align-items: center;
-      gap: 8px;
+      transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+      text-decoration: none; color: #1a1a1a;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 10px;
       border: 3px solid transparent;
+      min-height: 130px;
     }
     .home-tile:hover {
       transform: translateY(-3px);
       box-shadow: 0 8px 20px rgba(0,0,0,0.22);
-      border-color: #27ae60;
-    }
-    .home-tile .tile-icon {
-      font-size: 2.6em;
-      line-height: 1;
+      border-color: #15803d;
     }
     .home-tile .tile-label {
-      font-size: 1.05em;
-      font-weight: 700;
-      line-height: 1.25;
+      font-size: 1.35em;
+      font-weight: 800;
+      line-height: 1.3;
+      color: #15803d;
     }
     .home-tile .tile-count {
-      font-size: 0.8em; color: #888;
-      font-weight: 500;
+      font-size: 0.95em; color: #6b7280;
+      font-weight: 600;
     }
     .home-tile.favorites {
       background: linear-gradient(135deg, #fff7d6, #ffe79a);
       border-color: #f1c40f;
     }
-    .home-tile.favorites .tile-icon { color: #f39c12; }
+    .home-tile.favorites .tile-label { color: #b45309; }
 
     /* === Favorite star on cards === */
     .card { position: relative; }
@@ -476,7 +474,7 @@ window._compareData = {};
 const I18N = {
   zh: {
     title_app: '輔助工具',
-    title_subtitle: '價格只作參考，詳情請查詢相關的復康公司',
+    title_subtitle: '以下資料只作參考，詳情請查詢相關的復康公司',
     settings_lang: '🌐 語言：',
     settings_size: '🔍 字體大小：',
     cat_all: '所有類別', cat_wheelchair: '輪椅', cat_shower: '沐浴椅',
@@ -524,7 +522,7 @@ const I18N = {
   },
   en: {
     title_app: 'Assistive Devices',
-    title_subtitle: 'Prices for reference only. Please contact the supplier for details.',
+    title_subtitle: 'The following information is for reference only. Please contact the supplier for details.',
     settings_lang: '🌐 Language:',
     settings_size: '🔍 Font Size:',
     cat_all: 'All categories', cat_wheelchair: 'Wheelchair', cat_shower: 'Shower chair',
@@ -903,7 +901,6 @@ function renderHomePage() {
     a.href = '#/cat/' + tile.cat;
     const count = counts[tile.cat] || 0;
     a.innerHTML = `
-      <div class="tile-icon">${tile.icon}</div>
       <div class="tile-label">${escapeHTML(catLabels[tile.cat] || tile.cat)}</div>
       <div class="tile-count">${count} ${escapeHTML(t('items_count'))}</div>
     `;
@@ -914,7 +911,6 @@ function renderHomePage() {
   favTile.className = 'home-tile favorites';
   favTile.href = '#/favorites';
   favTile.innerHTML = `
-    <div class="tile-icon">⭐</div>
     <div class="tile-label">${escapeHTML(t('home_favorites'))}</div>
     <div class="tile-count"><span id="home-fav-count">${favorites.length}</span> ${escapeHTML(t('items_count'))}</div>
   `;
