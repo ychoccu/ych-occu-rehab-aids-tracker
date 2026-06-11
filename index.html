@@ -289,6 +289,51 @@
       .header .logo-en img { height: 95px; }
       .header .logo-en .dept-text { font-size: 1.05em; }
     }
+
+    /* ===== Footer (contact + disclaimer) ===== */
+    .site-footer {
+      max-width: 1200px;
+      margin: 32px auto 24px;
+      padding: 0 16px;
+      color: #fff;
+    }
+    .footer-card {
+      background: rgba(255,255,255,0.95);
+      color: #1a1a1a;
+      border-radius: 14px;
+      padding: 20px 22px;
+      margin-bottom: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      line-height: 1.65;
+      font-size: calc(0.95em * var(--font-scale, 1));
+    }
+    .footer-card h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.1em;
+      color: #15803d;
+      font-weight: 800;
+    }
+    .footer-card p { margin: 6px 0; }
+    .footer-card ul { margin: 6px 0; padding-left: 20px; }
+    .footer-card ul li { margin: 4px 0; }
+    .footer-card a { color: #15803d; font-weight: 600; text-decoration: none; }
+    .footer-card a:hover { text-decoration: underline; }
+    .footer-card .phone-row {
+      display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px;
+    }
+    .footer-card .phone-row a {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: #15803d; color: #fff;
+      padding: 8px 14px; border-radius: 8px;
+      font-weight: 700;
+    }
+    .footer-card .phone-row a:hover { background: #0f6b32; text-decoration: none; }
+    .footer-card .phone-row .phone-label {
+      display: block; font-size: 0.82em; opacity: 0.92; font-weight: 500;
+    }
+    .footer-card .phone-row .phone-num {
+      display: block; font-size: 1.05em; letter-spacing: 0.5px;
+    }
   </style>
 </head>
 <body>
@@ -376,6 +421,51 @@
 
 </div><!-- /#products-view -->
 
+<!-- Footer: contact + disclaimer -->
+<footer class="site-footer">
+  <div class="footer-card">
+    <h3 data-i18n="footer_contact_title">仁濟醫院職業治療部電話</h3>
+    <div class="phone-row">
+      <a href="tel:24178220">
+        <span>
+          <span class="phone-label" data-i18n="footer_phone_op">門診骨科</span>
+          <span class="phone-num">2417 8220</span>
+        </span>
+      </a>
+      <a href="tel:24178975">
+        <span>
+          <span class="phone-label" data-i18n="footer_phone_ip_ortho">住院骨科</span>
+          <span class="phone-num">2417 8975</span>
+        </span>
+      </a>
+      <a href="tel:24178961">
+        <span>
+          <span class="phone-label" data-i18n="footer_phone_ip_med">住院內科</span>
+          <span class="phone-num">2417 8961</span>
+        </span>
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-card">
+    <h3 data-i18n="footer_notes_title">注意事項</h3>
+    <ul>
+      <li>
+        <strong data-i18n="footer_note1_label">編製資訊：</strong>
+        <span data-i18n="footer_note1_body">本頁資料由仁濟醫院駐院職業治療師鄧姑娘於 2026 年 6 月製作。</span>
+      </li>
+      <li>
+        <strong data-i18n="footer_note2_label">參考性質：</strong>
+        <span data-i18n="footer_note2_body">本網頁僅列出部分輔助工具型號作為參考，市面上各品牌均有類似款式。</span>
+      </li>
+      <li>
+        <strong data-i18n="footer_note3_label">免責聲明：</strong>
+        <span data-i18n="footer_note3_body">上述建議不涉及任何商業利益關係。請讀者在購買前，自行查詢現貨供應情況、最新價格及運費。</span>
+      </li>
+    </ul>
+  </div>
+</footer>
+
 <script>
 const JSON_URL = 'https://raw.githubusercontent.com/h9ctddp2cm-debug/hk-rehab-price-tracker/main/products.json';
 let allProducts = [];
@@ -420,6 +510,17 @@ const I18N = {
     updated: '更新：',
     btn_call_text: '一按即打', btn_web_text: '產品網頁',
     alert_max: '最多選4件產品', alert_min: '請選至少2件產品',
+    footer_contact_title: '仁濟醫院職業治療部電話',
+    footer_phone_op: '門診骨科',
+    footer_phone_ip_ortho: '住院骨科',
+    footer_phone_ip_med: '住院內科',
+    footer_notes_title: '注意事項',
+    footer_note1_label: '編製資訊：',
+    footer_note1_body: '本頁資料由仁濟醫院駐院職業治療師鄧姑娘於 2026 年 6 月製作。',
+    footer_note2_label: '參考性質：',
+    footer_note2_body: '本網頁僅列出部分輔助工具型號作為參考，市面上各品牌均有類似款式。',
+    footer_note3_label: '免責聲明：',
+    footer_note3_body: '上述建議不涉及任何商業利益關係。請讀者在購買前，自行查詢現貨供應情況、最新價格及運費。',
   },
   en: {
     title_app: 'Assistive Devices',
@@ -457,6 +558,17 @@ const I18N = {
     updated: 'Updated: ',
     btn_call_text: 'Call', btn_web_text: 'Product page',
     alert_max: 'Maximum 4 products', alert_min: 'Please select at least 2 products',
+    footer_contact_title: 'Yan Chai Hospital Occupational Therapy — Phone',
+    footer_phone_op: 'Outpatient Orthopaedic',
+    footer_phone_ip_ortho: 'Inpatient Orthopaedic',
+    footer_phone_ip_med: 'Inpatient Medical',
+    footer_notes_title: 'Important Notes',
+    footer_note1_label: 'Compiled by: ',
+    footer_note1_body: 'This page was compiled by Ms. Tang, resident occupational therapist at Yan Chai Hospital, in June 2026.',
+    footer_note2_label: 'For reference only: ',
+    footer_note2_body: 'This website lists selected assistive device models for reference only. Similar products are available from many brands on the market.',
+    footer_note3_label: 'Disclaimer: ',
+    footer_note3_body: 'The recommendations above involve no commercial interest. Please verify stock availability, current prices, and shipping costs before purchase.',
   }
 };
 
