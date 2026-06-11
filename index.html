@@ -53,16 +53,116 @@
       flex-shrink: 0;
     }
     .header .logo-en .dept-text {
-      color: #b91c1c; font-weight: 700;
+      color: #1a1a1a; font-weight: 800;
       font-size: 1.6em; line-height: 1.25;
       text-align: left;
       letter-spacing: 0.01em;
     }
+    .header .logo-zh img {
+      /* original logo is already bold; this just ensures crisp render */
+    }
+    .header .logo-zh .zh-text {
+      font-weight: 900;
+    }
     /* Switch which logo block is visible based on <html lang> */
     html[lang="en"] .header .logo-zh { display: none; }
     html[lang="en"] .header .logo-en { display: flex; }
-    .header h2 { font-size: 1.3em; font-weight: normal; margin-top: 4px; }
-    .header p  { font-size: 0.9em; opacity: 0.9; }
+    .header h2 { font-size: 1.5em; font-weight: 800; margin-top: 4px; letter-spacing: 0.02em; }
+    .header p  { font-size: 0.95em; opacity: 0.95; }
+
+    /* === Home button (屋仔) === */
+    .home-btn {
+      position: fixed; top: 14px; left: 14px; z-index: 100;
+      background: white; border: 2px solid #27ae60; border-radius: 50%;
+      width: 56px; height: 56px;
+      display: none; align-items: center; justify-content: center;
+      cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      font-size: 28px; line-height: 1;
+      transition: transform 0.15s;
+      text-decoration: none;
+    }
+    .home-btn:hover { transform: scale(1.08); background: #eafaf1; }
+    body.show-home-btn .home-btn { display: flex; }
+
+    /* === Home page grid === */
+    .home-wrap {
+      max-width: 1000px; margin: 0 auto;
+      padding: 8px 0 24px;
+    }
+    .home-title {
+      color: white; text-align: center;
+      font-size: 1.6em; font-weight: 700;
+      margin: 8px 0 18px;
+    }
+    .home-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    @media (max-width: 700px) {
+      .home-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    }
+    .home-tile {
+      background: white; border-radius: 16px;
+      padding: 18px 12px;
+      text-align: center;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+      cursor: pointer;
+      transition: transform 0.15s, box-shadow 0.15s;
+      text-decoration: none; color: #2c3e50;
+      display: flex; flex-direction: column; align-items: center;
+      gap: 8px;
+      border: 3px solid transparent;
+    }
+    .home-tile:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.22);
+      border-color: #27ae60;
+    }
+    .home-tile .tile-icon {
+      font-size: 2.6em;
+      line-height: 1;
+    }
+    .home-tile .tile-label {
+      font-size: 1.05em;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+    .home-tile .tile-count {
+      font-size: 0.8em; color: #888;
+      font-weight: 500;
+    }
+    .home-tile.favorites {
+      background: linear-gradient(135deg, #fff7d6, #ffe79a);
+      border-color: #f1c40f;
+    }
+    .home-tile.favorites .tile-icon { color: #f39c12; }
+
+    /* === Favorite star on cards === */
+    .card { position: relative; }
+    .fav-btn {
+      position: absolute; top: 8px; right: 8px;
+      width: 44px; height: 44px;
+      background: rgba(255,255,255,0.92);
+      border: 2px solid #ddd; border-radius: 50%;
+      cursor: pointer; font-size: 22px; line-height: 1;
+      display: flex; align-items: center; justify-content: center;
+      transition: transform 0.15s, border-color 0.15s;
+      z-index: 5;
+      padding: 0;
+    }
+    .fav-btn:hover { transform: scale(1.1); border-color: #f1c40f; }
+    .fav-btn.faved {
+      background: #fff3cd; border-color: #f1c40f;
+      color: #f39c12;
+    }
+    .fav-btn .star { display: inline-block; }
+    .fav-btn.faved .star { animation: pop 0.3s; }
+    @keyframes pop {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.35); }
+      100% { transform: scale(1); }
+    }
 
     /* === Top settings bar === */
     .settings-bar {
@@ -193,6 +293,9 @@
 </head>
 <body>
 
+<!-- Home button (only shown when not on home page) -->
+<a class="home-btn" href="#/" id="home-btn" title="返主頁 / Home" aria-label="Home">🏠</a>
+
 <div class="header">
   <div class="logo-wrap">
     <div class="logo-zh">
@@ -206,6 +309,15 @@
   <h2 data-i18n="title_app">輔助工具</h2>
   <p data-i18n="title_subtitle">價格只作參考，詳情請查詢相關的復康公司</p>
 </div>
+
+<!-- Home view -->
+<div id="home-view" class="home-wrap" style="display:none">
+  <div class="home-title" data-i18n="home_title">請選擇輔助工具類別</div>
+  <div class="home-grid" id="home-grid"></div>
+</div>
+
+<!-- Products view (default; container for everything else below) -->
+<div id="products-view">
 
 <!-- Settings: language + font size -->
 <div class="settings-bar">
@@ -228,16 +340,16 @@
     <option value="" data-i18n="cat_all">所有類別</option>
     <option value="wheelchair" data-i18n="cat_wheelchair">輪椅</option>
     <option value="shower" data-i18n="cat_shower">沐浴椅</option>
-    <option value="toilet" data-i18n="cat_toilet">便椅 / 廁所加高</option>
+    <option value="commode" data-i18n="cat_commode">廁所/沖涼便椅</option>
+    <option value="toiletriser" data-i18n="cat_toiletriser">座廁增高器</option>
     <option value="handrail" data-i18n="cat_handrail">扶手</option>
-    <option value="bedrail" data-i18n="cat_bedrail">床邊扶手</option>
+    <option value="bedrail" data-i18n="cat_bedrail">免安裝扶手床欄</option>
     <option value="ramp" data-i18n="cat_ramp">斜台板</option>
-    <option value="bathboard" data-i18n="cat_bathboard">沐浴板</option>
+    <option value="bathboard" data-i18n="cat_bathboard">浴缸板</option>
     <option value="mattress" data-i18n="cat_mattress">氣墊床褥</option>
     <option value="bed" data-i18n="cat_bed">電動床</option>
-    <option value="walker" data-i18n="cat_walker">助行架</option>
     <option value="reacher" data-i18n="cat_reacher">長柄夾</option>
-    <option value="sockaid" data-i18n="cat_sockaid">穿襪器</option>
+    <option value="sockaid" data-i18n="cat_sockaid">穿襪輔助器</option>
   </select>
   <select id="filter-source"><option value="" data-i18n="src_all">所有供應商</option></select>
   <input id="search-input" type="text" data-i18n-attr="placeholder" data-i18n="search_placeholder" placeholder="搜尋產品名稱..." />
@@ -262,6 +374,8 @@
   </div>
 </div>
 
+</div><!-- /#products-view -->
+
 <script>
 const JSON_URL = 'https://raw.githubusercontent.com/h9ctddp2cm-debug/hk-rehab-price-tracker/main/products.json';
 let allProducts = [];
@@ -276,10 +390,22 @@ const I18N = {
     settings_lang: '🌐 語言：',
     settings_size: '🔍 字體大小：',
     cat_all: '所有類別', cat_wheelchair: '輪椅', cat_shower: '沐浴椅',
-    cat_toilet: '便椅 / 廁所加高', cat_handrail: '扶手', cat_bedrail: '床邊扶手',
-    cat_ramp: '斜台板', cat_bathboard: '沐浴板', cat_mattress: '氣墊床褥',
+    cat_commode: '廁所/沖涼便椅', cat_toiletriser: '座廁增高器',
+    cat_toilet: '便椅/廁所加高',
+    cat_handrail: '扶手', cat_bedrail: '免安裝扶手床欄',
+    cat_ramp: '斜台板', cat_bathboard: '浴缸板', cat_mattress: '氣墊床褥',
     cat_bed: '電動床', cat_walker: '助行架',
-    cat_reacher: '長柄夾 / 取物器', cat_sockaid: '穿襪器',
+    cat_reacher: '長柄夾', cat_sockaid: '穿襪輔助器',
+    home_title: '請選擇輔助工具類別',
+    home_favorites: '我的最愛',
+    home_favorites_sub: '治療師介紹的輔助工具',
+    home_empty_fav: '請在產品頁面按星星 ☆ 加入最愛',
+    items_count: '件產品',
+    section_title_cat: '類別：',
+    section_title_fav: '我的最愛',
+    fav_tooltip: '加入我的最愛',
+    unfav_tooltip: '移出我的最愛',
+    cat_no_products: '此類別暫時未有產品',
     src_all: '所有供應商', search_placeholder: '搜尋產品名稱...',
     btn_search: '🔎 搜尋',
     cmp_selected: '已選', cmp_max: '件產品（最多4件）',
@@ -301,10 +427,22 @@ const I18N = {
     settings_lang: '🌐 Language:',
     settings_size: '🔍 Font Size:',
     cat_all: 'All categories', cat_wheelchair: 'Wheelchair', cat_shower: 'Shower chair',
-    cat_toilet: 'Commode / Raised toilet', cat_handrail: 'Handrail', cat_bedrail: 'Bed rail',
+    cat_commode: 'Commode / Shower commode', cat_toiletriser: 'Toilet riser',
+    cat_toilet: 'Commode / Raised toilet',
+    cat_handrail: 'Handrail', cat_bedrail: 'No-install bed rail',
     cat_ramp: 'Ramp', cat_bathboard: 'Bath board', cat_mattress: 'Pressure-relief mattress',
     cat_bed: 'Electric care bed', cat_walker: 'Walker',
     cat_reacher: 'Reacher / Grabber', cat_sockaid: 'Sock aid',
+    home_title: 'Choose a category',
+    home_favorites: 'My Favorites',
+    home_favorites_sub: 'Items recommended by your therapist',
+    home_empty_fav: 'Tap the star ☆ on any product to add it to favorites',
+    items_count: 'items',
+    section_title_cat: 'Category:',
+    section_title_fav: 'My Favorites',
+    fav_tooltip: 'Add to favorites',
+    unfav_tooltip: 'Remove from favorites',
+    cat_no_products: 'No products in this category yet',
     src_all: 'All suppliers', search_placeholder: 'Search product name...',
     btn_search: '🔎 Search',
     cmp_selected: 'Selected', cmp_max: 'items (max 4)',
@@ -324,13 +462,35 @@ const I18N = {
 
 /* category labels per language */
 const CATEGORY_LABELS = {
-  zh: { wheelchair:'輪椅', shower:'沐浴椅', toilet:'便椅/廁所加高', handrail:'扶手',
-        bedrail:'床邊扶手', ramp:'斜台板', bathboard:'沐浴板', mattress:'氣墊床褥',
-        bed:'電動床', walker:'助行架', reacher:'長柄夾/取物器', sockaid:'穿襪器' },
-  en: { wheelchair:'Wheelchair', shower:'Shower chair', toilet:'Commode', handrail:'Handrail',
-        bedrail:'Bed rail', ramp:'Ramp', bathboard:'Bath board', mattress:'Mattress',
-        bed:'Electric bed', walker:'Walker', reacher:'Reacher / Grabber', sockaid:'Sock aid' },
+  zh: { wheelchair:'輪椅', shower:'沐浴椅',
+        commode:'廁所/沖涼便椅', toiletriser:'座廁增高器',
+        toilet:'便椅/廁所加高', handrail:'扶手',
+        bedrail:'免安裝扶手床欄',
+        ramp:'斜台板', bathboard:'浴缸板', mattress:'氣墊床褥',
+        bed:'電動床', walker:'助行架', reacher:'長柄夾', sockaid:'穿襪輔助器' },
+  en: { wheelchair:'Wheelchair', shower:'Shower chair',
+        commode:'Commode / Shower commode', toiletriser:'Toilet riser',
+        toilet:'Commode', handrail:'Handrail',
+        bedrail:'No-install bed rail',
+        ramp:'Ramp', bathboard:'Bath board', mattress:'Mattress',
+        bed:'Electric bed', walker:'Walker', reacher:'Reacher', sockaid:'Sock aid' },
 };
+
+/* === Home-page tile metadata === */
+const CATEGORY_TILES = [
+  { cat: 'toiletriser', icon: '🔼' },
+  { cat: 'commode',     icon: '🚹' },
+  { cat: 'reacher',     icon: '🧲' },
+  { cat: 'shower',      icon: '🚿' },
+  { cat: 'bathboard',   icon: '🛁' },
+  { cat: 'wheelchair',  icon: '🦽' },
+  { cat: 'ramp',        icon: '🔺' },
+  { cat: 'bed',         icon: '🛏️' },
+  { cat: 'handrail',    icon: '✋' },
+  { cat: 'mattress',    icon: '🛌' },
+  { cat: 'bedrail',     icon: '🚬' },
+  { cat: 'sockaid',     icon: '🧦' },
+];
 
 /* === Supplier EN translations (key = source_name in Chinese) === */
 const SUPPLIER_EN = {
@@ -383,7 +543,14 @@ function setLang(lang) {
   applyI18N();
   // Re-populate supplier filter (label depends on language)
   rebuildSourceFilter();
-  renderCards(window._lastFiltered || allProducts);
+  // Re-render whichever view is active
+  if ((location.hash || '#/') === '#/' || location.hash === '' || location.hash === '#') {
+    renderHomePage();
+  } else if ((location.hash || '').startsWith('#/favorites')) {
+    renderFavoritesView();
+  } else {
+    renderCards(window._lastFiltered || allProducts);
+  }
 }
 
 function setFontSize(size) {
@@ -418,7 +585,7 @@ async function loadProducts() {
     allProducts = Array.isArray(data) ? data : (data.products || []);
     if (allProducts.length === 0) throw new Error(t('no_data'));
     rebuildSourceFilter();
-    renderCards(allProducts);
+    // Render happens via handleRoute (home or category view)
   } catch (e) {
     document.getElementById('product-grid').innerHTML =
       '<div id="status">' + t('load_fail') + e.message + '</div>';
@@ -472,7 +639,11 @@ function renderCards(products) {
     const actionsHTML = (callBtn || webBtn)
       ? `<div class="actions">${callBtn}${webBtn}</div>`
       : '';
+    const isFav = favorites.includes(String(id));
+    const favStar = isFav ? '★' : '☆';
+    const favTitle = isFav ? t('unfav_tooltip') : t('fav_tooltip');
     card.innerHTML = `
+      <button class="fav-btn ${isFav ? 'faved' : ''}" data-id="${id}" onclick="toggleFavorite(this)" title="${favTitle}" aria-label="${favTitle}"><span class="star">${favStar}</span></button>
       ${imgHTML}
       <h3>${escapeHTML(fieldName(p))}</h3>
       <div class="model">${escapeHTML(p.model || '')}</div>
@@ -568,6 +739,124 @@ function showCompare() {
 
 function closeCompare() { document.getElementById('compare-modal').style.display = 'none'; }
 
+/* ===== Favorites (localStorage) ===== */
+let favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+
+function saveFavorites() {
+  localStorage.setItem('favorites', JSON.stringify(favorites));
+}
+
+window.toggleFavorite = function(btn) {
+  const id = String(btn.dataset.id);
+  const idx = favorites.indexOf(id);
+  if (idx >= 0) {
+    favorites.splice(idx, 1);
+    btn.classList.remove('faved');
+    btn.querySelector('.star').textContent = '☆';
+    btn.title = t('fav_tooltip');
+    btn.setAttribute('aria-label', t('fav_tooltip'));
+    // If currently viewing favorites, refresh
+    if ((location.hash || '').startsWith('#/favorites')) {
+      renderFavoritesView();
+    }
+  } else {
+    favorites.push(id);
+    btn.classList.add('faved');
+    btn.querySelector('.star').textContent = '★';
+    btn.title = t('unfav_tooltip');
+    btn.setAttribute('aria-label', t('unfav_tooltip'));
+  }
+  saveFavorites();
+  updateHomeFavCount();
+};
+
+function updateHomeFavCount() {
+  const el = document.getElementById('home-fav-count');
+  if (el) el.textContent = favorites.length;
+}
+
+/* ===== Home page rendering ===== */
+function renderHomePage() {
+  const grid = document.getElementById('home-grid');
+  if (!grid) return;
+  grid.innerHTML = '';
+  const catLabels = CATEGORY_LABELS[currentLang] || CATEGORY_LABELS.zh;
+  // Count products per category
+  const counts = {};
+  allProducts.forEach(p => { counts[p.category] = (counts[p.category] || 0) + 1; });
+  // 12 category tiles
+  CATEGORY_TILES.forEach(tile => {
+    const a = document.createElement('a');
+    a.className = 'home-tile';
+    a.href = '#/cat/' + tile.cat;
+    const count = counts[tile.cat] || 0;
+    a.innerHTML = `
+      <div class="tile-icon">${tile.icon}</div>
+      <div class="tile-label">${escapeHTML(catLabels[tile.cat] || tile.cat)}</div>
+      <div class="tile-count">${count} ${escapeHTML(t('items_count'))}</div>
+    `;
+    grid.appendChild(a);
+  });
+  // Favorites tile (always last, highlighted)
+  const favTile = document.createElement('a');
+  favTile.className = 'home-tile favorites';
+  favTile.href = '#/favorites';
+  favTile.innerHTML = `
+    <div class="tile-icon">⭐</div>
+    <div class="tile-label">${escapeHTML(t('home_favorites'))}</div>
+    <div class="tile-count"><span id="home-fav-count">${favorites.length}</span> ${escapeHTML(t('items_count'))}</div>
+  `;
+  grid.appendChild(favTile);
+}
+
+function renderFavoritesView() {
+  // Set category filter to none (show favorites instead)
+  document.getElementById('filter-category').value = '';
+  document.getElementById('filter-source').value = '';
+  document.getElementById('search-input').value = '';
+  const favProducts = allProducts.filter(p => favorites.includes(String(p.id)));
+  if (favProducts.length === 0) {
+    const grid = document.getElementById('product-grid');
+    grid.innerHTML = `<div id="status">${escapeHTML(t('home_empty_fav'))}</div>`;
+  } else {
+    renderCards(favProducts);
+  }
+}
+
+/* ===== Router (hash-based) ===== */
+function handleRoute() {
+  const hash = location.hash || '#/';
+  const homeView = document.getElementById('home-view');
+  const productsView = document.getElementById('products-view');
+
+  if (hash === '#/' || hash === '' || hash === '#') {
+    // HOME PAGE
+    homeView.style.display = 'block';
+    productsView.style.display = 'none';
+    document.body.classList.remove('show-home-btn');
+    renderHomePage();
+    return;
+  }
+
+  // Other views (category or favorites)
+  homeView.style.display = 'none';
+  productsView.style.display = 'block';
+  document.body.classList.add('show-home-btn');
+
+  if (hash.startsWith('#/cat/')) {
+    const cat = hash.slice('#/cat/'.length);
+    document.getElementById('filter-category').value = cat;
+    applyFilters();
+  } else if (hash.startsWith('#/favorites')) {
+    renderFavoritesView();
+  } else {
+    // Unknown route -> back to home
+    location.hash = '#/';
+  }
+}
+
+window.addEventListener('hashchange', handleRoute);
+
 /* ===== Wire up settings buttons ===== */
 document.querySelectorAll('.seg-btn[data-lang]').forEach(b => {
   b.addEventListener('click', () => setLang(b.dataset.lang));
@@ -579,7 +868,13 @@ document.querySelectorAll('.seg-btn[data-size]').forEach(b => {
 /* ===== Init ===== */
 applyI18N();
 applyFontSize();
-loadProducts();
+
+// Override loadProducts callback so home page renders correctly
+async function bootstrap() {
+  await loadProducts();
+  handleRoute();  // Process initial hash
+}
+bootstrap();
 </script>
 </body>
 </html>
