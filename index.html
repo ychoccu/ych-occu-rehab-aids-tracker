@@ -903,10 +903,22 @@ function clearCompare() {
 }
 
 function showCompare() {
-  // Look up products fresh from allProducts each time — survives re-renders.
-  const items = compareList
-    .map(id => allProducts.find(p => String(p.id) === String(id)) || window._compareData[id])
-    .filter(Boolean);
+  // Source of truth: any product whose id is in compareList OR whose checkbox is currently checked.
+  const ids = new Set(compareList.map(String));
+  document.querySelectorAll('.card input[type=checkbox]:checked').forEach(cb => {
+    if (cb.dataset.id) ids.add(String(cb.dataset.id));
+  });
+  const items = [];
+  ids.forEach(id => {
+    const fromAll = allProducts.find(p => String(p.id) === id);
+    if (fromAll) { items.push(fromAll); return; }
+    if (window._compareData[id]) { items.push(window._compareData[id]); return; }
+    // last resort: rehydrate from the checkbox's data-product
+    const cb = document.querySelector(`.card input[type=checkbox][data-id="${id}"]`);
+    if (cb && cb.dataset.product) {
+      try { items.push(JSON.parse(cb.dataset.product.replace(/&quot;/g,'"'))); } catch(e) {}
+    }
+  });
   if (items.length < 2) { alert(t('alert_min')); return; }
   const catMap = CATEGORY_LABELS[currentLang] || CATEGORY_LABELS.zh;
   const rows = [
