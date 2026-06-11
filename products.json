@@ -12,7 +12,8 @@
     "image_url": "https://www.rehabexpress.com.hk/media/catalog/product/2/1/21500046_fortisip.png?width=75&height=75&store=re_zh_Hant_TW&image-type=small_image",
     "product_url": "https://www.rehabexpress.com.hk/url-n-21500046.html",
     "updated_date": "2026-06-10",
-    "last_checked": "2026-06-10"
+    "last_checked": "2026-06-10",
+    "phone": "8206 6160"
   },
   {
     "id": "sc3",
@@ -27,7 +28,8 @@
     "image_url": "https://www.rehabexpress.com.hk/media/catalog/product/2/1/21500046_fortisip.png?width=75&height=75&store=re_zh_Hant_TW&image-type=small_image",
     "product_url": "https://www.rehabexpress.com.hk/url-n-21500046.html",
     "updated_date": "2026-06-10",
-    "last_checked": "2026-06-10"
+    "last_checked": "2026-06-10",
+    "phone": "8206 6160"
   },
   {
     "id": "sc4",
@@ -42,7 +44,8 @@
     "image_url": "https://www.rehabexpress.com.hk/media/catalog/product/2/1/21500046_fortisip.png?width=75&height=75&store=re_zh_Hant_TW&image-type=small_image",
     "product_url": "https://www.rehabexpress.com.hk/url-n-21500046.html",
     "updated_date": "2026-06-10",
-    "last_checked": "2026-06-10"
+    "last_checked": "2026-06-10",
+    "phone": "8206 6160"
   },
   {
     "id": "cm1",
@@ -54,7 +57,11 @@
     "price_min": 550.0,
     "price_max": 550.0,
     "price_display": "HK$550.00",
-    "specs": ["座高: 17\"", "座闊: 17\"", "總外闊: 21\""],
+    "specs": [
+      "座高: 17\"",
+      "座闊: 17\"",
+      "總外闊: 21\""
+    ],
     "image_url": "images/commode_medicare_ecm00407.jpg",
     "product_url": "https://www.medicare.com.hk/zh-hant/care/113/",
     "phone": "2687 6380",
@@ -71,7 +78,12 @@
     "price_min": 780.0,
     "price_max": 780.0,
     "price_display": "HK$780.00 (請電話查詢)",
-    "specs": ["座高: 17-21\" (可調)", "座闊: 17\"", "總外闊: 22\"", "鋁合金支架"],
+    "specs": [
+      "座高: 17-21\" (可調)",
+      "座闊: 17\"",
+      "總外闊: 22\"",
+      "鋁合金支架"
+    ],
     "image_url": "images/commode_supreme_ca1360.jpg",
     "product_url": "https://www.suprememed.com.hk/tc/products_detail.php?c1id=8&id=425",
     "phone": "3690 1468",
@@ -89,7 +101,14 @@
     "price_min": 1880.0,
     "price_max": 1880.0,
     "price_display": "HK$1,880.00 (原價 $2,400, 減21%)",
-    "specs": ["座高: 20\"", "座闊: 16\"", "總外闊: 19\"-20\"", "適合座廁高: 17\"", "適合座廁闊: 14\"-16\"", "承重: 90kg"],
+    "specs": [
+      "座高: 20\"",
+      "座闊: 16\"",
+      "總外闊: 19\"-20\"",
+      "適合座廁高: 17\"",
+      "適合座廁闊: 14\"-16\"",
+      "承重: 90kg"
+    ],
     "image_url": "images/commode_justmed_h61.jpg",
     "product_url": "https://www.justmed.com.hk/product-detail.php?id=55",
     "phone": "2742 4370",
@@ -106,7 +125,17 @@
     "price_min": 0,
     "price_max": 0,
     "price_display": "請電話查詢",
-    "specs": ["座高: 20\"", "座闊: 17\"", "總外闊: 20\"", "背高: 18\"", "304不銹鋼支架", "5\"全鎖德國輪", "PU座墊", "活動扶手", "拉出腳踏"],
+    "specs": [
+      "座高: 20\"",
+      "座闊: 17\"",
+      "總外闊: 20\"",
+      "背高: 18\"",
+      "304不銹鋼支架",
+      "5\"全鎖德國輪",
+      "PU座墊",
+      "活動扶手",
+      "拉出腳踏"
+    ],
     "image_url": "images/commode_supreme_cs880a.png",
     "product_url": "https://www.suprememed.com.hk/tc/products_detail.php?c1id=8&id=666",
     "phone": "3690 1468",
@@ -124,7 +153,15 @@
     "price_min": 1980.0,
     "price_max": 1980.0,
     "price_display": "HK$1,980.00",
-    "specs": ["座高: 20\"", "座闊: 18\"", "總外闊: 19\"", "適合座廁高: 16\"", "適合座廁闊: 15.5\"", "扶手腳踏可翻", "足部固定帶"],
+    "specs": [
+      "座高: 20\"",
+      "座闊: 18\"",
+      "總外闊: 19\"",
+      "適合座廁高: 16\"",
+      "適合座廁闊: 15.5\"",
+      "扶手腳踏可翻",
+      "足部固定帶"
+    ],
     "image_url": "images/commode_gethealth_ghm.jpg",
     "product_url": "https://www.hktvmall.com/p/H9500001_S_GHM-SC-CM01",
     "phone": "2432 2028",
@@ -141,7 +178,14 @@
     "price_min": 2200.0,
     "price_max": 2500.0,
     "price_display": "HK$2,200 (30444S) - HK$2,500 (30442)",
-    "specs": ["座高: 19.5\"", "座闊: 17\"", "總外闊: 19.1\"/18.3\"", "適合座廁高: 17\"", "適合座廁闊: 16\"/15.25\"", "304不銹鋼"],
+    "specs": [
+      "座高: 19.5\"",
+      "座闊: 17\"",
+      "總外闊: 19.1\"/18.3\"",
+      "適合座廁高: 17\"",
+      "適合座廁闊: 16\"/15.25\"",
+      "304不銹鋼"
+    ],
     "image_url": "images/commode_medicare_ecm30442.jpg",
     "product_url": "https://www.medicare.com.hk/zh-hant/care/94/",
     "phone": "2687 6380",
@@ -161,7 +205,8 @@
     "image_url": "https://www.rehabexpress.com.hk/media/catalog/product/4/3/43100026_dt20200519115050_rnd52905.jpeg?width=300&height=300&store=re_zh_Hant_TW&image-type=small_image",
     "product_url": "https://www.rehabexpress.com.hk/url-n-43100026.html",
     "updated_date": "2026-06-10",
-    "last_checked": "2026-06-10"
+    "last_checked": "2026-06-10",
+    "phone": "8206 6160"
   },
   {
     "id": "r2",
@@ -176,7 +221,8 @@
     "image_url": "https://www.rehabexpress.com.hk/media/catalog/product/2/1/21500046_fortisip.png?width=75&height=75&store=re_zh_Hant_TW&image-type=small_image",
     "product_url": "https://www.rehabexpress.com.hk/url-n-21500046.html",
     "updated_date": "2026-06-10",
-    "last_checked": "2026-06-10"
+    "last_checked": "2026-06-10",
+    "phone": "8206 6160"
   },
   {
     "id": "m2",
@@ -191,7 +237,8 @@
     "image_url": "https://www.rehabexpress.com.hk/media/catalog/product/2/1/21500046_fortisip.png?width=75&height=75&store=re_zh_Hant_TW&image-type=small_image",
     "product_url": "https://www.rehabexpress.com.hk/url-n-21500046.html",
     "updated_date": "2026-06-10",
-    "last_checked": "2026-06-10"
+    "last_checked": "2026-06-10",
+    "phone": "8206 6160"
   },
   {
     "id": "w4",
@@ -206,7 +253,8 @@
     "image_url": "",
     "product_url": "",
     "updated_date": "2026-06-10",
-    "last_checked": "2026-06-10"
+    "last_checked": "2026-06-10",
+    "phone": "2102 7180"
   },
   {
     "id": "r3",
@@ -221,6 +269,7 @@
     "image_url": "",
     "product_url": "",
     "updated_date": "2026-06-10",
-    "last_checked": "2026-06-10"
+    "last_checked": "2026-06-10",
+    "phone": "2102 7180"
   }
 ]

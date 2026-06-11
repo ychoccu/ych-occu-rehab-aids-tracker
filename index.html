@@ -65,6 +65,22 @@
     .card .updated { font-size: 0.75em; color: #aaa; }
     .card .specs { font-size: 0.8em; color: #555; }
     .card label { display: flex; align-items: center; gap: 6px; font-size: 0.85em; cursor: pointer; }
+    .card .actions {
+      display: flex; gap: 8px; margin-top: 4px;
+    }
+    .card .actions a {
+      flex: 1; text-align: center; padding: 8px 6px;
+      border-radius: 8px; text-decoration: none;
+      font-size: 0.85em; font-weight: 600;
+      transition: opacity 0.2s;
+    }
+    .card .actions a:active { opacity: 0.7; }
+    .card .actions .btn-call {
+      background: #27ae60; color: white;
+    }
+    .card .actions .btn-web {
+      background: #3498db; color: white;
+    }
     #compare-modal {
       display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
       background: rgba(0,0,0,0.5); z-index: 999; overflow-y: auto; padding: 20px;
@@ -180,6 +196,16 @@ function renderCards(products) {
     const specsHTML = specs.length ? `<div class="specs">${specs.slice(0,3).join(' · ')}</div>` : '';
     const checked = compareList.includes(String(id)) ? 'checked' : '';
     const pData = JSON.stringify(p).replace(/\\/g,'\\\\').replace(/"/g,'&quot;');
+    const phoneClean = (p.phone || '').replace(/\s+/g, '');
+    const callBtn = phoneClean
+      ? `<a class="btn-call" href="tel:${phoneClean}">📞 ${p.phone}</a>`
+      : '';
+    const webBtn = p.product_url
+      ? `<a class="btn-web" href="${p.product_url}" target="_blank" rel="noopener">🌐 產品網頁</a>`
+      : '';
+    const actionsHTML = (callBtn || webBtn)
+      ? `<div class="actions">${callBtn}${webBtn}</div>`
+      : '';
     card.innerHTML = `
       ${imgHTML}
       <h3>${p.product_name || '未知產品'}</h3>
@@ -187,6 +213,7 @@ function renderCards(products) {
       <div class="price">${p.price_display || 'HK$ N/A'}</div>
       <div class="source">📦 ${p.source_name || p.source || ''}</div>
       ${specsHTML}
+      ${actionsHTML}
       <div class="updated">更新：${p.updated_date || p.last_checked || 'N/A'}</div>
       <label><input type="checkbox" ${checked} data-id="${id}" data-product="${pData}" onchange="toggleCompare(this)"> 加入比較</label>
     `;
@@ -247,6 +274,14 @@ function showCompare() {
     ['供應商',   p => p.source_name||p.source||'-'],
     ['類別',     p => CATEGORY_LABELS[p.category]||p.category||'-'],
     ['規格',     p => parseJSON(p.specs).join('<br>')||'-'],
+    ['電話',     p => {
+      if (!p.phone) return '-';
+      const clean = p.phone.replace(/\s+/g, '');
+      return `<a href="tel:${clean}" style="color:#27ae60;font-weight:600;text-decoration:none">📞 ${p.phone}</a>`;
+    }],
+    ['網頁',     p => p.product_url
+      ? `<a href="${p.product_url}" target="_blank" rel="noopener" style="color:#3498db;text-decoration:none">🌐 產品網頁</a>`
+      : '-'],
     ['更新日期', p => p.updated_date||'-'],
   ];
   let html = '<tr><th>項目</th>' + items.map(p=>`<th>${p.product_name||'-'}</th>`).join('') + '</tr>';
