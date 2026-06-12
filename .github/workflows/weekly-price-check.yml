@@ -1,0 +1,78 @@
+name: Weekly Price Check
+
+on:
+  schedule:
+    # Saturday 9am HKT = Saturday 1am UTC
+    - cron: "0 1 * * 6"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run (do not commit changes)"
+        required: false
+        default: "false"
+        type: string
+
+jobs:
+  price-check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check GEMINI_API_KEY is set
+        run: |
+          if [ -z "$GEMINI_API_KEY" ]; then
+            echo "ERROR: GEMINI_API_KEY secret is not set."
+            echo "Please add it at: https://github.com/ychoccu/ych-occu-rehab-aids-tracker/settings/secrets/actions"
+            exit 1
+          fi
+          echo "GEMINI_API_KEY is present (length: ${#GEMINI_API_KEY})"
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r scripts/requirements.txt
+
+      - name: Run price checker
+        run: python scripts/price_checker.py
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: Check for changes in products.json
+        id: check_changes
+        run: |
+          if git diff --quiet products.json ych_rehab_aids_standalone.html 2>/dev/null; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No price changes detected."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Price changes detected — will commit."
+          fi
+
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.changed == 'true' && github.event.inputs.dry_run != 'true'
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add products.json ych_rehab_aids_standalone.html
+          git commit -m "Weekly auto price check (GitHub Actions)"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Dry run notice
+        if: github.event.inputs.dry_run == 'true' && steps.check_changes.outputs.changed == 'true'
+        run: echo "DRY RUN — changes detected but not committed."
