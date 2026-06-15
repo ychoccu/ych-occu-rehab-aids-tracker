@@ -1403,26 +1403,27 @@
     "category": "bathboard",
     "product_name": "塑料沐浴板連扶手",
     "model": "ESB00100",
-    "price_min": 480.0,
-    "price_max": 480.0,
-    "price_display": "HK$480.00",
+    "price_min": 550.0,
+    "price_max": 550.0,
+    "price_display": "HK$550.00",
     "specs": [
-      "適合浴缸寬度: 16.5\"-25.5\"",
-      "深度: 12.5\"",
-      "承重: 250kg (最強)",
+      "12.5吋 (闊) x 28吋 (長)",
+      "適合浴缸闊度﹕16.5吋 至 25.5吋",
+      "承重﹕100公斤",
       "已連扶手"
     ],
     "image_url": "images/bathboard_medicare_esb00100.jpg",
     "product_url": "https://medicare.com.hk/zh-hant/care/124/",
     "phone": "2687 6380",
     "note": "產品頁由相片 QR code 確認",
-    "updated_date": "2026-06-11",
+    "updated_date": "2026-06-15",
     "last_checked": "2026-06-15",
     "product_name_en": "Plastic Bath Board with Handrail",
     "specs_en": [
-      "Plastic construction",
-      "Integrated handrail",
-      "Standard width"
+      "12.5\" (W) × 28\" (L)",
+      "Fits bath width: 16.5\" – 25.5\"",
+      "Max load: 100kg",
+      "Integrated handrail"
     ],
     "price_display_en": "HK$550.00",
     "stock_status": "in_stock"
