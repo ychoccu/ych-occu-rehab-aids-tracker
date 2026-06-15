@@ -912,7 +912,7 @@
     "model": "FS-798L",
     "price_min": 450.0,
     "price_max": 450.0,
-    "price_display": "HK$450.00 (參考價)",
+    "price_display": "HK$450.00",
     "specs": [
       "座高: 13-17\" (可調校)",
       "座闊: 19\"",
@@ -923,7 +923,7 @@
     "product_url": "https://www.justmed.com.hk/product-detail.php?id=73",
     "phone": "2742 4370",
     "note": "產品頁由相片 QR code 確認, 網頁未列價, 請致電查詢",
-    "updated_date": "2026-06-11",
+    "updated_date": "2026-06-15",
     "last_checked": "2026-06-15",
     "product_name_en": "Shower Chair with Backrest",
     "specs_en": [
@@ -931,7 +931,7 @@
       "Height adjustable",
       "Anti-slip rubber feet"
     ],
-    "price_display_en": "Please call to enquire",
+    "price_display_en": "HK$450.00",
     "note_en": "Online price not listed — please call supplier",
     "stock_status": "in_stock"
   },
@@ -944,7 +944,7 @@
     "model": "FHA-FZK-186/B",
     "price_min": 800.0,
     "price_max": 800.0,
-    "price_display": "HK$800.00 (參考價)",
+    "price_display": "HK$800.00",
     "specs": [
       "座高: 16.9-18.9\" (可調校)",
       "座闊: 18\"",
@@ -957,7 +957,7 @@
     "product_url": "https://healthtop.com.hk/浴室用具/沐浴椅/鋁合金可摺疊U形沐浴椅",
     "phone": "2413 7867",
     "note": "產品頁由相片 QR code 確認, 網頁未列價, 請致電查詢",
-    "updated_date": "2026-06-11",
+    "updated_date": "2026-06-15",
     "last_checked": "2026-06-15",
     "product_name_en": "Foldable Aluminium U-shape Shower Chair (Light Blue)",
     "specs_en": [
@@ -966,9 +966,10 @@
       "Aluminium alloy frame",
       "Light blue colour"
     ],
-    "price_display_en": "Please call to enquire",
+    "price_display_en": "HK$800.00",
     "note_en": "Online price not listed — please call",
-    "stock_status": "in_stock"
+    "stock_status": "out_of_stock",
+    "stock_status_changed": "2026-06-15"
   },
   {
     "id": "sc9",
