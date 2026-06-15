@@ -583,24 +583,24 @@
     "price_max": 150.0,
     "price_display": "HK$150.00",
     "specs": [
-      "PDF QR 已失效, 請致電查詢確實型號規格",
+      "橡膠製造, 防滑設計; 多款尺寸",
       "適用門檻 / 小斜台",
       "真善美 WONSH® 系列"
     ],
     "image_url": "images/ramp_wonsh_trrub.jpeg",
     "product_url": "https://www.justmed.com.hk/product-detail.php?id=1914",
     "phone": "2742 4370",
-    "note": "QR 已失效, PDF 參考價 $150-$370",
+    "note": "",
     "updated_date": "2026-06-15",
     "last_checked": "2026-06-15",
     "product_name_en": "WONSH® Rubber Ramp",
     "specs_en": [
-      "PDF QR expired — please call to confirm model & specs",
+      "Rubber construction, anti-slip design; multiple sizes",
       "For thresholds / small ramps",
       "Just Med WONSH® series"
     ],
     "price_display_en": "HK$150.00",
-    "note_en": "QR expired; PDF reference $150-$370"
+    "note_en": ""
   },
   {
     "id": "m2",
@@ -666,7 +666,7 @@
     "image_url": "images/ramp_supreme_wa200.jpeg",
     "product_url": "https://www.supreme.com.hk/",
     "phone": "3690 1468",
-    "note": "PDF QR 已失效, 不同長度價格已列",
+    "note": "不同長度價格已列",
     "updated_date": "2026-06-11",
     "last_checked": "2026-06-15",
     "product_name_en": "Folding Wheelchair Ramp",
@@ -678,7 +678,7 @@
       "Anti-slip surface"
     ],
     "price_display_en": "HK$1,500 (36\") / $1,800 (48\") / $2,200 (60\") / $2,800 (72\")",
-    "note_en": "PDF QR expired; prices listed by length"
+    "note_en": "Prices listed by length"
   },
   {
     "id": "sc1",
@@ -723,7 +723,7 @@
     "model": "FS-7961L",
     "price_min": 500.0,
     "price_max": 500.0,
-    "price_display": "HK$500.00 (網店實價, PDF 參考 $700)",
+    "price_display": "HK$500.00",
     "specs": [
       "座高: 14-18\" (可調校)",
       "座闊: 16\"",
@@ -745,8 +745,8 @@
       "Anti-slip rubber feet",
       "Height adjustable"
     ],
-    "price_display_en": "HK$500.00 (online — PDF reference $700, save $200)",
-    "note_en": "Online price $500 vs PDF reference $700 — save $200"
+    "price_display_en": "HK$500.00",
+    "note_en": ""
   },
   {
     "id": "sc3",
@@ -1241,7 +1241,7 @@
     "image_url": "images/sockaid_justmed_f17252.jpg",
     "product_url": "https://www.justmed.com.hk/product-detail.php?id=831",
     "phone": "2742 4370",
-    "note": "原 QR 已失效, 已用 Google 搵到 official page, 線上實價 $85 (比 PDF 平 $15)",
+    "note": "",
     "updated_date": "2026-06-15",
     "last_checked": "2026-06-15",
     "product_name_en": "Sock Aid",
@@ -1250,7 +1250,7 @@
       "For people who cannot bend to put on socks"
     ],
     "price_display_en": "HK$100.00",
-    "note_en": "Original QR expired; URL recovered via Google. Online price $85 (saves $15 vs PDF)"
+    "note_en": ""
   },
   {
     "id": "sa2",
@@ -1429,7 +1429,7 @@
     "image_url": "images/ramp_healthtop_rub.jpeg",
     "product_url": "https://healthtop.com.hk/index.php?route=product/product&product_id=423",
     "phone": "2413 7867",
-    "note": "PDF 列參考價 $370-$650, 視乎尺寸. 詳情請致電查詢",
+    "note": "參考價 $370-$650, 視乎尺寸",
     "updated_date": "2026-06-15",
     "last_checked": "2026-06-15",
     "product_name_en": "Rubber Threshold Ramp (Multiple Sizes)",
@@ -1442,7 +1442,7 @@
       "No installation needed"
     ],
     "price_display_en": "HK$370 – $650",
-    "note_en": "PDF reference $370-$650 by size. Please call to confirm"
+    "note_en": "Reference price $370-$650 depending on size"
   },
   {
     "id": "rmp4",
@@ -1457,22 +1457,22 @@
     "specs": [
       "日本 Dunlop 品牌",
       "玻璃纖維製, 輕便",
-      "PDF QR 已失效, 詳細規格請致電查詢"
+      "詳細規格請致電查詢"
     ],
     "image_url": "images/ramp_healthtop_dunlop.jpeg",
     "product_url": "https://healthtop.com.hk/",
     "phone": "2413 7867",
-    "note": "QR 已失效, PDF 標明「自行查詢」",
+    "note": "請致電查詢",
     "updated_date": "2026-06-11",
     "last_checked": "2026-06-15",
     "product_name_en": "Japan Dunlop Lightweight Fiberglass Ramp",
     "specs_en": [
       "Brand: Dunlop (Japan)",
       "Fiberglass construction — lightweight",
-      "PDF QR expired; specs available on request"
+      "Specs available on request"
     ],
     "price_display_en": "Please call to enquire",
-    "note_en": "QR expired; PDF says \"call to enquire\""
+    "note_en": "Call to enquire"
   },
   {
     "id": "bed1",
@@ -1614,7 +1614,7 @@
     "image_url": "images/mattress_healthyliving_brick.jpeg",
     "product_url": "https://www.healthyliving.com.hk/shop/%E5%8F%B0%E7%81%A3-brick-%E6%B8%9B%E5%A3%93%E6%B0%A3%E5%A2%8A%E5%BA%8A/",
     "phone": "3426 9090",
-    "note": "線上實價 $1,980 (比 PDF 參考價 $2,500 平 $520)",
+    "note": "線上實價 $1,980 (原價 $2,500, 慳 $520)",
     "updated_date": "2026-06-11",
     "last_checked": "2026-06-15",
     "product_name_en": "Taiwan Brick Pressure-relief Air Mattress",
@@ -1628,7 +1628,7 @@
       "Options: 2-tube (AB) / 3-tube (ABC) models"
     ],
     "price_display_en": "HK$1,980.00 (online; original $2,500 — save $520)",
-    "note_en": "Online price $1,980 (saves $520 vs PDF reference $2,500)"
+    "note_en": "Online price $1,980 (original $2,500, save $520)"
   },
   {
     "id": "mat3",
@@ -1656,7 +1656,7 @@
     "image_url": "images/mattress_gethealth_effect.jpeg",
     "product_url": "https://www.hktvmall.com/p/H9500001_S_GHM-PM-EFFECT76",
     "phone": "2432 2028",
-    "note": "HKTVmall 特價 $1,850 (原價 $1,900, 比 PDF 參考價更平). 通過 CE/FDA 認證",
+    "note": "HKTVmall 特價 $1,850 (原價 $1,900). 通過 CE/FDA 認證",
     "updated_date": "2026-06-11",
     "last_checked": "2026-06-15",
     "product_name_en": "Effect Pressure-relief Air Mattress (Taiwan Brand)",
