@@ -10,12 +10,11 @@
     "price_max": 2680.0,
     "price_display": "HK$2,680.00 (原價 $4,500, 減40%)",
     "specs": [
-      "座高: 19\"",
-      "座闊: 16\"/18\"",
-      "總外闊: 23.5\"/25.5\"",
-      "重量: 12.9kg",
-      "扶手腳踏可拆",
-      "10年支架保用"
+      "座高：19\"",
+      "座闊：16\" / 18\"",
+      "總外闊：23.5\" / 25.5\"",
+      "重量：12.9kg",
+      "承重：360lb / 163.2kg"
     ],
     "image_url": "images/wheelchair_healthyliving_ad0171.jpg",
     "product_url": "https://www.healthyliving.com.hk/shop/%E7%BE%8E%E5%9C%8B-advanced-7510-%E5%A4%9A%E5%8A%9F%E8%83%BD%E8%BC%95%E8%BC%AA%E6%A4%85/",
@@ -26,13 +25,19 @@
     "specs_en": [
       "Seat height: 19\"",
       "Seat width: 16\" / 18\"",
-      "Overall width: 23.5\" / 25.5\"",
       "Weight: 12.9 kg",
-      "Detachable armrests & footrests",
-      "10-year frame warranty"
+      "Max load: 360 lb / 163.2 kg"
     ],
     "price_display_en": "HK$2,680.00 (Original $4,500, 40% off)",
-    "stock_status": "in_stock"
+    "stock_status": "in_stock",
+    "features": [
+      "扶手腳踏可拆",
+      "10年支架保用"
+    ],
+    "features_en": [
+      "Detachable armrests & footrests",
+      "10-year frame warranty"
+    ]
   },
   {
     "id": "w2",
@@ -45,13 +50,11 @@
     "price_max": 2400.0,
     "price_display": "HK$2,400.00",
     "specs": [
-      "座高: 20\"",
-      "座闊: 16\"/18\"",
-      "總外闊: 24.5\"/26.5\"",
-      "重量: 19.9kg",
-      "承重: 125kg",
-      "膠護板後翻扶手",
-      "腳踏可拆"
+      "座高：20\"",
+      "座闊：16\" / 18\"",
+      "總外闊：24.5\" / 26.5\"",
+      "重量：19.9kg",
+      "承重：125kg"
     ],
     "image_url": "images/wheelchair_justmed_alpha_t05.jpg",
     "product_url": "https://www.justmed.com.hk/product-detail.php?id=9",
@@ -65,13 +68,19 @@
       "Seat width: 16\" / 18\"",
       "Overall width: 24.5\" / 26.5\"",
       "Weight: 19.9 kg",
-      "Max load: 125 kg",
-      "Flip-back armrests with side panels",
-      "Detachable footrests"
+      "Max load: 125 kg"
     ],
     "price_display_en": "HK$2,400.00",
     "note_en": "Recommended by hospitals",
-    "stock_status": "in_stock"
+    "stock_status": "in_stock",
+    "features": [
+      "膠護板後翻扶手",
+      "腳踏可拆"
+    ],
+    "features_en": [
+      "Flip-back armrests with side panels",
+      "Detachable footrests"
+    ]
   },
   {
     "id": "w3",
@@ -84,12 +93,11 @@
     "price_max": 3200.0,
     "price_display": "HK$2,900 - $3,200",
     "specs": [
-      "座高: 17.5\"-19.5\" (雙軸位可調)",
-      "座闊: 16\"/18\"/20\"",
-      "重量: 16kg",
-      "承重: 250lb (114kg)",
-      "American Invacare 品牌",
-      "扶手腳踏可拆"
+      "座高：17.5\"–19.5\" (雙軸位可調)",
+      "座闊：16\" / 18\" / 20\"",
+      "總外闊：24.5\" / 26.5\" / 28.5\"",
+      "重量：16kg",
+      "承重：250lb (114kg)"
     ],
     "image_url": "images/wheelchair_gethealth_ex2.jpg",
     "product_url": "https://www.gethealth.com.hk/%E5%95%86%E5%93%81/invacare-tracer-ex2-%E5%A4%9A%E5%8A%9F%E8%83%BD%E5%A4%A7%E8%BC%AA%E8%BC%AA%E6%A4%85%E5%8F%AF%E6%8B%86%E6%89%8B%E6%8B%86%E8%85%B3/",
@@ -99,16 +107,23 @@
     "last_checked": "2026-06-15",
     "product_name_en": "Invacare Tracer EX2 Multi-functional Wheelchair (Large Wheel)",
     "specs_en": [
-      "Seat height: 17.5\" – 19.5\" (dual-axis adjustable)",
+      "Seat height: 17.5\"–19.5\" (dual-axis adjustable)",
       "Seat width: 16\" / 18\" / 20\"",
+      "Overall width: 24.5\" / 26.5\" / 28.5\"",
       "Weight: 16 kg",
-      "Max load: 250 lb (114 kg)",
-      "Brand: Invacare (USA)",
-      "Detachable armrests & footrests"
+      "Max load: 250 lb (114 kg)"
     ],
     "price_display_en": "HK$2,900 – $3,200",
     "note_en": "Product page confirmed via QR code",
-    "stock_status": "in_stock"
+    "stock_status": "in_stock",
+    "features": [
+      "American Invacare 品牌",
+      "扶手腳踏可拆"
+    ],
+    "features_en": [
+      "Brand: Invacare (USA)",
+      "Detachable armrests & footrests"
+    ]
   },
   {
     "id": "w5",
@@ -121,14 +136,10 @@
     "price_max": 1880.0,
     "price_display": "HK$1,880.00",
     "specs": [
-      "座高: 20\"",
-      "座闊: 16\"/18\"",
-      "總外闊: 23\"/25\"",
-      "重量: 14-15kg",
-      "PVC座墊背墊",
-      "後翻式長/短扶手",
-      "靠背可摺疊",
-      "前7\" / 後22\" 輪"
+      "座高：20\"",
+      "座闊：16\" / 18\"",
+      "總外闊：23\" / 25\"",
+      "重量：14–15kg"
     ],
     "image_url": "images/wheelchair_justice_h508.jpg",
     "product_url": "https://www.justicemed.com/product.php?sid=20&id=671",
@@ -139,12 +150,20 @@
     "product_name_en": "Folding-back Manual Wheelchair",
     "specs_en": [
       "Seat height: 20\"",
-      "Seat width: 16\" / 18\"",
-      "Foldable back design",
-      "Aluminium alloy frame"
+      "Seat width: 16\" / 18\""
     ],
     "price_display_en": "HK$1,880.00",
-    "stock_status": "in_stock"
+    "stock_status": "in_stock",
+    "features": [
+      "PVC座墊背墊",
+      "後翻式長/短扶手",
+      "靠背可摺疊",
+      "前7\" / 後22\" 輪"
+    ],
+    "features_en": [
+      "Foldable back design",
+      "Aluminium alloy frame"
+    ]
   },
   {
     "id": "w6",
@@ -157,15 +176,11 @@
     "price_max": 3000.0,
     "price_display": "HK$2,800 - $3,000 (16\"/18\": $2,800, 20\": $3,000)",
     "specs": [
-      "座高: 19\"",
-      "座闊: 16\"/18\"",
-      "總外闊: 22\"/24\"",
-      "重量: 14kg",
-      "承重: 100kg",
-      "7003 航太鋁合金",
-      "前6\" PU實芯 / 後16\" PU實芯",
-      "前後手剎掣",
-      "5年車架保養"
+      "座高：19\"",
+      "座闊：16\" / 18\"",
+      "總外闊：22\" / 24\"",
+      "重量：14kg",
+      "承重：100kg"
     ],
     "image_url": "images/wheelchair_healthtop_fhw13.jpg",
     "product_url": "https://healthtop.com.hk/%E5%8A%9F%E8%83%BD%E5%9E%8B%E9%8B%81%E5%90%88%E9%87%91%E5%B0%8F%E8%BC%AA%E6%89%8B%E5%8B%95%E8%BC%AA%E6%A4%85-FHW-13",
@@ -174,13 +189,21 @@
     "last_checked": "2026-06-15",
     "product_name_en": "Functional Aluminium Small-wheel Manual Wheelchair FHW-13",
     "specs_en": [
-      "Seat width: 16\" / 18\"",
+      "Seat width: 16\" / 18\""
+    ],
+    "price_display_en": "HK$2,800 - $3,000 (16\"/18\": $2,800, 20\": $3,000)",
+    "stock_status": "in_stock",
+    "features": [
+      "7003 航太鋁合金",
+      "前6\" PU實芯 / 後16\" PU實芯",
+      "前後手剎掣",
+      "5年車架保養"
+    ],
+    "features_en": [
       "Small rear wheels (caregiver-assist)",
       "Aluminium alloy, lightweight",
       "Foldable"
-    ],
-    "price_display_en": "HK$2,800 - $3,000 (16\"/18\": $2,800, 20\": $3,000)",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "w7",
@@ -193,13 +216,11 @@
     "price_max": 3900.0,
     "price_display": "HK$3,900.00 (原價 $6,800, 減43%)",
     "specs": [
-      "座高: 19.7\"",
-      "座闊: 16\"/18\"",
-      "總外闊: 25\"/27\"",
-      "可後躺172°",
-      "可拆式升降扶手",
-      "可拆式升降腳踏",
-      "可摺合"
+      "座高：19.7\"",
+      "座闊：16\" / 18\"",
+      "總外闊：25\" / 27\"",
+      "重量：20kg",
+      "承重：100kg"
     ],
     "image_url": "images/wheelchair_healthyliving_re30.jpg",
     "product_url": "https://www.healthyliving.com.hk/shop/%E7%BE%8E%E5%9C%8B-advanced-re30-%E9%AB%98%E8%83%8C%E5%BE%8C%E8%BA%BA%E8%BC%AA%E6%A4%85/",
@@ -208,13 +229,23 @@
     "last_checked": "2026-06-15",
     "product_name_en": "Advanced RE30 High-back Reclining Wheelchair (172°)",
     "specs_en": [
+      "Weight: 20 kg",
+      "Max load: 100 kg"
+    ],
+    "price_display_en": "HK$5,800.00",
+    "stock_status": "in_stock",
+    "features": [
+      "可後躺172°",
+      "可拆式升降扶手",
+      "可拆式升降腳踏",
+      "可摺合"
+    ],
+    "features_en": [
       "Backrest recline: up to 172°",
       "Adjustable headrest",
       "Elevating leg rest",
       "Suitable for long-term seating"
-    ],
-    "price_display_en": "HK$5,800.00",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "w8",
@@ -227,15 +258,11 @@
     "price_max": 4000.0,
     "price_display": "HK$4,000.00",
     "specs": [
-      "座高: 20\"",
-      "座闊: 16\"/18\"",
-      "總外闊: 25\"/27\"",
-      "重量: 26.6kg",
-      "承重: 150kg",
-      "靠背可達180°",
-      "腳托可拆及升降",
-      "附安全帶、防翻桿、頭枕",
-      "醫院推介"
+      "座高：20\"",
+      "座闊：16\" / 18\"",
+      "總外闊：25\" / 27\"",
+      "重量：26.6kg",
+      "承重：150kg"
     ],
     "image_url": "images/wheelchair_justmed_alpha_highback.jpg",
     "product_url": "https://www.justmed.com.hk/product-detail.php?id=14",
@@ -244,13 +271,20 @@
     "updated_date": "2026-06-11",
     "last_checked": "2026-06-15",
     "product_name_en": "Alpha® High-back Reclining Wheelchair (180°)",
-    "specs_en": [
+    "specs_en": [],
+    "price_display_en": "HK$6,800.00",
+    "stock_status": "in_stock",
+    "features": [
+      "靠背可達180°",
+      "腳托可拆及升降",
+      "附安全帶、防翻桿、頭枕",
+      "醫院推介"
+    ],
+    "features_en": [
       "Backrest recline: up to 180° (full flat)",
       "Adjustable headrest & leg rest",
       "Padded seat & back"
-    ],
-    "price_display_en": "HK$6,800.00",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "w9",
@@ -263,12 +297,11 @@
     "price_max": 3900.0,
     "price_display": "HK$3,900.00",
     "specs": [
-      "座高: 20\"",
-      "座闊: 18\"",
-      "總外闊: 27\"",
-      "可後躺",
-      "可升降腳踏",
-      "頭枕設計"
+      "座高：20\"",
+      "座闊：18\"",
+      "總外闊：27\"",
+      "重量：19.2kg",
+      "承重：150kg"
     ],
     "image_url": "images/wheelchair_gethealth_rc.jpg",
     "product_url": "https://www.gethealth.com.hk/%E5%95%86%E5%93%81/%E5%8F%AF%E8%BA%BA%E5%BC%8F%E9%AB%98%E8%83%8C%E8%BC%AA%E6%A4%85-%E5%A4%9A%E5%8A%9F%E8%83%BD%E8%A8%AD%E8%A8%88-%E6%A4%85%E8%83%8C%E5%8F%AF%E5%BE%8C%E5%82%BE/",
@@ -278,12 +311,21 @@
     "last_checked": "2026-06-15",
     "product_name_en": "Reclining High-back Wheelchair with Elevating Leg Rest",
     "specs_en": [
+      "Weight: 19.2 kg",
+      "Max load: 150 kg"
+    ],
+    "price_display_en": "HK$ — Please call",
+    "stock_status": "in_stock",
+    "features": [
+      "可後躺",
+      "可升降腳踏",
+      "頭枕設計"
+    ],
+    "features_en": [
       "High back with reclining function",
       "Elevating leg rest",
       "Suitable for stroke / long-term care"
-    ],
-    "price_display_en": "HK$ — Please call",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "cm1",
@@ -296,9 +338,9 @@
     "price_max": 550.0,
     "price_display": "HK$550.00",
     "specs": [
-      "座高: 17\"",
-      "座闊: 17\"",
-      "總外闊: 21\""
+      "座高：17\"",
+      "座闊：17\"",
+      "總外闊：21\""
     ],
     "image_url": "images/commode_medicare_ecm00407.jpg",
     "product_url": "https://www.medicare.com.hk/zh-hant/care/113/",
@@ -308,11 +350,12 @@
     "product_name_en": "Fixed Commode Chair",
     "specs_en": [
       "Seat height: 17\"",
-      "Seat width: 17\"",
-      "Overall width: 21\""
+      "Seat width: 17\""
     ],
     "price_display_en": "HK$550.00",
-    "stock_status": "in_stock"
+    "stock_status": "in_stock",
+    "features": [],
+    "features_en": []
   },
   {
     "id": "cm2",
@@ -325,10 +368,9 @@
     "price_max": 780.0,
     "price_display": "HK$780.00",
     "specs": [
-      "座高: 17-21\" (可調)",
-      "座闊: 17\"",
-      "總外闊: 22\"",
-      "鋁合金支架"
+      "座高：17–21\" (可調)",
+      "座闊：17\"",
+      "總外闊：22\""
     ],
     "image_url": "images/commode_supreme_ca1360.jpg",
     "product_url": "https://www.suprememed.com.hk/tc/products_detail.php?c1id=8&id=425",
@@ -337,13 +379,17 @@
     "updated_date": "2026-06-11",
     "last_checked": "2026-06-15",
     "product_name_en": "Folding Shower & Commode Chair",
-    "specs_en": [
+    "specs_en": [],
+    "price_display_en": "HK$880.00",
+    "stock_status": "in_stock",
+    "features": [
+      "鋁合金支架"
+    ],
+    "features_en": [
       "Folding design",
       "Both shower & commode use",
       "Aluminium alloy"
-    ],
-    "price_display_en": "HK$880.00",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "cm3",
@@ -356,12 +402,12 @@
     "price_max": 1880.0,
     "price_display": "HK$1,880.00 (原價 $2,400, 減21%)",
     "specs": [
-      "座高: 20\"",
-      "座闊: 16\"",
-      "總外闊: 19\"-20\"",
-      "適合座廁高: 17\"",
-      "適合座廁闊: 14\"-16\"",
-      "承重: 90kg"
+      "座高：20\"",
+      "座闊：16\"",
+      "總外闊：19\"–20\"",
+      "承重：90kg",
+      "適合座廁高：17\"",
+      "適合座廁闊：14\"–16\""
     ],
     "image_url": "images/commode_justmed_h61.jpg",
     "product_url": "https://www.justmed.com.hk/product-detail.php?id=55",
@@ -369,14 +415,16 @@
     "updated_date": "2026-06-11",
     "last_checked": "2026-06-15",
     "product_name_en": "Stainless Steel Shower/Commode Chair (Drop-down Arms + Tilt Bar)",
-    "specs_en": [
+    "specs_en": [],
+    "price_display_en": "HK$1,880.00",
+    "stock_status": "in_stock",
+    "features": [],
+    "features_en": [
       "Stainless steel frame",
       "Drop-down armrests for easy transfer",
       "Tilt-bar for caregiver",
       "Padded seat"
-    ],
-    "price_display_en": "HK$1,880.00",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "cm4",
@@ -389,15 +437,10 @@
     "price_max": 0,
     "price_display": "HK$ — 請致電查詢",
     "specs": [
-      "座高: 20\"",
-      "座闊: 17\"",
-      "總外闊: 20\"",
-      "背高: 18\"",
-      "304不銹鋼支架",
-      "5\"全鎖德國輪",
-      "PU座墊",
-      "活動扶手",
-      "拉出腳踏"
+      "座高：20\"",
+      "座闊：17\"",
+      "總外闊：20\"",
+      "背高：18\""
     ],
     "image_url": "images/commode_supreme_cs880a.png",
     "product_url": "https://www.suprememed.com.hk/tc/products_detail.php?c1id=8&id=666",
@@ -406,14 +449,22 @@
     "updated_date": "2026-06-11",
     "last_checked": "2026-06-15",
     "product_name_en": "4-wheel Shower/Commode Chair with Flip-up Arms (V-Chair)",
-    "specs_en": [
+    "specs_en": [],
+    "price_display_en": "HK$2,200.00",
+    "stock_status": "in_stock",
+    "features": [
+      "304不銹鋼支架",
+      "5\"全鎖德國輪",
+      "PU座墊",
+      "活動扶手",
+      "拉出腳踏"
+    ],
+    "features_en": [
       "4-wheel design",
       "Flip-up armrests",
       "V-shape seat opening",
       "Shower-safe materials"
-    ],
-    "price_display_en": "HK$2,200.00",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "cm5",
@@ -426,14 +477,37 @@
     "price_max": 1700.0,
     "price_display": "HK$1,700.00",
     "specs": [
-      "尺寸: 64(L) × 46.5(W) × 93(H) cm / 25.2\" × 18.3\" × 36.6\"",
-      "座闊: 39 cm / 15.4\"",
-      "座深: 43 cm / 17\"",
-      "座高: 50.5 cm / 19.8\"",
-      "腳踏高: 20 cm / 8\"",
-      "腳踏伸縮距離: 15 cm / 6\"",
-      "承重: 100 kg",
-      "重量: 11.5 kg",
+      "座高：50.5cm / 19.8\"",
+      "座闊：39cm / 15.4\"",
+      "總外闊：18.3\"/46.5cm",
+      "承重：100kg",
+      "尺寸：64(L) × 46.5(W) × 93(H) cm / 25.2\" × 18.3\" × 36.6\"",
+      "座深：43cm / 17\"",
+      "重量：11.5kg",
+      "腳踏高：20cm / 8\"",
+      "腳踏伸縮距離：15cm / 6\""
+    ],
+    "image_url": "images/commode_gethealth_cm04pu.jpg",
+    "product_url": "https://www.gethealth.com.hk/商品/不銹鋼沐浴便椅-總闊僅18-3吋/",
+    "phone": "2432 2028",
+    "updated_date": "2026-06-15",
+    "last_checked": "2026-06-15",
+    "product_name_en": "Stainless Steel Shower Commode Chair | Only 18.3\" Wide",
+    "specs_en": [
+      "Seat height: 50.5 cm / 19.8\"",
+      "Seat width: 39 cm / 15.4\"",
+      "Overall width: 18.3\" / 46.5 cm",
+      "Max load: 100 kg",
+      "Overall size: 64(L) × 46.5(W) × 93(H) cm / 25.2\" × 18.3\" × 36.6\"",
+      "Seat depth: 43 cm / 17\"",
+      "Weight: 11.5 kg",
+      "Footrest height: 20 cm / 8\""
+    ],
+    "price_display_en": "HK$1,700.00",
+    "stock_status": "in_stock",
+    "note": "",
+    "note_en": "",
+    "features": [
       "304 不銹鋼支架, 防水耐用",
       "超窄 18.3 吋總闊, 可通過大多數門口",
       "可進入座廁 (高 16.5\" × 闊 14.5\"), 方便如廁",
@@ -445,21 +519,8 @@
       "腳踏挑桿, 上落門檻更慳力",
       "四輪獨立鎖, 確保安全"
     ],
-    "image_url": "images/commode_gethealth_cm04pu.jpg",
-    "product_url": "https://www.gethealth.com.hk/商品/不銹鋼沐浴便椅-總闊僅18-3吋/",
-    "phone": "2432 2028",
-    "updated_date": "2026-06-15",
-    "last_checked": "2026-06-15",
-    "product_name_en": "Stainless Steel Shower Commode Chair | Only 18.3\" Wide",
-    "specs_en": [
-      "Overall: 64(L) × 46.5(W) × 93(H) cm / 25.2\" × 18.3\" × 36.6\"",
-      "Seat width: 39 cm / 15.4\"",
-      "Seat depth: 43 cm / 17\"",
-      "Seat height: 50.5 cm / 19.8\"",
-      "Footrest height: 20 cm / 8\"",
+    "features_en": [
       "Footrest extend: 15 cm / 6\"",
-      "Max load: 100 kg",
-      "Weight: 11.5 kg",
       "304 stainless steel frame, waterproof & durable",
       "Ultra-narrow 18.3\" total width — fits most doorways",
       "Fits over toilet (16.5\" H × 14.5\" W) for direct toilet use",
@@ -470,11 +531,7 @@
       "Soft cushioned lid included",
       "Tilt bar makes crossing thresholds easier",
       "Independent locks on all 4 wheels"
-    ],
-    "price_display_en": "HK$1,700.00",
-    "stock_status": "in_stock",
-    "note": "",
-    "note_en": ""
+    ]
   },
   {
     "id": "cm6",
@@ -487,12 +544,12 @@
     "price_max": 2500.0,
     "price_display": "HK$2,200 (30444S) - HK$2,500 (30442)",
     "specs": [
-      "座高: 19.5\"",
-      "座闊: 17\"",
-      "總外闊: 19.1\"/18.3\"",
-      "適合座廁高: 17\"",
-      "適合座廁闊: 16\"/15.25\"",
-      "304不銹鋼"
+      "座高：19.5\"",
+      "座闊：17\"",
+      "總外闊：19.1\" / 18.3\"",
+      "承重：120kg",
+      "適合座廁高：17\"",
+      "適合座廁闊：16\" / 15.25\""
     ],
     "image_url": "images/commode_medicare_ecm30442.jpg",
     "product_url": "https://www.medicare.com.hk/zh-hant/care/94/",
@@ -501,12 +558,18 @@
     "last_checked": "2026-06-15",
     "product_name_en": "304 Stainless Steel Shower/Commode Chair (Optional Tilt Bar)",
     "specs_en": [
+      "Max load: 120 kg"
+    ],
+    "price_display_en": "HK$2,200 – $2,500 (with/without tilt bar)",
+    "stock_status": "in_stock",
+    "features": [
+      "304不銹鋼"
+    ],
+    "features_en": [
       "304 stainless steel — rust-resistant",
       "Optional tilt-bar for caregiver",
       "Shower-safe"
-    ],
-    "price_display_en": "HK$2,200 – $2,500 (with/without tilt bar)",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "br1",
@@ -526,22 +589,26 @@
     "note": "免安裝；床欄可由 25\" 伸長至 40\"；置於床褥下使用；床墊厚度需大過 8cm/3吋",
     "product_name_en": "UK NRS Single-side Bed Rail (Extendable)",
     "specs_en": [
-      "Size: 37.5\"(D) × 25–40\"(W) × 18.75\"(H)",
-      "No installation — slides under mattress",
-      "Extendable rail: 25\" to 40\"",
-      "Single-side fall prevention",
-      "UK NRS brand"
+      "Dimensions: 37.5\"(D) × 25–40\"(W) × 18.75\"(H)"
     ],
     "price_display_en": "HK$1,080",
     "note_en": "No-install; rail extends 25\" to 40\"; placed under mattress; requires mattress thicker than 8cm/3\"",
     "specs": [
-      "尺寸：37.5\"(深) × 25-40\"(闊) × 18.75\"(高)",
+      "尺寸：37.5\"(深) × 25–40\"(闊) × 18.75\"(高)"
+    ],
+    "stock_status": "in_stock",
+    "features": [
       "免安裝，置於床褥下",
       "床欄可伸長：25\" → 40\"",
       "單邊防跌設計",
       "英國 NRS 品牌"
     ],
-    "stock_status": "in_stock"
+    "features_en": [
+      "No installation — slides under mattress",
+      "Extendable rail: 25\" to 40\"",
+      "Single-side fall prevention",
+      "UK NRS brand"
+    ]
   },
   {
     "id": "br2",
@@ -560,25 +627,29 @@
     "phone": "2432 2028",
     "note": "免安裝；高度可調 5 段（46.5-56cm）；床墊厚度需大過 8cm/3吋；床面需與床框同一水平；4 防滑腳墊",
     "specs": [
-      "尺寸：90cm(深) × 51cm(闊) × 46.5-56cm(高)",
+      "尺寸：90cm(深) × 51cm(闊) × 46.5–56cm(高)"
+    ],
+    "product_name_en": "No-install Bed Rail (Sit-to-Stand Assist)",
+    "specs_en": [
+      "Dimensions: 90 cm(D) × 51 cm(W) × 46.5–56 cm(H)"
+    ],
+    "price_display_en": "HK$380",
+    "note_en": "No-install; 5-level height adjust (46.5–56cm); mattress must be >8cm/3\" thick; bed surface level with frame",
+    "stock_status": "in_stock",
+    "features": [
       "高度可調 5 段",
       "免安裝設計，可隨時放置或移走",
       "需配合床墊使用，厚度 > 8cm",
       "床面需與床框同一水平",
       "4 防滑腳墊"
     ],
-    "product_name_en": "No-install Bed Rail (Sit-to-Stand Assist)",
-    "specs_en": [
-      "Size: 90cm(D) × 51cm(W) × 46.5–56cm(H)",
+    "features_en": [
       "5-level height adjustment",
       "No installation — place/remove anytime",
       "Requires mattress thicker than 8cm",
       "Bed surface must be level with frame",
       "4 anti-slip foot pads"
-    ],
-    "price_display_en": "HK$380",
-    "note_en": "No-install; 5-level height adjust (46.5–56cm); mattress must be >8cm/3\" thick; bed surface level with frame",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "br3",
@@ -597,25 +668,29 @@
     "phone": "2419 6788",
     "note": "單邊無腳扶手；連 24\"×24\" 木底板；費用已包送貨及上門安裝；建議固定於床板；如鐵床板/床架另收費",
     "specs": [
-      "尺寸：24吋(深) × 24吋(闊木底板) × 18吋(高)",
+      "尺寸：24吋(深) × 24吋(闊木底板) × 18吋(高)"
+    ],
+    "product_name_en": "Bedside Footless Bed Rail (Single)",
+    "specs_en": [
+      "Dimensions: 24\"(D) × 24\"(W wood base) × 18\"(H)"
+    ],
+    "price_display_en": "HK$920 - $1,770 (BP3888 $920 / BP3868 $1,770, was $970-$1,820)",
+    "note_en": "Single-side footless rail; includes 24×24\" wood base; price covers delivery + install; recommend mounting on bed frame; metal frame install costs extra",
+    "stock_status": "in_stock",
+    "features": [
       "上欄高度 18\"，下欄高度 12\"，床欄闊 14\"",
       "連 24×24 吋木底板一塊",
       "螺絲固定於床板上",
       "費用已包送貨及上門安裝",
       "2-3 吋床褥可直接固定於床板"
     ],
-    "product_name_en": "Bedside Footless Bed Rail (Single)",
-    "specs_en": [
-      "Size: 24\"(D) × 24\"(W wood base) × 18\"(H)",
+    "features_en": [
       "Upper rail 18\", lower rail 12\", rail width 14\"",
       "Includes one 24×24\" wood base board",
       "Secured to bed frame with screws",
       "Price includes delivery and installation",
       "For 2–3\" mattresses, can mount directly to frame"
-    ],
-    "price_display_en": "HK$920 - $1,770 (BP3888 $920 / BP3868 $1,770, was $970-$1,820)",
-    "note_en": "Single-side footless rail; includes 24×24\" wood base; price covers delivery + install; recommend mounting on bed frame; metal frame install costs extra",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "r2",
@@ -628,9 +703,10 @@
     "price_max": 370.0,
     "price_display": "HK$150 - $370 (按尺寸/高度)",
     "specs": [
-      "橡膠製造, 防滑設計; 多款尺寸",
-      "適用門檻 / 小斜台",
-      "真善美 WONSH® 系列"
+      "長度：5.9\"",
+      "闊度：12\" / 24\"",
+      "高度：1\" / 1.4\"",
+      "承重：272.6kg"
     ],
     "image_url": "images/ramp_wonsh_trrub.jpeg",
     "product_url": "https://www.justmed.com.hk/product-detail.php?id=1914",
@@ -640,13 +716,24 @@
     "last_checked": "2026-06-15",
     "product_name_en": "WONSH® Rubber Ramp",
     "specs_en": [
-      "Rubber construction, anti-slip design; multiple sizes",
-      "For thresholds / small ramps",
-      "Just Med WONSH® series"
+      "Length: 5.9\"",
+      "Width: 12\" / 24\"",
+      "Height: 1\" / 1.4\"",
+      "Max load: 272.6 kg"
     ],
     "price_display_en": "HK$150 - $370 (by size/height)",
     "note_en": "",
-    "stock_status": "in_stock"
+    "stock_status": "in_stock",
+    "features": [
+      "橡膠製造, 防滑設計; 多款尺寸",
+      "適用門檻 / 小斜台",
+      "真善美 WONSH® 系列"
+    ],
+    "features_en": [
+      "Rubber construction, anti-slip design; multiple sizes",
+      "For thresholds / small ramps",
+      "Just Med WONSH® series"
+    ]
   },
   {
     "id": "m2",
@@ -659,16 +746,10 @@
     "price_max": 1980.0,
     "price_display": "HK$1,980.00 (原價 $2,200, 減 10%)",
     "specs": [
-      "充氣後尺寸: 74\"(L) × 33.8\"(W) × 4\"(H)",
-      "承重: 135kg",
-      "管條數量: 20 條 (備用 19 條)",
-      "氣泵空氣流量: 7-8 L/min",
-      "外層: 耐用尼龍, 內層: PVC",
-      "氣管交替換氣, 預防褥瘡",
-      "電動氣泵可因應體重調節壓力",
-      "氣管可逐條拆裝清潔",
-      "附送防水透氣床套",
-      "氣泵+床管保養 2 年"
+      "充氣後尺寸：74\"(L) × 33.8\"(W) × 4\"(H)",
+      "承重：135kg",
+      "管條數量：20 條 (備用 19 條)",
+      "氣泵流量：7–8 L / min"
     ],
     "image_url": "images/mattress_justmed_rxam40a.jpeg",
     "product_url": "https://www.justmed.com.hk/product-detail.php?id=758",
@@ -680,18 +761,28 @@
     "specs_en": [
       "Inflated size: 74\"(L) × 33.8\"(W) × 4\"(H)",
       "Max load: 135 kg",
-      "Air tubes: 20 (19 spare)",
-      "Air pump flow: 7-8 L/min",
+      "Number of tubes: 20 (19 spare)",
+      "Pump flow: 7–8 L / min"
+    ],
+    "price_display_en": "HK$1,980.00 (original $2,200, 10% off)",
+    "note_en": "Specs available online; price not listed — please call. Suitable for medium-to-high pressure ulcer risk",
+    "stock_status": "in_stock",
+    "features": [
+      "外層: 耐用尼龍, 內層: PVC",
+      "氣管交替換氣, 預防褥瘡",
+      "電動氣泵可因應體重調節壓力",
+      "氣管可逐條拆裝清潔",
+      "附送防水透氣床套",
+      "氣泵+床管保養 2 年"
+    ],
+    "features_en": [
       "Outer: durable nylon; inner: PVC",
       "Alternating airflow — pressure ulcer prevention",
       "Pump auto-adjusts pressure by weight",
       "Tubes can be removed individually for cleaning",
       "Includes waterproof breathable cover",
       "2-year warranty on pump + tubes"
-    ],
-    "price_display_en": "HK$1,980.00 (original $2,200, 10% off)",
-    "note_en": "Specs available online; price not listed — please call. Suitable for medium-to-high pressure ulcer risk",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "r3",
@@ -704,11 +795,8 @@
     "price_max": 2800.0,
     "price_display": "HK$1,500 (36\") / $1,800 (48\") / $2,200 (60\") / $2,800 (72\")",
     "specs": [
-      "長度: 36\" / 48\" / 60\" / 72\" 四款",
-      "鋁合金製, 輕便耐用",
-      "摺疊式設計, 方便運輸及收納",
-      "適用輪椅 / 電動車",
-      "防滑表面"
+      "長度：36\" / 48\" / 60\" / 72\" 四款",
+      "闊度：29\""
     ],
     "image_url": "images/ramp_supreme_wa200.jpeg",
     "product_url": "https://www.supreme.com.hk/",
@@ -718,15 +806,24 @@
     "last_checked": "2026-06-15",
     "product_name_en": "Folding Wheelchair Ramp",
     "specs_en": [
-      "Lengths: 36\" / 48\" / 60\" / 72\"",
+      "Length: 36\" / 48\" / 60\" / 72\"",
+      "Width: 29\""
+    ],
+    "price_display_en": "HK$1,500 (36\") / $1,800 (48\") / $2,200 (60\") / $2,800 (72\")",
+    "note_en": "Prices listed by length",
+    "stock_status": "in_stock",
+    "features": [
+      "鋁合金製, 輕便耐用",
+      "摺疊式設計, 方便運輸及收納",
+      "適用輪椅 / 電動車",
+      "防滑表面"
+    ],
+    "features_en": [
       "Aluminium alloy — light & durable",
       "Folding design for easy transport & storage",
       "Suitable for wheelchairs & power chairs",
       "Anti-slip surface"
-    ],
-    "price_display_en": "HK$1,500 (36\") / $1,800 (48\") / $2,200 (60\") / $2,800 (72\")",
-    "note_en": "Prices listed by length",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "sc1",
@@ -739,11 +836,10 @@
     "price_max": 500.0,
     "price_display": "HK$500.00",
     "specs": [
-      "座高: 16-21\" (可調校)",
-      "座闊: 16\"",
-      "總尺寸: 18.5\"(長) × 17.3\"(闊) × 28-33\"(高)",
-      "承重: 100kg",
-      "扶手可拆"
+      "座高：16–21\" (可調校)",
+      "座闊：16\"",
+      "總尺寸：18.5\"(長) × 17.3\"(闊) × 28–33\"(高)",
+      "承重：100kg"
     ],
     "image_url": "images/shower_healthtop_fha_dw3500.jpg",
     "product_url": "https://healthtop.com.hk/浴室用具/沐浴椅?product_id=444",
@@ -753,15 +849,20 @@
     "last_checked": "2026-06-15",
     "product_name_en": "Shower Chair with Detachable Armrests",
     "specs_en": [
-      "Seat height: 16 – 21\" (adjustable)",
+      "Seat height: 16–21\" (adjustable)",
       "Seat width: 16\"",
-      "Overall: 18.5\"(L) × 17.3\"(W) × 28-33\"(H)",
-      "Max load: 100 kg",
-      "Detachable armrests"
+      "Overall size: 18.5\"(L) × 17.3\"(W) × 28–33\"(H)",
+      "Max load: 100 kg"
     ],
     "price_display_en": "HK$500.00",
     "note_en": "Product page confirmed by QR; price not listed online — please call",
-    "stock_status": "in_stock"
+    "stock_status": "in_stock",
+    "features": [
+      "扶手可拆"
+    ],
+    "features_en": [
+      "Detachable armrests"
+    ]
   },
   {
     "id": "sc2",
@@ -774,12 +875,10 @@
     "price_max": 700.0,
     "price_display": "HK$700.00",
     "specs": [
-      "座高: 14-18\" (可調校)",
-      "座闊: 16\"",
-      "總尺寸: 21\"(長) × 21\"(闊) × 29-33\"(高)",
-      "承重: 100kg",
-      "U型座位 (方便清潔)",
-      "扶手可拆"
+      "座高：14–18\" (可調校)",
+      "座闊：16\"",
+      "總尺寸：21\"(長) × 21\"(闊) × 29–33\"(高)",
+      "承重：100kg"
     ],
     "image_url": "images/shower_justmed_fs7961l.jpg",
     "product_url": "https://www.justmed.com.hk/product-detail.php?id=71",
@@ -788,15 +887,20 @@
     "updated_date": "2026-06-15",
     "last_checked": "2026-06-15",
     "product_name_en": "U-shape Back Shower Chair with Armrests",
-    "specs_en": [
+    "specs_en": [],
+    "price_display_en": "HK$700.00",
+    "note_en": "",
+    "stock_status": "in_stock",
+    "features": [
+      "U型座位 (方便清潔)",
+      "扶手可拆"
+    ],
+    "features_en": [
       "U-shape backrest",
       "Detachable armrests",
       "Anti-slip rubber feet",
       "Height adjustable"
-    ],
-    "price_display_en": "HK$700.00",
-    "note_en": "",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "sc3",
@@ -809,12 +913,10 @@
     "price_max": 750.0,
     "price_display": "HK$750.00",
     "specs": [
-      "座高: 15.7-18.9\" (可調校)",
-      "座闊: 15.7\"",
-      "總尺寸: 17.7\"(長) × 19.7\"(闊) × 27.6-30.7\"(高)",
-      "承重: 150kg",
-      "椅可 360° 旋轉, 方便進出企缸",
-      "上翻式扶手"
+      "座高：15.7–18.9\" (可調校)",
+      "座闊：15.7\"",
+      "總尺寸：17.7\"(長) × 19.7\"(闊) × 27.6–30.7\"(高)",
+      "承重：150kg"
     ],
     "image_url": "images/shower_gethealth_rt360.jpg",
     "product_url": "https://www.gethealth.com.hk/商品/鋁合金扶手旋轉沐浴椅-360o旋轉-扶手可翻/",
@@ -823,14 +925,19 @@
     "updated_date": "2026-06-11",
     "last_checked": "2026-06-15",
     "product_name_en": "Aluminium 360° Swivel Shower Chair with Armrests",
-    "specs_en": [
+    "specs_en": [],
+    "price_display_en": "HK$750.00",
+    "stock_status": "in_stock",
+    "features": [
+      "椅可 360° 旋轉, 方便進出企缸",
+      "上翻式扶手"
+    ],
+    "features_en": [
       "360° rotating seat",
       "Aluminium alloy frame",
       "With armrests",
       "Height adjustable"
-    ],
-    "price_display_en": "HK$750.00",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "sc4",
@@ -843,11 +950,10 @@
     "price_max": 450.0,
     "price_display": "HK$450.00",
     "specs": [
-      "座高: 14.1-18.1\" (可調校)",
-      "座闊: 15.8\"",
-      "總尺寸: 18\"(長) × 19\"(闊) × 25.5-29.5\"(高)",
-      "承重: 100kg",
-      "軟墊可拆出來清潔"
+      "座高：14.1–18.1\" (可調校)",
+      "座闊：15.8\"",
+      "總尺寸：18\"(長) × 19\"(闊) × 25.5–29.5\"(高)",
+      "承重：100kg"
     ],
     "image_url": "images/shower_gethealth_fz03.jpg",
     "product_url": "https://www.gethealth.com.hk/商品/鋁合金軟墊沐浴椅-輕巧迷你/",
@@ -856,14 +962,18 @@
     "updated_date": "2026-06-11",
     "last_checked": "2026-06-15",
     "product_name_en": "Aluminium Padded Shower Chair (Compact / Light)",
-    "specs_en": [
+    "specs_en": [],
+    "price_display_en": "HK$450.00",
+    "stock_status": "in_stock",
+    "features": [
+      "軟墊可拆出來清潔"
+    ],
+    "features_en": [
       "Padded seat",
       "Aluminium alloy frame",
       "Compact, lightweight",
       "Height adjustable"
-    ],
-    "price_display_en": "HK$450.00",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "sc5",
@@ -876,12 +986,10 @@
     "price_max": 250.0,
     "price_display": "HK$250.00",
     "specs": [
-      "座高: 14-21\" (可調校)",
-      "座闊: 12.7\"",
-      "總尺寸: 13.5\"(長) × 13.5\"(闊) × 14-21\"(高)",
-      "防滑膠腳",
-      "鋁合金支架",
-      "免工具裝拆"
+      "座高：14–21\" (可調校)",
+      "座闊：12.7\"",
+      "總尺寸：13.5\"(長) × 13.5\"(闊) × 14–21\"(高)",
+      "承重：100kg/220lb"
     ],
     "image_url": "images/shower_healthyliving_sb01.jpg",
     "product_url": "https://www.healthyliving.com.hk/shop/advanced-sb01-圓形沐浴椅-白色/",
@@ -891,13 +999,21 @@
     "last_checked": "2026-06-15",
     "product_name_en": "Advanced SB01 Round Shower Stool (White)",
     "specs_en": [
+      "Max load: 100 kg / 220 lb"
+    ],
+    "price_display_en": "HK$280.00",
+    "stock_status": "in_stock",
+    "features": [
+      "防滑膠腳",
+      "鋁合金支架",
+      "免工具裝拆"
+    ],
+    "features_en": [
       "Round seat design",
       "White colour",
       "Anti-slip rubber feet",
       "Height adjustable"
-    ],
-    "price_display_en": "HK$280.00",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "sc6",
@@ -910,11 +1026,9 @@
     "price_max": 500.0,
     "price_display": "HK$500.00",
     "specs": [
-      "座高: 15-18\" (可調校)",
-      "座闊: 11.5\"",
-      "承重: 100kg",
-      "椅可 360° 旋轉, 方便進出企缸",
-      "圓形座位"
+      "座高：15–18\" (可調校)",
+      "座闊：11.5\"",
+      "承重：100kg"
     ],
     "image_url": "images/shower_justmed_std1004.jpg",
     "product_url": "https://www.justmed.com.hk/product-detail.php?id=69",
@@ -923,13 +1037,18 @@
     "updated_date": "2026-06-11",
     "last_checked": "2026-06-15",
     "product_name_en": "Folding Aluminium Shower Chair",
-    "specs_en": [
+    "specs_en": [],
+    "price_display_en": "HK$680.00",
+    "stock_status": "in_stock",
+    "features": [
+      "椅可 360° 旋轉, 方便進出企缸",
+      "圓形座位"
+    ],
+    "features_en": [
       "Foldable design — space-saving",
       "Aluminium alloy frame",
       "Height adjustable"
-    ],
-    "price_display_en": "HK$680.00",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "sc7",
@@ -942,10 +1061,10 @@
     "price_max": 450.0,
     "price_display": "HK$450.00",
     "specs": [
-      "座高: 13-17\" (可調校)",
-      "座闊: 19\"",
-      "外型尺寸: 19\"(W) × 17\"(L)",
-      "承重: 100kg"
+      "座高：13–17\" (可調校)",
+      "座闊：19\"",
+      "總尺寸：19\"(W) × 17\"(L)",
+      "承重：100kg"
     ],
     "image_url": "images/shower_justmed_fs798l.jpg",
     "product_url": "https://www.justmed.com.hk/product-detail.php?id=73",
@@ -954,14 +1073,16 @@
     "updated_date": "2026-06-15",
     "last_checked": "2026-06-15",
     "product_name_en": "Shower Chair with Backrest",
-    "specs_en": [
+    "specs_en": [],
+    "price_display_en": "HK$450.00",
+    "note_en": "Online price not listed — please call supplier",
+    "stock_status": "in_stock",
+    "features": [],
+    "features_en": [
       "With backrest",
       "Height adjustable",
       "Anti-slip rubber feet"
-    ],
-    "price_display_en": "HK$450.00",
-    "note_en": "Online price not listed — please call supplier",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "sc8",
@@ -974,12 +1095,10 @@
     "price_max": 800.0,
     "price_display": "HK$800.00",
     "specs": [
-      "座高: 16.9-18.9\" (可調校)",
-      "座闊: 18\"",
-      "外型尺寸 (打開後): 19.7-21.7\"(L) × 24.4\"(W) × 28.3-31\"(H)",
-      "可摺疊收納",
-      "U型座位 (方便清潔)",
-      "軟墊可拆"
+      "座高：16.9–18.9\" (可調校)",
+      "座闊：18\"",
+      "總尺寸：19.7–21.7\"(L) × 24.4\"(W) × 28.3–31\"(H)",
+      "承重：100kg"
     ],
     "image_url": "images/shower_healthtop_fzk186b.jpg",
     "product_url": "https://healthtop.com.hk/浴室用具/沐浴椅/鋁合金可摺疊U形沐浴椅",
@@ -989,15 +1108,23 @@
     "last_checked": "2026-06-15",
     "product_name_en": "Foldable Aluminium U-shape Shower Chair (Light Blue)",
     "specs_en": [
-      "U-shape opening (perineal access)",
-      "Foldable for storage",
-      "Aluminium alloy frame",
-      "Light blue colour"
+      "Max load: 100 kg"
     ],
     "price_display_en": "HK$800.00",
     "note_en": "Online price not listed — please call",
     "stock_status": "out_of_stock",
-    "stock_status_changed": "2026-06-15"
+    "stock_status_changed": "2026-06-15",
+    "features": [
+      "可摺疊收納",
+      "U型座位 (方便清潔)",
+      "軟墊可拆"
+    ],
+    "features_en": [
+      "U-shape opening (perineal access)",
+      "Foldable for storage",
+      "Aluminium alloy frame",
+      "Light blue colour"
+    ]
   },
   {
     "id": "sc9",
@@ -1010,12 +1137,10 @@
     "price_max": 430.0,
     "price_display": "HK$430.00",
     "specs": [
-      "座高: 13-17\" (可調校)",
-      "座闊: 19\" × 11\"",
-      "總外闊: 19\" × 16\"",
-      "承重: 100kg",
-      "支架: 銀色鋁質",
-      "座板: 塑膠"
+      "座高：13–17\" (可調校)",
+      "座闊：19\" × 11\"",
+      "總尺寸：19\"(闊)x16\"(深)x13\"-17\"(高)",
+      "承重：100kg"
     ],
     "image_url": "images/shower_rehabexpress_15300045.jpg",
     "product_url": "https://www.rehabexpress.com.hk/uat4-15300045.html",
@@ -1025,13 +1150,20 @@
     "last_checked": "2026-06-15",
     "product_name_en": "Backless Shower Stool",
     "specs_en": [
-      "No backrest — compact",
-      "Height adjustable",
-      "Anti-slip feet"
+      "Overall size: 19\"(W) x 16\"(D) x 13\" – 17\"(H)"
     ],
     "price_display_en": "HK$320.00",
     "stock_status": "out_of_stock",
-    "stock_status_changed": "2026-06-15"
+    "stock_status_changed": "2026-06-15",
+    "features": [
+      "支架: 銀色鋁質",
+      "座板: 塑膠"
+    ],
+    "features_en": [
+      "No backrest — compact",
+      "Height adjustable",
+      "Anti-slip feet"
+    ]
   },
   {
     "id": "tr1",
@@ -1044,11 +1176,9 @@
     "price_max": 400.0,
     "price_display": "HK$400.00",
     "specs": [
-      "尺寸: 40cm(L) × 36cm(W)",
-      "高度: 3\" / 4\" / 5.5\" 三款",
-      "承重: 100kg",
-      "建議安裝在廁盤上, 而非廁板上",
-      "定期需檢查固定螺絲"
+      "尺寸：40cm(L) × 36cm(W)",
+      "高度：3\" / 4\" / 5.5\" 三款",
+      "承重：100kg"
     ],
     "image_url": "images/riser_healthtop_tb9000.jpg",
     "product_url": "https://healthtop.com.hk/浴室用具/廁所加高器/廁所加高器FHA-TB-9000",
@@ -1058,12 +1188,18 @@
     "last_checked": "2026-06-15",
     "product_name_en": "Toilet Riser (3\" / 4\" / 5.5\" — three heights)",
     "specs_en": [
-      "Heights: 3\" / 4\" / 5.5\"",
-      "Three options to choose from",
-      "Fits most standard toilets"
+      "Height: 3\" / 4\" / 5.5\""
     ],
     "price_display_en": "HK$450 – $580 (depending on height)",
-    "stock_status": "in_stock"
+    "stock_status": "in_stock",
+    "features": [
+      "建議安裝在廁盤上, 而非廁板上",
+      "定期需檢查固定螺絲"
+    ],
+    "features_en": [
+      "Three options to choose from",
+      "Fits most standard toilets"
+    ]
   },
   {
     "id": "tr2",
@@ -1076,11 +1212,10 @@
     "price_max": 430.0,
     "price_display": "HK$400 (2\") / $430 (4\")",
     "specs": [
-      "孔徑: 10.5\"(L) × 9\"(W)",
-      "高度: 2\" 或 4\"",
-      "承重: 190kg (最強)",
-      "可清洗及烘焗 (耐溫至 73°C)",
-      "英國 NRS 品牌"
+      "尺寸：2\" / 4\"",
+      "高度：2\" 或 4\"",
+      "承重：190kg (最強)",
+      "孔徑：10.5\"(L) × 9\"(W)"
     ],
     "image_url": "images/riser_justmed_nrs.jpg",
     "product_url": "https://www.justmed.com.hk/product-detail.php?id=81",
@@ -1090,12 +1225,19 @@
     "last_checked": "2026-06-15",
     "product_name_en": "NRS Toilet Seat Riser (2\" / 4\")",
     "specs_en": [
-      "Heights: 2\" / 4\"",
-      "Two options",
-      "NRS brand"
+      "Dimensions: 2\" / 4\"",
+      "Height: 2\" / 4\""
     ],
     "price_display_en": "HK$400 (2\") / $430 (4\")",
-    "stock_status": "in_stock"
+    "stock_status": "in_stock",
+    "features": [
+      "可清洗及烘焗 (耐溫至 73°C)",
+      "英國 NRS 品牌"
+    ],
+    "features_en": [
+      "Two options",
+      "NRS brand"
+    ]
   },
   {
     "id": "tr3",
@@ -1108,11 +1250,10 @@
     "price_max": 510.0,
     "price_display": "HK$380 (2.5\") / $430 (4\") / $510 (6\")",
     "specs": [
-      "尺寸: 15.5\"(L) × 14\"(W)",
-      "適合坐廁總外闊: 12\"-15\"",
-      "高度: 2.5\" / 4\" / 6\"",
-      "承重: 136kg",
-      "無蓋設計"
+      "尺寸：15.5\"(L) × 14\"(W)",
+      "高度：2.5\" / 4\" / 6\"",
+      "承重：136kg",
+      "適合坐廁總外闊：12\"–15\""
     ],
     "image_url": "images/riser_medicare_ems00600.jpg",
     "product_url": "https://www.medicare.com.hk/zh-hant/care/109/",
@@ -1122,12 +1263,17 @@
     "last_checked": "2026-06-15",
     "product_name_en": "Toilet Riser — No Lid (2.5\" / 4\" / 6\")",
     "specs_en": [
-      "Heights: 2.5\" / 4\" / 6\"",
-      "Without lid",
-      "Three options"
+      "Height: 2.5\" / 4\" / 6\""
     ],
     "price_display_en": "HK$380 – $580 (depending on height)",
-    "stock_status": "in_stock"
+    "stock_status": "in_stock",
+    "features": [
+      "無蓋設計"
+    ],
+    "features_en": [
+      "Without lid",
+      "Three options"
+    ]
   },
   {
     "id": "tr4",
@@ -1140,10 +1286,8 @@
     "price_max": 530.0,
     "price_display": "HK$430 (3\") / $480 (4\") / $530 (5\")",
     "specs": [
-      "尺寸: 15.5\"(L) × 14\"(W)",
-      "厚度/高度: 3\" / 4\" / 5\"",
-      "深度: 15.5\" × 闊度: 14\"",
-      "連蓋設計"
+      "尺寸：15.5\"(L) × 14\"(W)",
+      "高度：3\" / 4\" / 5\""
     ],
     "image_url": "images/riser_supreme_cx900c.jpg",
     "product_url": "https://www.suprememed.com.hk/tc/products_detail.php?c1id=8&id=524",
@@ -1153,12 +1297,17 @@
     "last_checked": "2026-06-15",
     "product_name_en": "Toilet Riser Cushion with Lid (3\" / 4\" / 5\")",
     "specs_en": [
-      "Heights: 3\" / 4\" / 5\"",
-      "With lid",
-      "Padded cushion"
+      "Height: 3\" / 4\" / 5\""
     ],
     "price_display_en": "HK$420 – $580",
-    "stock_status": "in_stock"
+    "stock_status": "in_stock",
+    "features": [
+      "連蓋設計"
+    ],
+    "features_en": [
+      "With lid",
+      "Padded cushion"
+    ]
   },
   {
     "id": "tr5",
@@ -1171,11 +1320,10 @@
     "price_max": 580.0,
     "price_display": "HK$450 (2.5\") / $500 (4\") / $580 (6\")",
     "specs": [
-      "尺寸: 15.5\"(L) × 14\"(W)",
-      "適合坐廁總外闊: 12\"-15\"",
-      "高度: 2.5\" / 4\" / 6\"",
-      "承重: 136kg",
-      "連蓋設計"
+      "尺寸：15.5\"(L) × 14\"(W)",
+      "高度：2.5\" / 4\" / 6\"",
+      "承重：136kg",
+      "適合坐廁總外闊：12\"–15\""
     ],
     "image_url": "images/riser_medicare_ems00603.jpg",
     "product_url": "https://www.medicare.com.hk/zh-hant/care/109/",
@@ -1185,12 +1333,17 @@
     "last_checked": "2026-06-15",
     "product_name_en": "Toilet Riser with Lid (2.5\" / 4\" / 6\")",
     "specs_en": [
-      "Heights: 2.5\" / 4\" / 6\"",
-      "With lid",
-      "Three options"
+      "Height: 2.5\" / 4\" / 6\""
     ],
     "price_display_en": "HK$420 – $620",
-    "stock_status": "in_stock"
+    "stock_status": "in_stock",
+    "features": [
+      "連蓋設計"
+    ],
+    "features_en": [
+      "With lid",
+      "Three options"
+    ]
   },
   {
     "id": "rc1",
@@ -1203,13 +1356,8 @@
     "price_max": 200.0,
     "price_display": "HK$200.00",
     "specs": [
-      "長度: 26\" / 32\" 兩款",
-      "重量: 160g (26\") / 180g (32\")",
-      "輕身物料製造",
-      "鉗口有防滑及磁石膠面",
-      "磁石膠面幫助執拾金屬物件",
-      "可作鞋拔使用",
-      "適合未能彎腰執拾物品的人士"
+      "長度：26\" / 32\" 兩款",
+      "重量：160g (26\") / 180g (32\")"
     ],
     "image_url": "images/reacher_justmed_l36237.jpg",
     "product_url": "https://www.justmed.com.hk/product-detail.php?id=828",
@@ -1219,17 +1367,26 @@
     "last_checked": "2026-06-15",
     "product_name_en": "Reacher / Grabber (Two Lengths)",
     "specs_en": [
-      "Lengths: 26\" / 32\"",
-      "Weight: 160 g (26\") / 180 g (32\")",
+      "Length: 26\" / 32\"",
+      "Weight: 160 g (26\") / 180 g (32\")"
+    ],
+    "price_display_en": "HK$200.00 (both lengths same price)",
+    "note_en": "Original QR expired; URL recovered via Google. Online price not listed — please call",
+    "stock_status": "in_stock",
+    "features": [
+      "輕身物料製造",
+      "鉗口有防滑及磁石膠面",
+      "磁石膠面幫助執拾金屬物件",
+      "可作鞋拔使用",
+      "適合未能彎腰執拾物品的人士"
+    ],
+    "features_en": [
       "Lightweight materials",
       "Anti-slip jaws with magnet",
       "Magnetic surface for picking up metal items",
       "Doubles as a shoehorn",
       "For users who cannot bend"
-    ],
-    "price_display_en": "HK$200.00 (both lengths same price)",
-    "note_en": "Original QR expired; URL recovered via Google. Online price not listed — please call",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "rc2",
@@ -1242,7 +1399,7 @@
     "price_max": 28.0,
     "price_display": "HK$28.00",
     "specs": [
-      "長度: 24\" / 30\" 兩款"
+      "長度：24\" / 30\" 兩款"
     ],
     "image_url": "images/reacher_cheers_16200254.jpg",
     "product_url": "https://www.rehabexpress.com.hk/",
@@ -1251,13 +1408,15 @@
     "updated_date": "2026-06-11",
     "last_checked": "2026-06-15",
     "product_name_en": "Reacher / Grabber",
-    "specs_en": [
+    "specs_en": [],
+    "price_display_en": "HK$120.00",
+    "stock_status": "in_stock",
+    "features": [],
+    "features_en": [
       "Standard grabber design",
       "Lightweight",
       "For users who cannot bend"
-    ],
-    "price_display_en": "HK$120.00",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "rc3",
@@ -1270,11 +1429,8 @@
     "price_max": 120.0,
     "price_display": "HK$120.00",
     "specs": [
-      "長度: 26\" (85cm)",
-      "夾頭闊度: 9cm",
-      "可懸掛槍型手柄",
-      "帶磁鐵夾頭 (磁鐵僅有一邊)",
-      "可旋轉夾頭"
+      "長度：26\" (85cm)",
+      "夾頭闊度：9cm"
     ],
     "image_url": "images/reacher_healthtop_he1626.jpg",
     "product_url": "https://healthtop.com.hk/取物器FHA-HE-1626",
@@ -1283,13 +1439,19 @@
     "updated_date": "2026-06-11",
     "last_checked": "2026-06-15",
     "product_name_en": "(New) Magnetic Reacher / Grabber",
-    "specs_en": [
+    "specs_en": [],
+    "price_display_en": "HK$120.00",
+    "stock_status": "in_stock",
+    "features": [
+      "可懸掛槍型手柄",
+      "帶磁鐵夾頭 (磁鐵僅有一邊)",
+      "可旋轉夾頭"
+    ],
+    "features_en": [
       "Magnetic tip for metal pickup",
       "Anti-slip jaws",
       "Lightweight aluminium"
-    ],
-    "price_display_en": "HK$120.00",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "sa1",
@@ -1301,10 +1463,7 @@
     "price_min": 100.0,
     "price_max": 100.0,
     "price_display": "HK$100.00",
-    "specs": [
-      "有效幫助康復者將襪子穿上",
-      "適合未能彎腰穿襪人士"
-    ],
+    "specs": [],
     "image_url": "images/sockaid_justmed_f17252.jpg",
     "product_url": "https://www.justmed.com.hk/product-detail.php?id=831",
     "phone": "2742 4370",
@@ -1312,13 +1471,18 @@
     "updated_date": "2026-06-15",
     "last_checked": "2026-06-15",
     "product_name_en": "Sock Aid",
-    "specs_en": [
-      "Helps users pull socks on",
-      "For people who cannot bend to put on socks"
-    ],
+    "specs_en": [],
     "price_display_en": "HK$100.00",
     "note_en": "",
-    "stock_status": "in_stock"
+    "stock_status": "in_stock",
+    "features": [
+      "有效幫助康復者將襪子穿上",
+      "適合未能彎腰穿襪人士"
+    ],
+    "features_en": [
+      "Helps users pull socks on",
+      "For people who cannot bend to put on socks"
+    ]
   },
   {
     "id": "sa2",
@@ -1331,11 +1495,7 @@
     "price_max": 380.0,
     "price_display": "HK$380.00",
     "specs": [
-      "長度: 70cm",
-      "6 種功能: 穿襪 / 脫襪 / 取襪 / 穿鞋 / 脫鞋 / 取鞋",
-      "長柄設計, 套襪時穩固不滑動",
-      "重量輕巧, 可懸掛於衣櫃或鞋櫃",
-      "適合銀髮族、孕婦、關節受傷者"
+      "長度：70cm"
     ],
     "image_url": "images/sockaid_famica_easy66.jpg",
     "product_url": "https://www.easy66.com.hk/products/famica-socks-aid",
@@ -1344,13 +1504,20 @@
     "updated_date": "2026-06-11",
     "last_checked": "2026-06-15",
     "product_name_en": "FAMICA Sock Aid (6-in-1 sock & shoe on/off)",
-    "specs_en": [
+    "specs_en": [],
+    "price_display_en": "HK$220.00",
+    "stock_status": "in_stock",
+    "features": [
+      "6 種功能: 穿襪 / 脫襪 / 取襪 / 穿鞋 / 脫鞋 / 取鞋",
+      "長柄設計, 套襪時穩固不滑動",
+      "重量輕巧, 可懸掛於衣櫃或鞋櫃",
+      "適合銀髮族、孕婦、關節受傷者"
+    ],
+    "features_en": [
       "FAMICA brand",
       "6-in-1: put on / take off socks & shoes",
       "Long handle"
-    ],
-    "price_display_en": "HK$220.00",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "sa3",
@@ -1363,11 +1530,7 @@
     "price_max": 120.0,
     "price_display": "HK$120.00",
     "specs": [
-      "台灣製造",
-      "高彈力伸縮性棉帶",
-      "長 230mm, 重 88g",
-      "尼龍 + 棉質毛巾 + 塑膠製造",
-      "適合髖關節置換、平衡不佳人士"
+      "長度：230mm"
     ],
     "image_url": "https://raw.githubusercontent.com/h9ctddp2cm-debug/ych-occu-rehab-aids-tracker/main/images/sock_aid_healthyliving_sun.jpg",
     "product_url": "https://www.healthyliving.com.hk/shop/%E5%8F%B0%E7%81%A3%E7%A9%BF%E8%A5%AA%E5%99%A8/",
@@ -1377,14 +1540,24 @@
     "last_checked": "2026-06-15",
     "product_name_en": "Taiwan Sun Sock Aid (Made in Taiwan)",
     "specs_en": [
+      "Length: 230 mm"
+    ],
+    "price_display_en": "HK$120.00",
+    "stock_status": "in_stock",
+    "features": [
+      "台灣製造",
+      "高彈力伸縮性棉帶",
+      "長 230mm, 重 88g",
+      "尼龍 + 棉質毛巾 + 塑膠製造",
+      "適合髖關節置換、平衡不佳人士"
+    ],
+    "features_en": [
       "Made in Taiwan",
       "High-elasticity stretch cotton band",
       "Length 230mm, Weight 88g",
       "Nylon + cotton towel + plastic construction",
       "Suitable for hip-replacement patients & those with poor balance"
-    ],
-    "price_display_en": "HK$120.00",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "bb1",
@@ -1397,13 +1570,10 @@
     "price_max": 550.0,
     "price_display": "HK$470 (26\"/27\"/28\") / $550 (30\"), 專用扶手另加 $100",
     "specs": [
-      "總闊: 26.5\" / 27.5\" / 28.5\" / 30\" 四款",
-      "深度: 10.75\" (NRS 系列為 9\")",
-      "承重: 190kg",
-      "底架至板邊間距: 1\"-3.5\"",
-      "不含乳膠舒適膠面 (減低敏感)",
-      "適合不同形狀浴缸",
-      "專用扶手另計 HK$100"
+      "尺寸：26\" / 27\" / 28\"",
+      "承重：190kg",
+      "總闊：26.5\" / 27.5\" / 28.5\" / 30\" 四款",
+      "深度：10.75\" (NRS 系列為 9\")"
     ],
     "image_url": "images/bathboard_justmed_nuvo.jpg",
     "product_url": "https://www.justmed.com.hk/product-detail.php?id=75",
@@ -1413,17 +1583,26 @@
     "last_checked": "2026-06-15",
     "product_name_en": "NUVO / NRS Bath Board (Four Widths)",
     "specs_en": [
-      "Widths: 26.5\" / 27.5\" / 28.5\" / 30\"",
-      "Depth: 10.75\" (NRS series 9\")",
+      "Dimensions: 26\" / 27\" / 28\"",
       "Max load: 190 kg",
+      "Depth: 10.75\" (NRS series 9\")"
+    ],
+    "price_display_en": "HK$470 (26\"/27\"/28\") / $550 (30\"); handrail +$100",
+    "note_en": "Product page confirmed via QR. Online actual price $470 for 26\"/27\"/28\"",
+    "stock_status": "in_stock",
+    "features": [
+      "底架至板邊間距: 1\"-3.5\"",
+      "不含乳膠舒適膠面 (減低敏感)",
+      "適合不同形狀浴缸",
+      "專用扶手另計 HK$100"
+    ],
+    "features_en": [
+      "Widths: 26.5\" / 27.5\" / 28.5\" / 30\"",
       "Frame-to-edge gap: 1\" – 3.5\"",
       "Latex-free padded surface (hypoallergenic)",
       "Fits various bathtub shapes",
       "Optional dedicated handrail: +HK$100"
-    ],
-    "price_display_en": "HK$470 (26\"/27\"/28\") / $550 (30\"); handrail +$100",
-    "note_en": "Product page confirmed via QR. Online actual price $470 for 26\"/27\"/28\"",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "bb2",
@@ -1436,10 +1615,9 @@
     "price_max": 480.0,
     "price_display": "HK$480.00",
     "specs": [
-      "12.5吋 (闊) x 28吋 (長)",
-      "適合浴缸闊度﹕16.5吋 至 25.5吋",
-      "承重﹕100公斤",
-      "已連扶手"
+      "尺寸：12.5\"(闊)x28\"(長)",
+      "承重：100kg",
+      "適合浴缸闊度：16.5吋 至 25.5吋"
     ],
     "image_url": "images/bathboard_medicare_esb00100.jpg",
     "product_url": "https://medicare.com.hk/zh-hant/care/124/",
@@ -1449,13 +1627,19 @@
     "last_checked": "2026-06-15",
     "product_name_en": "Plastic Bath Board with Handrail",
     "specs_en": [
-      "12.5\" (W) × 28\" (L)",
-      "Fits bath width: 16.5\" – 25.5\"",
-      "Max load: 100kg",
-      "Integrated handrail"
+      "Dimensions: 12.5\" (W) x 28\" (L)",
+      "Max load: 100 kg",
+      "Fits bathtub width: 16.5\"–25.5\""
     ],
     "price_display_en": "HK$480.00",
-    "stock_status": "in_stock"
+    "stock_status": "in_stock",
+    "features": [
+      "已連扶手"
+    ],
+    "features_en": [
+      "12.5\" (W) × 28\" (L)",
+      "Integrated handrail"
+    ]
   },
   {
     "id": "bb3",
@@ -1468,9 +1652,8 @@
     "price_max": 550.0,
     "price_display": "HK$480 – HK$550",
     "specs": [
-      "強化塑膠洗澡板 (26吋 / 27吋 / 28吋)：HK$480",
-      "高級強化塑膠洗澡板 (26吋 / 27吋 / 28吋)：HK$550",
-      "價格按尺寸而定"
+      "尺寸：685x230x140mm",
+      "承重：159kg"
     ],
     "image_url": "images/bathboard_aidapt_reinforced.jpg",
     "product_url": "https://aidapt.com.hk/search?q=%E6%B4%97%E6%BE%A1%E6%9D%BF&view=no-usf",
@@ -1480,12 +1663,21 @@
     "last_checked": "2026-06-15",
     "product_name_en": "Reinforced Plastic Bath Board",
     "specs_en": [
+      "Dimensions: 685 x 230 x 140 mm",
+      "Max load: 159 kg"
+    ],
+    "price_display_en": "HK$480 – HK$550",
+    "stock_status": "in_stock",
+    "features": [
+      "強化塑膠洗澡板 (26吋 / 27吋 / 28吋)：HK$480",
+      "高級強化塑膠洗澡板 (26吋 / 27吋 / 28吋)：HK$550",
+      "價格按尺寸而定"
+    ],
+    "features_en": [
       "Reinforced Plastic Bath Board (26\" / 27\" / 28\"): HK$480",
       "Premium Reinforced Plastic Bath Board (26\" / 27\" / 28\"): HK$550",
       "Price varies by size"
-    ],
-    "price_display_en": "HK$480 – HK$550",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "rmp1",
@@ -1498,12 +1690,10 @@
     "price_max": 650.0,
     "price_display": "HK$370 - $650",
     "specs": [
-      "闊度: 90cm",
-      "高度: 0.8cm / 1.3cm / 2cm / 2.5cm / 3cm / 4cm / 4.5cm 七款可選",
-      "承重: 200kg",
-      "天然橡膠製造, 耐磨防滑",
-      "適合輪椅及助行架通過門檻",
-      "無需安裝"
+      "長度：10cm",
+      "闊度：90cm",
+      "高度：0.8cm / 1.3cm / 2cm / 2.5cm / 3cm / 4cm / 4.5cm 七款可選",
+      "承重：200kg"
     ],
     "image_url": "images/ramp_healthtop_rub.jpeg",
     "product_url": "https://healthtop.com.hk/index.php?route=product/product&product_id=423",
@@ -1513,16 +1703,24 @@
     "last_checked": "2026-06-15",
     "product_name_en": "Rubber Threshold Ramp (Multiple Sizes)",
     "specs_en": [
+      "Length: 10 cm",
       "Width: 90 cm",
-      "Heights: 0.8 / 1.3 / 2 / 2.5 / 3 / 4 / 4.5 cm (7 options)",
-      "Max load: 200 kg",
-      "Natural rubber — durable & anti-slip",
-      "Suitable for wheelchair & walker access",
-      "No installation needed"
+      "Height: 0.8 / 1.3 / 2 / 2.5 / 3 / 4 / 4.5 cm (7 options)",
+      "Max load: 200 kg"
     ],
     "price_display_en": "HK$370 – $650",
     "note_en": "Reference price $370-$650 depending on size",
-    "stock_status": "in_stock"
+    "stock_status": "in_stock",
+    "features": [
+      "天然橡膠製造, 耐磨防滑",
+      "適合輪椅及助行架通過門檻",
+      "無需安裝"
+    ],
+    "features_en": [
+      "Natural rubber — durable & anti-slip",
+      "Suitable for wheelchair & walker access",
+      "No installation needed"
+    ]
   },
   {
     "id": "rmp4",
@@ -1535,9 +1733,9 @@
     "price_max": 0.0,
     "price_display": "HK$ — 請致電查詢",
     "specs": [
-      "日本 Dunlop 品牌",
-      "玻璃纖維製, 輕便",
-      "詳細規格請致電查詢"
+      "長度：2.5呎/70cm",
+      "闊度：73cm",
+      "承重：300kg"
     ],
     "image_url": "images/ramp_healthtop_dunlop.jpeg",
     "product_url": "https://healthtop.com.hk/Dunlop-斜板?product_id=402",
@@ -1547,14 +1745,24 @@
     "last_checked": "2026-06-15",
     "product_name_en": "Japan Dunlop Lightweight Fiberglass Ramp",
     "specs_en": [
-      "Brand: Dunlop (Japan)",
-      "Fiberglass construction — lightweight",
-      "Specs available on request"
+      "Length: 2.5' / 70 cm",
+      "Width: 73 cm",
+      "Max load: 300 kg"
     ],
     "price_display_en": "HK$ — Please call",
     "note_en": "Call to enquire",
     "stock_status": "out_of_stock",
-    "stock_status_changed": "2026-06-15"
+    "stock_status_changed": "2026-06-15",
+    "features": [
+      "日本 Dunlop 品牌",
+      "玻璃纖維製, 輕便",
+      "詳細規格請致電查詢"
+    ],
+    "features_en": [
+      "Brand: Dunlop (Japan)",
+      "Fiberglass construction — lightweight",
+      "Specs available on request"
+    ]
   },
   {
     "id": "bed1",
@@ -1567,13 +1775,9 @@
     "price_max": 7450.0,
     "price_display": "HK$7,450 (2.5呎 / 3呎)",
     "specs": [
-      "2.5呎: 74(L) × 34(W) 吋, 3呎: 76(L) × 38(W) 吋",
-      "離地: 30cm – 72cm",
-      "丹麥 Linak 電機系統, 配備後備電源",
-      "木製床頭尾板, 上翻式床欄",
-      "獨立鎖腳輪",
-      "附送 3吋床墊、拉手架、鹽水架",
-      "電機系統保養兩年"
+      "尺寸：2.5呎:188(L)x86cm(W);3呎:193(L)x97cm(W)",
+      "承重：180kg",
+      "離地高度：30cm – 72cm"
     ],
     "image_url": "images/bed_gethealth_nb888.jpeg",
     "product_url": "https://www.gethealth.com.hk/%E5%95%86%E5%93%81/%e4%b8%89%e5%8a%9f%e8%83%bd%e9%9b%bb%e5%8b%95%e8%ad%b7%e7%90%86%e5%ba%8a-%e7%b6%93%e6%bf%9f%e4%b9%8b%e9%81%b8-%e5%8f%af%e9%81%b83%e5%91%8e2-5%e5%91%8e/",
@@ -1583,17 +1787,29 @@
     "last_checked": "2026-06-15",
     "product_name_en": "3-function Electric Care Bed (Economical, 2.5 ft / 3 ft)",
     "specs_en": [
+      "Dimensions: 2.5呎: 188 (L) x 86 cm (W); 3呎: 193 (L) x 97 cm (W)",
+      "Max load: 180 kg",
+      "Height range: 30–72 cm"
+    ],
+    "price_display_en": "HK$7,450 (2.5ft / 3ft)",
+    "note_en": "Also on HKTVmall in two sizes (GHM-NB-888B 2.5 ft / 888C 3 ft)",
+    "stock_status": "in_stock",
+    "features": [
+      "2.5呎: 74(L) × 34(W) 吋, 3呎: 76(L) × 38(W) 吋",
+      "丹麥 Linak 電機系統, 配備後備電源",
+      "木製床頭尾板, 上翻式床欄",
+      "獨立鎖腳輪",
+      "附送 3吋床墊、拉手架、鹽水架",
+      "電機系統保養兩年"
+    ],
+    "features_en": [
       "2.5 ft: 74(L) × 34(W) in; 3 ft: 76(L) × 38(W) in",
-      "Height range: 30 – 72 cm",
       "Denmark LINAK motor with battery backup",
       "Wooden head/foot boards; flip-up siderails",
       "Independent locking castors",
       "Includes 3\" mattress, grip handle, IV pole",
       "2-year warranty on motor system"
-    ],
-    "price_display_en": "HK$7,450 (2.5ft / 3ft)",
-    "note_en": "Also on HKTVmall in two sizes (GHM-NB-888B 2.5 ft / 888C 3 ft)",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "bed2",
@@ -1606,14 +1822,9 @@
     "price_max": 13600.0,
     "price_display": "HK$13,600",
     "specs": [
-      "2.5呎: 74(L) × 34(W) 吋, 3呎: 78.7(L) × 38.2(W) 吋",
-      "離地: 35cm – 74cm",
-      "丹麥 LINAK 電機及控制器",
-      "可整床升降, 背及腳部可調節 (背 75°± 5°, 腳 40°± 5°)",
-      "木質頭尾板, 一鍵式摺疊床欄",
-      "鋼面板, 堅固耐用",
-      "四輪設獨立鎖, 一年保養",
-      "包 1\" / 3\" 原裝床墊"
+      "尺寸：74\"x34\"(2.5呎)/78.7\"x38\"(3呎)",
+      "承重：170kg",
+      "離地高度：35cm – 74cm"
     ],
     "image_url": "images/bed_healthtop_828a.jpeg",
     "product_url": "https://healthtop.com.hk/FHA-FO-KS-828ATOPONE%E4%B8%89%E5%8A%9F%E8%83%BD%E9%9B%BB%E5%8B%95%E8%AD%B7%E7%90%86%E5%BA%8A",
@@ -1623,18 +1834,31 @@
     "last_checked": "2026-06-15",
     "product_name_en": "Electric 3-function Care Bed (TopOne, 2.5 ft / 3 ft)",
     "specs_en": [
+      "Dimensions: 74\" x 34\" (2.5') / 78.7\" x 38\" (3')",
+      "Max load: 170 kg",
+      "Height range: 35–74 cm"
+    ],
+    "price_display_en": "HK$13,600",
+    "note_en": "Currently \"out of stock\" online — please call to check availability",
+    "stock_status": "in_stock",
+    "features": [
+      "2.5呎: 74(L) × 34(W) 吋, 3呎: 78.7(L) × 38.2(W) 吋",
+      "丹麥 LINAK 電機及控制器",
+      "可整床升降, 背及腳部可調節 (背 75°± 5°, 腳 40°± 5°)",
+      "木質頭尾板, 一鍵式摺疊床欄",
+      "鋼面板, 堅固耐用",
+      "四輪設獨立鎖, 一年保養",
+      "包 1\" / 3\" 原裝床墊"
+    ],
+    "features_en": [
       "2.5 ft: 74(L) × 34(W) in; 3 ft: 78.7(L) × 38.2(W) in",
-      "Height range: 35 – 74 cm",
       "Denmark LINAK motor & controller",
       "Full-bed lift; back 75°±5°, leg 40°±5°",
       "Wooden head/foot boards; one-touch folding siderails",
       "Steel deck — robust & durable",
       "Independent castor locks; 1-year warranty",
       "Includes 1\" / 3\" mattress"
-    ],
-    "price_display_en": "HK$13,600",
-    "note_en": "Currently \"out of stock\" online — please call to check availability",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "bed3",
@@ -1647,14 +1871,8 @@
     "price_max": 12000.0,
     "price_display": "HK$12,000",
     "specs": [
-      "尺寸: 78(L) × 38(W) 吋, 總長 199cm × 96cm",
-      "離地: 36cm – 74cm (面板高 34.5-80cm)",
-      "丹麥 Linak 電動床摩打, 附儲電池",
-      "有孔鋼床面板, 摺疊式鋁合金床欄",
-      "可拆式 ABS 強化塑膠床頭尾板",
-      "床頭升高 0° - 85°, 床尾屈曲 0° - 40°",
-      "4個鹽水架孔 + 2個手拉架孔",
-      "5吋豪華萬向全鎖轆 × 4"
+      "尺寸：78(L) × 38(W) 吋, 總長 199cm × 96cm",
+      "離地高度：36cm – 74cm (面板高 34.5–80cm)"
     ],
     "image_url": "images/bed_medicare_ehb00055.jpeg",
     "product_url": "https://medicare.com.hk/zh-hant/care/247/",
@@ -1664,7 +1882,20 @@
     "last_checked": "2026-06-15",
     "product_name_en": "3 ft Electric 3-action Steel Care Bed",
     "specs_en": [
-      "Size: 78(L) × 38(W) in; overall 199 × 96 cm",
+      "Dimensions: 78(L) × 38(W) in; overall 199 × 96 cm"
+    ],
+    "price_display_en": "HK$12,000",
+    "note_en": "Full specs online; price not listed — please call",
+    "stock_status": "in_stock",
+    "features": [
+      "丹麥 Linak 電動床摩打, 附儲電池",
+      "有孔鋼床面板, 摺疊式鋁合金床欄",
+      "可拆式 ABS 強化塑膠床頭尾板",
+      "床頭升高 0° - 85°, 床尾屈曲 0° - 40°",
+      "4個鹽水架孔 + 2個手拉架孔",
+      "5吋豪華萬向全鎖轆 × 4"
+    ],
+    "features_en": [
       "Height: 36 – 74 cm (deck 34.5-80 cm)",
       "Denmark LINAK motor with battery",
       "Perforated steel deck; folding aluminium siderails",
@@ -1672,10 +1903,7 @@
       "Back: 0° – 85°; knee: 0° – 40°",
       "4× IV pole holes + 2× grip handle holes",
       "Four 5\" deluxe locking castors"
-    ],
-    "price_display_en": "HK$12,000",
-    "note_en": "Full specs online; price not listed — please call",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "mat2",
@@ -1688,13 +1916,10 @@
     "price_max": 1980.0,
     "price_display": "HK$1,980.00 (網店實價, 原價 $2,500, 慳 $520)",
     "specs": [
-      "充氣後尺寸: 72.5\"(L) × 31.5\"(W) × 4\"(H)",
-      "承重: 140kg",
-      "管條數量: 17 條",
-      "氣泵充氣流量: 5 升/分鐘",
-      "台灣製造",
-      "氣泵+床管保養 2 年",
-      "可選兩管 (AB) / 三管 (ABC) 型號"
+      "充氣後尺寸：72.5\"(L) × 31.5\"(W) × 4\"(H)",
+      "承重：140kg",
+      "管條數量：17 條",
+      "氣泵流量：5 升/分鐘"
     ],
     "image_url": "images/mattress_healthyliving_brick.jpeg",
     "product_url": "https://www.healthyliving.com.hk/shop/%E5%8F%B0%E7%81%A3-brick-%E6%B8%9B%E5%A3%93%E6%B0%A3%E5%A2%8A%E5%BA%8A/",
@@ -1706,15 +1931,22 @@
     "specs_en": [
       "Inflated size: 72.5\"(L) × 31.5\"(W) × 4\"(H)",
       "Max load: 140 kg",
-      "Air tubes: 17",
-      "Air pump flow: 5 L/min",
-      "Made in Taiwan",
-      "2-year warranty on pump + tubes",
-      "Options: 2-tube (AB) / 3-tube (ABC) models"
+      "Number of tubes: 17",
+      "Pump flow: 5 L / min"
     ],
     "price_display_en": "HK$1,980.00 (online; original $2,500 — save $520)",
     "note_en": "Online price $1,980 (original $2,500, save $520)",
-    "stock_status": "in_stock"
+    "stock_status": "in_stock",
+    "features": [
+      "台灣製造",
+      "氣泵+床管保養 2 年",
+      "可選兩管 (AB) / 三管 (ABC) 型號"
+    ],
+    "features_en": [
+      "Made in Taiwan",
+      "2-year warranty on pump + tubes",
+      "Options: 2-tube (AB) / 3-tube (ABC) models"
+    ]
   },
   {
     "id": "mat3",
@@ -1727,17 +1959,10 @@
     "price_max": 1850.0,
     "price_display": "HK$1,850.00 (2.5呎 / 3呎)",
     "specs": [
-      "近 2.5呎: 185(L) × 76(W) × 11(H) cm",
-      "近 3呎: 185(L) × 88(W) × 11(H) cm",
-      "承重: 160kg",
-      "氣泵充氣流量: 8L/分鐘",
-      "雙管交替模式 (2-1), 週期 12 mins",
-      "床管: 16 條, TPU 物料",
-      "床套: PU 防水透氣",
-      "床管特設微漏氣小孔, 保持皮膚乾爽",
-      "氣泵設 CPR 急速排氣功能",
-      "設低壓提示, 通過 CE 及 FDA 認證",
-      "中等壓瘡風險患者適用"
+      "充氣後尺寸：185(L)x76(W)x11cm(H) / 185(L)x88(W)x11cm(H)",
+      "承重：160kg",
+      "管條數量：16 條, TPU 物料",
+      "氣泵流量：8L/分鐘"
     ],
     "image_url": "images/mattress_gethealth_effect.jpeg",
     "product_url": "https://www.gethealth.com.hk/商品/effect-減壓氣墊床-台灣品牌/",
@@ -1747,21 +1972,34 @@
     "last_checked": "2026-06-15",
     "product_name_en": "Effect Pressure-relief Air Mattress (Taiwan Brand)",
     "specs_en": [
+      "Inflated size: 185 (L) x 76 (W) x 11 cm (H) / 185 (L) x 88 (W) x 11 cm (H)",
+      "Max load: 160 kg",
+      "Number of tubes: 16, TPU material",
+      "Pump flow: 8 L / min"
+    ],
+    "price_display_en": "HK$1,850.00 (2.5ft / 3ft)",
+    "note_en": "CE/FDA certified",
+    "stock_status": "in_stock",
+    "features": [
+      "近 2.5呎: 185(L) × 76(W) × 11(H) cm",
+      "近 3呎: 185(L) × 88(W) × 11(H) cm",
+      "雙管交替模式 (2-1), 週期 12 mins",
+      "床套: PU 防水透氣",
+      "床管特設微漏氣小孔, 保持皮膚乾爽",
+      "氣泵設 CPR 急速排氣功能",
+      "設低壓提示, 通過 CE 及 FDA 認證",
+      "中等壓瘡風險患者適用"
+    ],
+    "features_en": [
       "~2.5 ft: 185(L) × 76(W) × 11(H) cm",
       "~3 ft: 185(L) × 88(W) × 11(H) cm",
-      "Max load: 160 kg",
-      "Air pump flow: 8 L/min",
       "2-1 alternating mode, 12-min cycle",
-      "Air tubes: 16, TPU material",
       "Cover: PU waterproof & breathable",
       "Micro-leak holes — keep skin dry",
       "CPR rapid-deflate function",
       "Low-pressure alert; CE & FDA certified",
       "For medium pressure ulcer risk patients"
-    ],
-    "price_display_en": "HK$1,850.00 (2.5ft / 3ft)",
-    "note_en": "CE/FDA certified",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "hr1",
@@ -1780,19 +2018,25 @@
     "phone": "2742 4370",
     "specs": [
       "長度：12\" / 18\" / 24\"",
+      "承重：100kg"
+    ],
+    "specs_en": [
+      "Length: 12\" / 18\" / 24\"",
+      "Max load: 100 kg"
+    ],
+    "product_name_en": "Anti-slip Bathroom Grab Bar",
+    "price_display_en": "HK$190 - $250 (size-dependent)",
+    "stock_status": "in_stock",
+    "features": [
       "防滑紋設計",
       "白色塑膠 + 鋁管",
       "包安裝螺絲"
     ],
-    "specs_en": [
-      "Length: 12\" / 18\" / 24\"",
+    "features_en": [
       "Anti-slip texture surface",
       "White plastic + aluminium tube",
       "Mounting screws included"
-    ],
-    "product_name_en": "Anti-slip Bathroom Grab Bar",
-    "price_display_en": "HK$190 - $250 (size-dependent)",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "hr2",
@@ -1812,20 +2056,24 @@
     "specs": [
       "長度：12\" / 18\" / 24\" / 32\"",
       "直徑：1.38\"",
-      "離牆高度：2\"",
-      "尼龍包鋁管 + 防滑紋",
-      "白色"
+      "離牆高度：2\""
     ],
     "specs_en": [
       "Length: 12\" / 18\" / 24\" / 32\"",
       "Diameter: 1.38\"",
-      "Wall clearance: 2\"",
-      "Nylon-coated aluminium with anti-slip pattern",
-      "White"
+      "Wall clearance: 2\""
     ],
     "product_name_en": "1.38\" Nylon-coated Aluminium Anti-slip Grab Bar",
     "price_display_en": "HK$300 - $500 (size-dependent)",
-    "stock_status": "in_stock"
+    "stock_status": "in_stock",
+    "features": [
+      "尼龍包鋁管 + 防滑紋",
+      "白色"
+    ],
+    "features_en": [
+      "Nylon-coated aluminium with anti-slip pattern",
+      "White"
+    ]
   },
   {
     "id": "hr3",
@@ -1843,20 +2091,24 @@
     "last_checked": "2026-06-15",
     "phone": "3426 9090",
     "specs": [
-      "長度：30 / 40 / 50 / 60 / 70 / 80 cm",
-      "承重：330.7 lb (150 kg)",
-      "防滑手柄設計",
-      "包安裝用螺絲"
+      "長度：30 / 40 / 50 / 60 / 70 / 80cm",
+      "承重：330.7lb (150kg)"
     ],
     "specs_en": [
       "Length: 30 / 40 / 50 / 60 / 70 / 80 cm",
-      "Load capacity: 330.7 lb (150 kg)",
-      "Anti-slip handle design",
-      "Mounting screws included"
+      "Max load: 330.7 lb (150 kg)"
     ],
     "product_name_en": "DBPE Anti-slip Safety Grab Bar",
     "price_display_en": "HK$200 - $350 (size-dependent)",
-    "stock_status": "in_stock"
+    "stock_status": "in_stock",
+    "features": [
+      "防滑手柄設計",
+      "包安裝用螺絲"
+    ],
+    "features_en": [
+      "Anti-slip handle design",
+      "Mounting screws included"
+    ]
   },
   {
     "id": "hr4",
@@ -1874,7 +2126,17 @@
     "last_checked": "2026-06-15",
     "phone": "2102 7180",
     "specs": [
-      "長度：30 - 120 cm",
+      "長度：30–120cm",
+      "承重：120kg"
+    ],
+    "specs_en": [
+      "Length: 30–120 cm",
+      "Max load: 120 kg"
+    ],
+    "product_name_en": "[Shangling] ABS Anti-slip Grab Bar with Fluorescent Ring",
+    "price_display_en": "HK$250 - $800 (size-dependent)",
+    "stock_status": "in_stock",
+    "features": [
       "有白色 / 黃色選擇",
       "螢光矽膠環（夜間防跌）",
       "ABS + 304 不銹鋼",
@@ -1882,18 +2144,14 @@
       "德國 TUV 認證 承重 120 kg",
       "121 cm 或以上長度需另行報價"
     ],
-    "specs_en": [
-      "Length: 30 - 120 cm",
+    "features_en": [
       "Colours: white / yellow",
       "Fluorescent silicone ring (visible at night)",
       "ABS + 304 stainless steel",
       "Antibacterial coating",
       "German TUV certified · 120 kg load",
       "Quote required for 121 cm or longer"
-    ],
-    "product_name_en": "[Shangling] ABS Anti-slip Grab Bar with Fluorescent Ring",
-    "price_display_en": "HK$250 - $800 (size-dependent)",
-    "stock_status": "in_stock"
+    ]
   },
   {
     "id": "hr5",
@@ -1913,20 +2171,24 @@
     "specs": [
       "長度：12\" / 18\" / 24\" / 32\"",
       "直徑：1.25\"",
-      "離牆高度：2\"",
-      "304 不銹鋼 + 防滑紋",
-      "金屬光澤"
+      "離牆高度：2\""
     ],
     "specs_en": [
       "Length: 12\" / 18\" / 24\" / 32\"",
       "Diameter: 1.25\"",
-      "Wall clearance: 2\"",
-      "304 stainless steel with anti-slip pattern",
-      "Metallic finish"
+      "Wall clearance: 2\""
     ],
     "product_name_en": "1.25\" 304 Stainless Steel Anti-slip Grab Bar",
     "price_display_en": "HK$350 - $500 (size-dependent)",
-    "stock_status": "in_stock"
+    "stock_status": "in_stock",
+    "features": [
+      "304 不銹鋼 + 防滑紋",
+      "金屬光澤"
+    ],
+    "features_en": [
+      "304 stainless steel with anti-slip pattern",
+      "Metallic finish"
+    ]
   },
   {
     "id": "hr6",
@@ -1944,26 +2206,30 @@
     "last_checked": "2026-06-15",
     "phone": "3426 9090",
     "specs": [
-      "長度：60 / 70 cm",
-      "上翻式設計，方便輪椅進出",
-      "承重：165 lb (75 kg)",
-      "防滑手柄",
-      "包安裝用螺絲",
-      "適合廁所旁邊安裝"
+      "長度：60 / 70cm",
+      "承重：165lb (75kg)"
     ],
     "specs_en": [
       "Length: 60 / 70 cm",
-      "Swing-up design — wheelchair friendly",
-      "Load capacity: 165 lb (75 kg)",
-      "Anti-slip handle",
-      "Mounting screws included",
-      "Suitable for toilet-side installation"
+      "Max load: 165 lb (75 kg)"
     ],
     "product_name_en": "DBPE Swing-up Bathroom Grab Bar",
     "price_display_en": "HK$880 / $1,080 (60 / 70 cm)",
     "note": "上翻式：閒置時可向上翻起，方便輪椅或助行架進出。常用於座廁旁邊。",
     "note_en": "Swing-up: folds up when not in use — wheelchair/walker access. Common around toilet.",
-    "stock_status": "in_stock"
+    "stock_status": "in_stock",
+    "features": [
+      "上翻式設計，方便輪椅進出",
+      "防滑手柄",
+      "包安裝用螺絲",
+      "適合廁所旁邊安裝"
+    ],
+    "features_en": [
+      "Swing-up design — wheelchair friendly",
+      "Anti-slip handle",
+      "Mounting screws included",
+      "Suitable for toilet-side installation"
+    ]
   },
   {
     "id": "hr7",
@@ -1976,11 +2242,8 @@
     "price_max": 360.0,
     "price_display": "HK$360.00",
     "specs": [
-      "長度: 16.2吋",
-      "吸盤直徑: 3.6吋",
-      "承重: 132.3磅 / 60kg",
-      "橫向拉力: 88.2磅 / 40kg",
-      "免安裝吸盤式"
+      "長度：16.2吋",
+      "承重：132.3磅 / 60kg"
     ],
     "image_url": "images/handrail_healthyliving_uncl350.jpeg",
     "product_url": "https://www.healthyliving.com.hk/shop/%E5%8F%B0%E7%81%A3-uncl-350-%E5%85%8D%E5%AE%89%E8%A3%9D%E5%90%B8%E7%9B%A4%E6%89%B6%E6%89%8B/",
@@ -1990,13 +2253,20 @@
     "product_name_en": "Taiwan UNCL 350 Suction Cup Grab Bar (No Installation)",
     "specs_en": [
       "Length: 16.2\"",
-      "Suction cup diameter: 3.6\"",
-      "Weight capacity: 132.3 lb / 60 kg",
-      "Lateral pull capacity: 88.2 lb / 40 kg",
-      "No installation required (suction cup)"
+      "Max load: 132.3 lb / 60 kg"
     ],
     "price_display_en": "HK$360.00",
-    "stock_status": "in_stock"
+    "stock_status": "in_stock",
+    "features": [
+      "吸盤直徑: 3.6吋",
+      "橫向拉力: 88.2磅 / 40kg",
+      "免安裝吸盤式"
+    ],
+    "features_en": [
+      "Suction cup diameter: 3.6\"",
+      "Lateral pull capacity: 88.2 lb / 40 kg",
+      "No installation required (suction cup)"
+    ]
   },
   {
     "id": "w10",
@@ -2009,13 +2279,14 @@
     "price_max": 2380.0,
     "price_display": "HK$2,380.00",
     "specs": [
-      "座闊: 16\"/18\"",
-      "座深: 16.3\"",
-      "座高: 19\"",
-      "背高: 16.3\"",
-      "扶手高: 9.8\"",
-      "重量: 11.9kg",
-      "承重: 360lb / 163.2kg"
+      "座高：19\"",
+      "座闊：16\" / 18\"",
+      "總外闊：23\" / 25\" / 27\"",
+      "重量：11.9kg",
+      "承重：360lb / 163.2kg",
+      "座深：16.3\"",
+      "背高：16.3\"",
+      "扶手高：9.8\""
     ],
     "image_url": "images/wheelchair_healthyliving_ad7530.jpeg",
     "product_url": "https://www.healthyliving.com.hk/shop/%E7%BE%8E%E5%9C%8B-advanced-7530-%E5%A4%9A%E5%8A%9F%E8%83%BD%E8%BC%95%E8%BC%AA%E6%A4%85/",
@@ -2024,15 +2295,18 @@
     "last_checked": "2026-06-15",
     "product_name_en": "Advanced 7530 Multi-functional Lightweight Wheelchair",
     "specs_en": [
-      "Seat width: 16\" / 18\"",
-      "Seat depth: 16.3\"",
       "Seat height: 19\"",
-      "Back height: 16.3\"",
-      "Armrest height: 9.8\"",
+      "Seat width: 16\" / 18\"",
+      "Overall width: 23\" / 25\" / 27\"",
       "Weight: 11.9 kg",
-      "Weight capacity: 360 lb / 163.2 kg"
+      "Max load: 360 lb / 163.2 kg",
+      "Seat depth: 16.3\"",
+      "Back height: 16.3\"",
+      "Armrest height: 9.8\""
     ],
     "price_display_en": "HK$2,380.00",
-    "stock_status": "in_stock"
+    "stock_status": "in_stock",
+    "features": [],
+    "features_en": []
   }
 ]

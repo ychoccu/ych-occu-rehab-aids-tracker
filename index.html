@@ -356,6 +356,37 @@
       margin: 2px 0;
       padding-left: 2px;
     }
+    /* === Features section: subtle heading + ✓ tags === */
+    .card .features-section {
+      margin: 6px 0 2px 0;
+      padding-top: 6px;
+      border-top: 1px dashed #e5e7eb;
+    }
+    .card .features-heading {
+      font-size: 0.72em;
+      color: #94a3b8;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+    }
+    .card .features-list {
+      display: flex; flex-wrap: wrap; gap: 4px 6px;
+      margin: 0; padding: 0; list-style: none;
+    }
+    .card .features-list li {
+      font-size: 0.76em;
+      color: #475569;
+      background: #f1f5f9;
+      padding: 2px 8px;
+      border-radius: 10px;
+      line-height: 1.5;
+    }
+    .card .features-list li::before {
+      content: '✓ ';
+      color: #16a34a;
+      font-weight: 700;
+    }
     .card label { display: flex; align-items: center; gap: 6px; font-size: 0.85em; cursor: pointer; }
     .card .actions {
       display: flex; gap: 8px; margin-top: 4px;
@@ -642,7 +673,7 @@ const I18N = {
     cmp_title: '產品比較', btn_close: '關閉',
     no_product: '未知產品',
     label_product: '產品名稱', label_model: '型號', label_price: '價格',
-    label_supplier: '供應商', label_category: '類別', label_specs: '規格',
+    label_supplier: '供應商', label_category: '類別', label_specs: '規格', label_features: '其他特點',
     label_phone: '電話', label_web: '網頁', label_updated: '價錢最後變動', label_checked: '最後核對', label_item: '項目',
     label_stock: '庫存狀態', stock_out: '⚠️ 未有庫存', stock_in: '有貨', stock_last_price: '上次售價',
     updated: '價錢最後變動：',
@@ -720,7 +751,7 @@ const I18N = {
     cmp_title: 'Product Comparison', btn_close: 'Close',
     no_product: 'Unknown product',
     label_product: 'Product', label_model: 'Model', label_price: 'Price',
-    label_supplier: 'Supplier', label_category: 'Category', label_specs: 'Specs',
+    label_supplier: 'Supplier', label_category: 'Category', label_specs: 'Specs', label_features: 'Features',
     label_phone: 'Phone', label_web: 'Website', label_updated: 'Price last changed', label_checked: 'Last verified', label_item: 'Item',
     label_stock: 'Stock', stock_out: '⚠️ Out of stock', stock_in: 'In stock', stock_last_price: 'Last known price',
     updated: 'Price last changed: ',
@@ -877,6 +908,10 @@ function fieldSpecs(p)  {
   const list = currentLang === 'en' ? (p.specs_en || p.specs) : (p.specs);
   return Array.isArray(list) ? list : (typeof list === 'string' ? safeParseArray(list) : []);
 }
+function fieldFeatures(p) {
+  const list = currentLang === 'en' ? (p.features_en || p.features) : (p.features);
+  return Array.isArray(list) ? list : (typeof list === 'string' ? safeParseArray(list) : []);
+}
 function fieldNote(p)   { return currentLang === 'en' ? (p.note_en || p.note || '') : (p.note || ''); }
 
 function safeParseArray(v) { try { const r = JSON.parse(v); return Array.isArray(r) ? r : []; } catch { return []; } }
@@ -938,6 +973,10 @@ function renderCards(products) {
     const specsHTML = specs.length
       ? `<ul class="specs-list">${specs.map(s => `<li>${escapeHTML(s)}</li>`).join('')}</ul>`
       : '';
+    const features = fieldFeatures(p);
+    const featuresHTML = features.length
+      ? `<div class="features-section"><div class="features-heading">${t('label_features')}</div><ul class="features-list">${features.map(f => `<li>${escapeHTML(f)}</li>`).join('')}</ul></div>`
+      : '';
     const checked = compareList.includes(String(id)) ? 'checked' : '';
     const pData = JSON.stringify(p).replace(/\\/g,'\\\\').replace(/"/g,'&quot;');
     const phoneClean = (p.phone || '').replace(/\s+/g, '');
@@ -961,6 +1000,7 @@ function renderCards(products) {
       ${priceBlockHTML(p)}
       <div class="source">📦 ${escapeHTML(supplierName(p))}</div>
       ${specsHTML}
+      ${featuresHTML}
       ${actionsHTML}
       <div class="updated">${t('updated')}${escapeHTML(p.updated_date || 'N/A')}</div>
       <div class="updated checked">✓ ${t('checked')}${escapeHTML(p.last_checked || p.updated_date || 'N/A')}</div>
@@ -1061,6 +1101,10 @@ function showCompare() {
     [t('label_category'), p => escapeHTML(catMap[p.category] || p.category || '-')],
     [t('label_specs'),    p => {
       const list = fieldSpecs(p);
+      return list.length ? `<ul>${list.map(x => `<li>${escapeHTML(x)}</li>`).join('')}</ul>` : '-';
+    }],
+    [t('label_features'), p => {
+      const list = fieldFeatures(p);
       return list.length ? `<ul>${list.map(x => `<li>${escapeHTML(x)}</li>`).join('')}</ul>` : '-';
     }],
     [t('label_phone'),    p => {
