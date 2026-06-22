@@ -14,10 +14,11 @@ import requests
 
 logger = logging.getLogger(__name__)
 
-# Primary: Gemini 2.0 Flash (free tier on OpenRouter, 1M context, fast)
-# Fallback: DeepSeek V3 (free tier, strong instruction-following)
-PRIMARY_MODEL = "google/gemini-2.0-flash-exp:free"
-FALLBACK_MODEL = "deepseek/deepseek-chat-v3-0324:free"
+# Primary: Qwen3-Next 80B instruct (free, 262K context, strong instruction-following)
+# Fallback: Llama 3.3 70B instruct (free, 131K context, stable)
+# Updated 2026-06-22: old Gemini/DeepSeek free IDs returned 404 (model no longer hosted)
+PRIMARY_MODEL = "qwen/qwen3-next-80b-a3b-instruct:free"
+FALLBACK_MODEL = "meta-llama/llama-3.3-70b-instruct:free"
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 _api_key = os.environ.get("OPENROUTER_API_KEY")
