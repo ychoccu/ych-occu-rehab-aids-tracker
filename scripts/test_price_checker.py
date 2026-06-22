@@ -8,7 +8,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from price_checker import _is_sane_change, _detect_duplicate_prices, _validate_price
+from price_checker import _is_sane_change, _detect_duplicate_prices, _validate_price, _detect_stock_status
 
 
 def test_sane_change():
@@ -77,6 +77,62 @@ def test_duplicate_detection():
     print("  PASS — would have BLOCKED all 33 wrong updates from 2026-06-21")
 
 
+def test_stock_detection():
+    print("Test: _detect_stock_status")
+
+    # 2026-06-22 incident: justmed embeds JS like
+    #   $('#stockText').text('Sold out');
+    # in a <script> block. Detector MUST ignore script content.
+    justmed_js = '''
+    <html><body>
+      <h1>Alpha T05 Air Pressure Massage</h1>
+      <div id="stockText">In stock</div>
+      <script>
+        if (qty > 0) { $('#stockText').text('In stock'); }
+        else { $('#stockText').text('Sold out'); }
+      </script>
+      <p>HK$2,500</p>
+    </body></html>
+    '''
+    assert _detect_stock_status(justmed_js) is None, \
+        "JS-embedded 'Sold out' must NOT trigger out_of_stock (2026-06-22 bug)"
+
+    # SHOPLINE generic cart-error template appears on EVERY easy66 page —
+    # short keyword 「售完」 would false-trigger. Detector must use full phrases.
+    shopline_template = '''
+    <html><body>
+      <h1>FAMICA 襪好穿</h1>
+      <p>HK$280</p>
+      <div class="cart-error">售完 商品存貨不足，未能加入購物車</div>
+    </body></html>
+    '''
+    assert _detect_stock_status(shopline_template) is None, \
+        "SHOPLINE generic 'cart-error' template must NOT trigger out_of_stock"
+
+    # Promo copy 「送完即止」 (substring of 「售完」) on rehabexpress
+    promo_copy = '''
+    <html><body>
+      <h1>Nutricia Fortisip</h1>
+      <p>HK$567 優惠期至 2026年6月30日，送完即止</p>
+    </body></html>
+    '''
+    assert _detect_stock_status(promo_copy) is None, \
+        "Promo copy '送完即止' must NOT trigger out_of_stock"
+
+    # TRUE positives — these SHOULD trigger out_of_stock
+    assert _detect_stock_status('<html><body><p>This item is currently <b>Sold Out</b></p></body></html>') == "out_of_stock"
+    assert _detect_stock_status('<html><body><p>商品已售完</p></body></html>') == "out_of_stock"
+    assert _detect_stock_status('<html><body><p>未有庫存</p></body></html>') == "out_of_stock"
+    assert _detect_stock_status('<html><body><p>已售罄</p></body></html>') == "out_of_stock"
+    assert _detect_stock_status('<html><body><p>Currently unavailable</p></body></html>') == "out_of_stock"
+
+    # Edge cases
+    assert _detect_stock_status("") is None
+    assert _detect_stock_status(None) is None
+
+    print("  PASS — stock detector ignores JS/template/promo false positives")
+
+
 def test_price_validation():
     print("Test: _validate_price")
     assert _validate_price(2680) == 2680
@@ -92,6 +148,7 @@ def test_price_validation():
 if __name__ == "__main__":
     test_sane_change()
     test_duplicate_detection()
+    test_stock_detection()
     test_price_validation()
     print()
     print("=" * 60)

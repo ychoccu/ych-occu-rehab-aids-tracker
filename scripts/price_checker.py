@@ -91,23 +91,48 @@ def _make_session() -> requests.Session:
 # ---------------------------------------------------------------------------
 # Stock detection keywords
 # ---------------------------------------------------------------------------
+# IMPORTANT: Keep keywords SPECIFIC. Short fragments like "售完" or "缺貨"
+# alone will false-trigger on:
+#   - SHOPLINE templates: "售完 商品存貨不足，未能加入購物車" (generic cart UI on every page)
+#   - Promo copy: "優惠期至... 送完即止" (substring match on 「售完」)
+#   - Category/home pages: stock label of a SIBLING product (e.g. rehabexpress home page)
+# So we use full-phrase keywords only.
 OUT_OF_STOCK_KEYWORDS = [
     "未有庫存",
-    "缺貨",
-    "售完",
-    "已售完",
+    "暫無庫存",
+    "暂無庫存",
+    "商品已售完",
+    "此商品已售完",
+    "本商品已售完",
+    "已售罄",
+    "售罄",
     "out of stock",
     "sold out",
-    "無貨",
-    "暂無庫存",
+    "currently unavailable",
 ]
 
 
 def _detect_stock_status(html: str) -> str | None:
-    """Return 'out_of_stock' if any OOS keyword found, else None (treat as in_stock)."""
+    """Return 'out_of_stock' if any OOS keyword found in VISIBLE text, else None.
+
+    IMPORTANT: Strips <script> and <style> blocks before searching, because some
+    sites (e.g. justmed.com.hk) embed JS inventory logic like
+    `$('#stockText').text('Sold out')` which would otherwise trigger a false positive.
+    """
     if not html:
         return None
-    haystack = html.lower()
+    try:
+        from bs4 import BeautifulSoup
+        soup = BeautifulSoup(html, "html.parser")
+        # Remove script/style/noscript blocks — they're not visible text
+        for tag in soup(["script", "style", "noscript"]):
+            tag.decompose()
+        haystack = soup.get_text(separator=" ", strip=True).lower()
+    except Exception:
+        # Fallback: regex-strip script/style if BeautifulSoup unavailable
+        import re
+        cleaned = re.sub(r"<(script|style|noscript)[^>]*>.*?</\1>", " ", html, flags=re.IGNORECASE | re.DOTALL)
+        haystack = cleaned.lower()
     for kw in OUT_OF_STOCK_KEYWORDS:
         if kw.lower() in haystack:
             return "out_of_stock"
