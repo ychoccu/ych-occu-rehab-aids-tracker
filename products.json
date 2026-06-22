@@ -20,7 +20,7 @@
     "product_url": "https://www.healthyliving.com.hk/shop/%E7%BE%8E%E5%9C%8B-advanced-7510-%E5%A4%9A%E5%8A%9F%E8%83%BD%E8%BC%95%E8%BC%AA%E6%A4%85/",
     "phone": "3426 9090",
     "updated_date": "2026-06-11",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "product_name_en": "Advanced 7510 Multi-functional Lightweight Wheelchair",
     "specs_en": [
       "Seat height: 19\"",
@@ -61,7 +61,7 @@
     "phone": "2742 4370",
     "note": "醫院推介款式; ⚠ 不支援線上付款，請 WhatsApp 2742 4370 落單",
     "updated_date": "2026-06-15",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "product_name_en": "Alpha® T05 Self-propelled Wheelchair (Large Rear Wheel)",
     "specs_en": [
       "Seat height: 20\"",
@@ -72,7 +72,7 @@
     ],
     "price_display_en": "HK$2,400.00",
     "note_en": "Recommended by hospitals",
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "features": [
       "膠護板後翻扶手",
       "腳踏可拆"
@@ -81,7 +81,8 @@
       "Flip-back armrests with side panels",
       "Detachable footrests"
     ],
-    "purchase_method": "whatsapp_only"
+    "purchase_method": "whatsapp_only",
+    "stock_status_changed": "2026-06-22"
   },
   {
     "id": "w3",
@@ -227,7 +228,7 @@
     "product_url": "https://www.healthyliving.com.hk/shop/%E7%BE%8E%E5%9C%8B-advanced-re30-%E9%AB%98%E8%83%8C%E5%BE%8C%E8%BA%BA%E8%BC%AA%E6%A4%85/",
     "phone": "3426 9090",
     "updated_date": "2026-06-11",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "product_name_en": "Advanced RE30 High-back Reclining Wheelchair (172°)",
     "specs_en": [
       "Weight: 20 kg",
@@ -270,11 +271,11 @@
     "phone": "2742 4370",
     "note": "請致電 6280-0738 / 2742-4370 確認最新價格; ⚠ 不支援線上付款，請 WhatsApp 2742 4370 落單",
     "updated_date": "2026-06-11",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "product_name_en": "Alpha® High-back Reclining Wheelchair (180°)",
     "specs_en": [],
     "price_display_en": "HK$6,800.00",
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "features": [
       "靠背可達180°",
       "腳托可拆及升降",
@@ -286,7 +287,8 @@
       "Adjustable headrest & leg rest",
       "Padded seat & back"
     ],
-    "purchase_method": "whatsapp_only"
+    "purchase_method": "whatsapp_only",
+    "stock_status_changed": "2026-06-22"
   },
   {
     "id": "w9",
@@ -348,7 +350,7 @@
     "product_url": "https://www.medicare.com.hk/zh-hant/care/113/",
     "phone": "2687 6380",
     "updated_date": "2026-06-11",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "product_name_en": "Fixed Commode Chair",
     "specs_en": [
       "Seat height: 17\"",
@@ -415,11 +417,11 @@
     "product_url": "https://www.justmed.com.hk/product-detail.php?id=55",
     "phone": "2742 4370",
     "updated_date": "2026-06-11",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "product_name_en": "Stainless Steel Shower/Commode Chair (Drop-down Arms + Tilt Bar)",
     "specs_en": [],
     "price_display_en": "HK$1,880.00",
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "features": [],
     "features_en": [
       "Stainless steel frame",
@@ -428,7 +430,8 @@
       "Padded seat"
     ],
     "purchase_method": "whatsapp_only",
-    "note": "⚠ 不支援線上付款，請 WhatsApp 2742 4370 落單"
+    "note": "⚠ 不支援線上付款，請 WhatsApp 2742 4370 落單",
+    "stock_status_changed": "2026-06-22"
   },
   {
     "id": "cm4",
@@ -544,9 +547,9 @@
     "category": "commode",
     "product_name": "304不銹鋼沐浴便椅 (可選Tilt-bar)",
     "model": "ECM30442 / ECM30444S",
-    "price_min": 2200.0,
-    "price_max": 2500.0,
-    "price_display": "HK$2,200 (30444S) - HK$2,500 (30442)",
+    "price_min": 2500,
+    "price_max": 2500,
+    "price_display": "HK$2,500",
     "specs": [
       "座高：19.5\"",
       "座闊：17\"",
@@ -558,8 +561,8 @@
     "image_url": "images/commode_medicare_ecm30442.jpg",
     "product_url": "https://www.medicare.com.hk/zh-hant/care/94/",
     "phone": "2687 6380",
-    "updated_date": "2026-06-11",
-    "last_checked": "2026-06-15",
+    "updated_date": "2026-06-22",
+    "last_checked": "2026-06-22",
     "product_name_en": "304 Stainless Steel Shower/Commode Chair (Optional Tilt Bar)",
     "specs_en": [
       "Max load: 120 kg"
@@ -588,7 +591,7 @@
     "image_url": "images/bedrail_justmed_p42434.jpeg",
     "product_url": "https://www.justmed.com.hk/product-detail.php?id=750",
     "updated_date": "2026-06-11",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "phone": "2742 4370",
     "note": "免安裝；床欄可由 25\" 伸長至 40\"；置於床褥下使用；床墊厚度需大過 8cm/3吋; ⚠ 不支援線上付款，請 WhatsApp 2742 4370 落單",
     "product_name_en": "UK NRS Single-side Bed Rail (Extendable)",
@@ -600,7 +603,7 @@
     "specs": [
       "尺寸：37.5\"(深) × 25–40\"(闊) × 18.75\"(高)"
     ],
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "features": [
       "免安裝，置於床褥下",
       "床欄可伸長：25\" → 40\"",
@@ -613,7 +616,8 @@
       "Single-side fall prevention",
       "UK NRS brand"
     ],
-    "purchase_method": "whatsapp_only"
+    "purchase_method": "whatsapp_only",
+    "stock_status_changed": "2026-06-22"
   },
   {
     "id": "br2",
@@ -669,7 +673,7 @@
     "image_url": "images/bedrail_nero_bp3888.jpeg",
     "product_url": "https://www.nrmedic.com/index.php?route=product/product&product_id=509",
     "updated_date": "2026-06-15",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "phone": "2419 6788",
     "note": "單邊無腳扶手；連 24\"×24\" 木底板；費用已包送貨及上門安裝；建議固定於床板；如鐵床板/床架另收費",
     "specs": [
@@ -718,7 +722,7 @@
     "phone": "2742 4370",
     "note": "⚠ 不支援線上付款，請 WhatsApp 2742 4370 落單",
     "updated_date": "2026-06-15",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "product_name_en": "WONSH® Rubber Ramp",
     "specs_en": [
       "Length: 5.9\"",
@@ -728,7 +732,7 @@
     ],
     "price_display_en": "HK$150 - $370 (by size/height)",
     "note_en": "",
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "features": [
       "橡膠製造, 防滑設計; 多款尺寸",
       "適用門檻 / 小斜台",
@@ -739,7 +743,8 @@
       "For thresholds / small ramps",
       "Just Med WONSH® series"
     ],
-    "purchase_method": "whatsapp_only"
+    "purchase_method": "whatsapp_only",
+    "stock_status_changed": "2026-06-22"
   },
   {
     "id": "m2",
@@ -762,7 +767,7 @@
     "phone": "2742 4370",
     "note": "官網規格齊全, 線上未列價, 請致電查詢. 中等至高皮膚破損風險適用; ⚠ 不支援線上付款，請 WhatsApp 2742 4370 落單",
     "updated_date": "2026-06-15",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "product_name_en": "ROSSMAX Strip Air Mattress",
     "specs_en": [
       "Inflated size: 74\"(L) × 33.8\"(W) × 4\"(H)",
@@ -772,7 +777,7 @@
     ],
     "price_display_en": "HK$1,980.00 (original $2,200, 10% off)",
     "note_en": "Specs available online; price not listed — please call. Suitable for medium-to-high pressure ulcer risk",
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "features": [
       "外層: 耐用尼龍, 內層: PVC",
       "氣管交替換氣, 預防褥瘡",
@@ -789,7 +794,8 @@
       "Includes waterproof breathable cover",
       "2-year warranty on pump + tubes"
     ],
-    "purchase_method": "whatsapp_only"
+    "purchase_method": "whatsapp_only",
+    "stock_status_changed": "2026-06-22"
   },
   {
     "id": "r3",
@@ -892,12 +898,12 @@
     "phone": "2742 4370",
     "note": "產品頁由相片 QR code 確認; ⚠ 不支援線上付款，請 WhatsApp 2742 4370 落單",
     "updated_date": "2026-06-15",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "product_name_en": "U-shape Back Shower Chair with Armrests",
     "specs_en": [],
     "price_display_en": "HK$700.00",
     "note_en": "",
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "features": [
       "U型座位 (方便清潔)",
       "扶手可拆"
@@ -908,7 +914,8 @@
       "Anti-slip rubber feet",
       "Height adjustable"
     ],
-    "purchase_method": "whatsapp_only"
+    "purchase_method": "whatsapp_only",
+    "stock_status_changed": "2026-06-22"
   },
   {
     "id": "sc3",
@@ -1004,7 +1011,7 @@
     "phone": "3426 9090",
     "note": "產品頁由相片 QR code 確認",
     "updated_date": "2026-06-11",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "product_name_en": "Advanced SB01 Round Shower Stool (White)",
     "specs_en": [
       "Max load: 100 kg / 220 lb"
@@ -1043,11 +1050,11 @@
     "phone": "2742 4370",
     "note": "產品頁由相片 QR code 確認; ⚠ 不支援線上付款，請 WhatsApp 2742 4370 落單",
     "updated_date": "2026-06-11",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "product_name_en": "Folding Aluminium Shower Chair",
     "specs_en": [],
     "price_display_en": "HK$680.00",
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "features": [
       "椅可 360° 旋轉, 方便進出企缸",
       "圓形座位"
@@ -1057,7 +1064,8 @@
       "Aluminium alloy frame",
       "Height adjustable"
     ],
-    "purchase_method": "whatsapp_only"
+    "purchase_method": "whatsapp_only",
+    "stock_status_changed": "2026-06-22"
   },
   {
     "id": "sc7",
@@ -1080,19 +1088,20 @@
     "phone": "2742 4370",
     "note": "產品頁由相片 QR code 確認, 網頁未列價, 請致電查詢; ⚠ 不支援線上付款，請 WhatsApp 2742 4370 落單",
     "updated_date": "2026-06-15",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "product_name_en": "Shower Chair with Backrest",
     "specs_en": [],
     "price_display_en": "HK$450.00",
     "note_en": "Online price not listed — please call supplier",
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "features": [],
     "features_en": [
       "With backrest",
       "Height adjustable",
       "Anti-slip rubber feet"
     ],
-    "purchase_method": "whatsapp_only"
+    "purchase_method": "whatsapp_only",
+    "stock_status_changed": "2026-06-22"
   },
   {
     "id": "sc8",
@@ -1157,7 +1166,7 @@
     "phone": "8206 6160",
     "note": "產品頁由相片 QR code 確認",
     "updated_date": "2026-06-15",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "product_name_en": "Backless Shower Stool",
     "specs_en": [
       "Overall size: 19\"(W) x 16\"(D) x 13\" – 17\"(H)"
@@ -1232,14 +1241,14 @@
     "phone": "2742 4370",
     "note": "產品頁由相片 QR code 確認, 2\" 線上 $350 (參考價亦同價), 4\" 請致電; ⚠ 不支援線上付款，請 WhatsApp 2742 4370 落單",
     "updated_date": "2026-06-15",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "product_name_en": "NRS Toilet Seat Riser (2\" / 4\")",
     "specs_en": [
       "Dimensions: 2\" / 4\"",
       "Height: 2\" / 4\""
     ],
     "price_display_en": "HK$400 (2\") / $430 (4\")",
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "features": [
       "可清洗及烘焗 (耐溫至 73°C)",
       "英國 NRS 品牌"
@@ -1248,7 +1257,8 @@
       "Two options",
       "NRS brand"
     ],
-    "purchase_method": "whatsapp_only"
+    "purchase_method": "whatsapp_only",
+    "stock_status_changed": "2026-06-22"
   },
   {
     "id": "tr3",
@@ -1271,7 +1281,7 @@
     "phone": "2687 6380",
     "note": "產品頁由相片 QR code 確認, 三款線上實價",
     "updated_date": "2026-06-11",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "product_name_en": "Toilet Riser — No Lid (2.5\" / 4\" / 6\")",
     "specs_en": [
       "Height: 2.5\" / 4\" / 6\""
@@ -1375,7 +1385,7 @@
     "phone": "2742 4370",
     "note": "原 QR 已失效, 已用 Google 搵到 official page, 網頁未列價請致電; ⚠ 不支援線上付款，請 WhatsApp 2742 4370 落單",
     "updated_date": "2026-06-11",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "product_name_en": "Reacher / Grabber (Two Lengths)",
     "specs_en": [
       "Length: 26\" / 32\"",
@@ -1383,7 +1393,7 @@
     ],
     "price_display_en": "HK$200.00 (both lengths same price)",
     "note_en": "Original QR expired; URL recovered via Google. Online price not listed — please call",
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "features": [
       "輕身物料製造",
       "鉗口有防滑及磁石膠面",
@@ -1398,7 +1408,8 @@
       "Doubles as a shoehorn",
       "For users who cannot bend"
     ],
-    "purchase_method": "whatsapp_only"
+    "purchase_method": "whatsapp_only",
+    "stock_status_changed": "2026-06-22"
   },
   {
     "id": "rc2",
@@ -1418,17 +1429,18 @@
     "phone": "3111 2386",
     "note": "原 QR 已失效, 卓思廊冇 online product page, 詳情請致電 3111 2386 (荃灣街市街分店)",
     "updated_date": "2026-06-11",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "product_name_en": "Reacher / Grabber",
     "specs_en": [],
     "price_display_en": "HK$120.00",
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "features": [],
     "features_en": [
       "Standard grabber design",
       "Lightweight",
       "For users who cannot bend"
-    ]
+    ],
+    "stock_status_changed": "2026-06-22"
   },
   {
     "id": "rc3",
@@ -1481,12 +1493,12 @@
     "phone": "2742 4370",
     "note": "⚠ 不支援線上付款，請 WhatsApp 2742 4370 落單",
     "updated_date": "2026-06-15",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "product_name_en": "Sock Aid",
     "specs_en": [],
     "price_display_en": "HK$100.00",
     "note_en": "",
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "features": [
       "有效幫助康復者將襪子穿上",
       "適合未能彎腰穿襪人士"
@@ -1495,7 +1507,8 @@
       "Helps users pull socks on",
       "For people who cannot bend to put on socks"
     ],
-    "purchase_method": "whatsapp_only"
+    "purchase_method": "whatsapp_only",
+    "stock_status_changed": "2026-06-22"
   },
   {
     "id": "sa2",
@@ -1515,11 +1528,11 @@
     "phone": "2102 7180",
     "note": "原 QR 已失效, 已用 Google 搵到 official page, 暫時存貨不足",
     "updated_date": "2026-06-11",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "product_name_en": "FAMICA Sock Aid (6-in-1 sock & shoe on/off)",
     "specs_en": [],
     "price_display_en": "HK$220.00",
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "features": [
       "6 種功能: 穿襪 / 脫襪 / 取襪 / 穿鞋 / 脫鞋 / 取鞋",
       "長柄設計, 套襪時穩固不滑動",
@@ -1530,7 +1543,8 @@
       "FAMICA brand",
       "6-in-1: put on / take off socks & shoes",
       "Long handle"
-    ]
+    ],
+    "stock_status_changed": "2026-06-22"
   },
   {
     "id": "sa3",
@@ -1593,7 +1607,7 @@
     "phone": "2742 4370",
     "note": "產品頁由相片 QR code 確認, 線上實價 $470 對應 26\"/27\"/28\"; ⚠ 不支援線上付款，請 WhatsApp 2742 4370 落單",
     "updated_date": "2026-06-11",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "product_name_en": "NUVO / NRS Bath Board (Four Widths)",
     "specs_en": [
       "Dimensions: 26\" / 27\" / 28\"",
@@ -1602,7 +1616,7 @@
     ],
     "price_display_en": "HK$470 (26\"/27\"/28\") / $550 (30\"); handrail +$100",
     "note_en": "Product page confirmed via QR. Online actual price $470 for 26\"/27\"/28\"",
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "features": [
       "底架至板邊間距: 1\"-3.5\"",
       "不含乳膠舒適膠面 (減低敏感)",
@@ -1616,7 +1630,8 @@
       "Fits various bathtub shapes",
       "Optional dedicated handrail: +HK$100"
     ],
-    "purchase_method": "whatsapp_only"
+    "purchase_method": "whatsapp_only",
+    "stock_status_changed": "2026-06-22"
   },
   {
     "id": "bb2",
@@ -1638,7 +1653,7 @@
     "phone": "2687 6380",
     "note": "產品頁由相片 QR code 確認",
     "updated_date": "2026-06-15",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "product_name_en": "Plastic Bath Board with Handrail",
     "specs_en": [
       "Dimensions: 12.5\" (W) x 28\" (L)",
@@ -1674,14 +1689,14 @@
     "phone": "2552 3385",
     "note": "",
     "updated_date": "2026-06-15",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "product_name_en": "Reinforced Plastic Bath Board",
     "specs_en": [
       "Dimensions: 685 x 230 x 140 mm",
       "Max load: 159 kg"
     ],
     "price_display_en": "HK$480 – HK$550",
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "features": [
       "強化塑膠洗澡板 (26吋 / 27吋 / 28吋)：HK$480",
       "高級強化塑膠洗澡板 (26吋 / 27吋 / 28吋)：HK$550",
@@ -1691,7 +1706,8 @@
       "Reinforced Plastic Bath Board (26\" / 27\" / 28\"): HK$480",
       "Premium Reinforced Plastic Bath Board (26\" / 27\" / 28\"): HK$550",
       "Price varies by size"
-    ]
+    ],
+    "stock_status_changed": "2026-06-22"
   },
   {
     "id": "rmp1",
@@ -1894,7 +1910,7 @@
     "phone": "2687 6380",
     "note": "官網規格齊全, 但未公開列價, 請致電查詢",
     "updated_date": "2026-06-11",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "product_name_en": "3 ft Electric 3-action Steel Care Bed",
     "specs_en": [
       "Dimensions: 78(L) × 38(W) in; overall 199 × 96 cm"
@@ -1941,7 +1957,7 @@
     "phone": "3426 9090",
     "note": "線上實價 $1,980 (原價 $2,500, 慳 $520)",
     "updated_date": "2026-06-11",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "product_name_en": "Taiwan Brick Pressure-relief Air Mattress",
     "specs_en": [
       "Inflated size: 72.5\"(L) × 31.5\"(W) × 4\"(H)",
@@ -2068,7 +2084,7 @@
     "image_url": "images/handrail_medicare_ems00532.jpeg",
     "product_url": "https://medicare.com.hk/zh-hant/care/191/",
     "updated_date": "2026-06-11",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "phone": "2687 6380",
     "specs": [
       "長度：12\" / 18\" / 24\" / 32\"",
@@ -2140,7 +2156,7 @@
     "image_url": "images/handrail_easy66_abs.jpeg",
     "product_url": "https://www.easy66.com.hk/products/handrail",
     "updated_date": "2026-06-11",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "phone": "2102 7180",
     "specs": [
       "長度：30–120cm",
@@ -2152,7 +2168,7 @@
     ],
     "product_name_en": "[Shangling] ABS Anti-slip Grab Bar with Fluorescent Ring",
     "price_display_en": "HK$250 - $800 (size-dependent)",
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "features": [
       "有白色 / 黃色選擇",
       "螢光矽膠環（夜間防跌）",
@@ -2168,7 +2184,8 @@
       "Antibacterial coating",
       "German TUV certified · 120 kg load",
       "Quote required for 121 cm or longer"
-    ]
+    ],
+    "stock_status_changed": "2026-06-22"
   },
   {
     "id": "hr5",
@@ -2266,7 +2283,7 @@
     "product_url": "https://www.healthyliving.com.hk/shop/%E5%8F%B0%E7%81%A3-uncl-350-%E5%85%8D%E5%AE%89%E8%A3%9D%E5%90%B8%E7%9B%A4%E6%89%B6%E6%89%8B/",
     "phone": "3426 9090",
     "updated_date": "2026-06-13",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "product_name_en": "Taiwan UNCL 350 Suction Cup Grab Bar (No Installation)",
     "specs_en": [
       "Length: 16.2\"",
@@ -2309,7 +2326,7 @@
     "product_url": "https://www.healthyliving.com.hk/shop/%E7%BE%8E%E5%9C%8B-advanced-7530-%E5%A4%9A%E5%8A%9F%E8%83%BD%E8%BC%95%E8%BC%AA%E6%A4%85/",
     "phone": "3426 9090",
     "updated_date": "2026-06-13",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-22",
     "product_name_en": "Advanced 7530 Multi-functional Lightweight Wheelchair",
     "specs_en": [
       "Seat height: 19\"",
