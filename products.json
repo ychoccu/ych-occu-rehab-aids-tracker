@@ -144,7 +144,7 @@
     "image_url": "images/wheelchair_justice_h508.jpg",
     "product_url": "https://www.justicemed.com/product.php?sid=20&id=671",
     "phone": "3904 9019",
-    "note": "產品頁由相片 QR code 確認, 請致電/WhatsApp 54062554 查詢最新價格",
+    "note": "產品頁由相片 QR code 確認, 請致電/WhatsApp 54062554 查詢最新價格 [網站 SSL 證書失效, 系統會 fallback 跳過驗證]",
     "updated_date": "2026-06-11",
     "last_checked": "2026-06-15",
     "product_name_en": "Folding-back Manual Wheelchair",
@@ -799,7 +799,7 @@
       "闊度：29\""
     ],
     "image_url": "images/ramp_supreme_wa200.jpeg",
-    "product_url": "https://www.supreme.com.hk/",
+    "product_url": "https://www.suprememed.com.hk/tc/products_detail.php?id=440",
     "phone": "3690 1468",
     "note": "不同長度價格已列",
     "updated_date": "2026-06-11",
@@ -1829,7 +1829,7 @@
     "image_url": "images/bed_healthtop_828a.jpeg",
     "product_url": "https://healthtop.com.hk/FHA-FO-KS-828ATOPONE%E4%B8%89%E5%8A%9F%E8%83%BD%E9%9B%BB%E5%8B%95%E8%AD%B7%E7%90%86%E5%BA%8A",
     "phone": "2413 7867",
-    "note": "官網現顯示「未有庫存」, 請致電查詢供應狀況",
+    "note": "產品頁已被供應商剷除 (2026-06-22 確認), 請致電 2413 7867 查詢替代型號",
     "updated_date": "2026-06-11",
     "last_checked": "2026-06-15",
     "product_name_en": "Electric 3-function Care Bed (TopOne, 2.5 ft / 3 ft)",
@@ -1858,7 +1858,8 @@
       "Steel deck — robust & durable",
       "Independent castor locks; 1-year warranty",
       "Includes 1\" / 3\" mattress"
-    ]
+    ],
+    "manual_only": true
   },
   {
     "id": "bed3",
