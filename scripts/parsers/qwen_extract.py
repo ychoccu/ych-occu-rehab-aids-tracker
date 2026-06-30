@@ -23,8 +23,8 @@ logger = logging.getLogger(__name__)
 # Fallback: qwen-turbo (cheapest, fastest)
 # qwen-plus exhausted 2026-06-22. qwen-plus-latest = same quality, separate 1M quota.
 # qwen-max too conservative (misses listed prices). Keep as fallback in case plus-latest exhausts.
-PRIMARY_MODEL = "qwen-plus-latest"
-FALLBACK_MODEL = "qwen-max"
+PRIMARY_MODEL = "qwen3.6-plus"
+FALLBACK_MODEL = "qwen3.7-max-2026-06-08"
 
 # Singapore endpoint = International region with free quota
 # Hong Kong endpoint exists too but no free quota
@@ -33,7 +33,7 @@ API_URL = "https://dashscope-intl.aliyuncs.com/compatible-mode/v1/chat/completio
 _api_key = os.environ.get("DASHSCOPE_API_KEY")
 
 
-def _truncate_html(html: str, max_chars: int = 50000) -> str:
+def _truncate_html(html: str, max_chars: int = 30000) -> str:
     """Strip <script>, <style>, comments. Keep main content."""
     html = re.sub(r'<script[^>]*>.*?</script>', '', html, flags=re.DOTALL | re.IGNORECASE)
     html = re.sub(r'<style[^>]*>.*?</style>', '', html, flags=re.DOTALL | re.IGNORECASE)
@@ -91,14 +91,29 @@ def _call_qwen(prompt: str, model: str) -> Optional[str]:
             {"role": "user", "content": prompt},
         ],
         "temperature": 0.0,
-        "max_tokens": 20,
+        "max_tokens": 50,
     }
     headers = {
         "Authorization": f"Bearer {_api_key}",
         "Content-Type": "application/json",
     }
     try:
-        resp = requests.post(API_URL, headers=headers, json=payload, timeout=60)
+        resp = None
+        last_exc = None
+        for attempt in range(3):
+            try:
+                resp = requests.post(API_URL, headers=headers, json=payload, timeout=120)
+                break
+            except requests.Timeout as te:
+                last_exc = te
+                if attempt < 2:
+                    logger.info(f"Timeout attempt {attempt+1}/3 (model={model}), retrying...")
+                    continue
+                raise
+        if resp is None:
+            if last_exc:
+                raise last_exc
+            return None
         resp.raise_for_status()
         data = resp.json()
         if not data.get("choices"):
@@ -156,3 +171,4 @@ def extract_price(html: str, url: str, tier: int = 1, product_hint: str = "") ->
         return None
 
     return int(m.group(0))
+
