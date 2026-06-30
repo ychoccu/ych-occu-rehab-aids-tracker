@@ -255,4 +255,274 @@ def main():
     scripts_dir = Path(__file__).resolve().parent
     if str(scripts_dir) not in sys.path:
         sys.path.insert(0, str(scripts_dir))
-    from parsers import
+    from parsers import get_parser  # noqa: E402
+
+    session = _make_session()
+
+    # ---------------------------------------------------------------------------
+    # PASS 1: Fetch + extract prices for every product (no writes yet)
+    # ---------------------------------------------------------------------------
+    # fetched_prices: pid -> dict with raw_price + meta needed for decision
+    fetched_prices: dict[str, dict] = {}
+    # per_domain_prices: domain -> {price -> [pids]} for duplicate detection
+    per_domain_prices: dict[str, dict[int, list[str]]] = defaultdict(lambda: defaultdict(list))
+    failed_skipped: list[tuple[str, str]] = []
+    oos_pids: set[str] = set()
+
+    logger.info("=== Pass 1: Fetching prices for all products ===")
+    for product in data:
+        pid = product.get("id", "?")
+        url = product.get("product_url", "")
+
+        if not url:
+            logger.info("SKIP [%s]: no product_url", pid)
+            failed_skipped.append((pid, "no product_url"))
+            product["last_checked"] = today  # cron ran today, even if skipped
+            continue
+
+        domain = urlparse(url).hostname or ""
+        logger.info("Fetching [%s] %s", pid, url)
+
+        html = fetch_html(session, url)
+        if html is None:
+            logger.warning("FAIL [%s]: fetch failed", pid)
+            failed_skipped.append((pid, "fetch failed"))
+            product["last_checked"] = today  # cron ran today, even if fetch failed
+            continue
+
+        # Stock detection BEFORE price parse (OOS products handled even with no price)
+        if _detect_stock_status(html) == "out_of_stock":
+            oos_pids.add(pid)
+            logger.info("  [%s] STOCK: out_of_stock detected", pid)
+            continue
+
+        # Extract price via Perplexity
+        parser = get_parser(domain)
+        is_tier2 = pid in TIER2_IDS
+
+        # Build hint from product name + model number to help LLM locate main product
+        product_name = product.get("product_name", "") or ""
+        model = product.get("model", "") or ""
+        product_hint = f"{product_name} {model}".strip()
+
+        try:
+            if is_tier2:
+                raw_price = parser.extract_min_price(html, url, product_hint=product_hint)
+            else:
+                raw_price = parser.extract_price(html, url, product_hint=product_hint)
+        except Exception as exc:
+            logger.warning("PARSE ERROR [%s] %s: %s", pid, domain, exc)
+            failed_skipped.append((pid, f"parse error: {exc}"))
+            time.sleep(API_SLEEP)
+            product["last_checked"] = today  # cron ran today, even if parse errored
+            continue
+
+        # Rate limiting — sleep after each API call
+        time.sleep(API_SLEEP)
+
+        price = _validate_price(raw_price)
+        if price is None:
+            logger.warning("SKIP [%s]: no valid price found (raw=%r)", pid, raw_price)
+            failed_skipped.append((pid, f"no valid price (raw={raw_price!r})"))
+            product["last_checked"] = today  # cron ran today, even if no price extracted
+            continue
+
+        # Record for cross-product duplicate detection
+        fetched_prices[pid] = {
+            "price": price,
+            "domain": domain,
+            "is_tier2": is_tier2,
+        }
+        per_domain_prices[domain][price].append(pid)
+
+    # ---------------------------------------------------------------------------
+    # PASS 2: Detect cross-product duplicate prices (parser hallucination signal)
+    # ---------------------------------------------------------------------------
+    logger.info("=== Pass 2: Detecting duplicate-price clusters ===")
+    duplicates = _detect_duplicate_prices(per_domain_prices)
+    rejected_duplicate_pids: set[str] = set()
+    rejected_duplicates: list[tuple[str, str, int]] = []  # (pid, domain, price)
+
+    for (domain, price), pids in duplicates.items():
+        logger.warning(
+            "DUPLICATE CLUSTER: %s returned HK$%d for %d products (%s) — REJECTING ALL",
+            domain, price, len(pids), ", ".join(pids),
+        )
+        for pid in pids:
+            rejected_duplicate_pids.add(pid)
+            rejected_duplicates.append((pid, domain, price))
+
+    # ---------------------------------------------------------------------------
+    # PASS 3: Apply updates (only for products surviving both safety checks)
+    # ---------------------------------------------------------------------------
+    logger.info("=== Pass 3: Applying updates ===")
+    tier1_changed: list[str] = []
+    tier2_changed: list[str] = []
+    suspicious: list[tuple[str, int, int, float]] = []  # (pid, old, new, ratio)
+    checked_count = 0
+
+    for product in data:
+        pid = product.get("id", "?")
+        prev_stock = product.get("stock_status", "in_stock")
+
+        # ---- Out-of-stock handling ----
+        if pid in oos_pids:
+            if prev_stock != "out_of_stock":
+                product["stock_status"] = "out_of_stock"
+                product["stock_status_changed"] = today
+                logger.info("  [%s] STOCK: in_stock → out_of_stock", pid)
+            else:
+                product["stock_status"] = "out_of_stock"
+            product["last_checked"] = today
+            checked_count += 1
+            continue
+
+        # ---- Was this product successfully fetched + extracted? ----
+        if pid not in fetched_prices:
+            # Failed in Pass 1 — leave untouched
+            continue
+
+        # ---- LAYER 2 reject: parser returned duplicate price across domain ----
+        if pid in rejected_duplicate_pids:
+            # Do NOT update anything (not even last_checked) — we don't trust this fetch
+            continue
+
+        info = fetched_prices[pid]
+        price = info["price"]
+        is_tier2 = info["is_tier2"]
+
+        current_min = product.get("price_min")
+        try:
+            current_min_int = int(float(current_min)) if current_min is not None else None
+        except (TypeError, ValueError):
+            current_min_int = None
+
+        # ---- LAYER 1 reject: single-product sanity check ----
+        if current_min_int is not None and current_min_int > 0 and price != current_min_int:
+            if not _is_sane_change(current_min_int, price):
+                ratio = price / current_min_int
+                logger.warning(
+                    "SUSPICIOUS [%s]: %d -> %d (ratio %.2fx), SKIPPING",
+                    pid, current_min_int, price, ratio,
+                )
+                suspicious.append((pid, current_min_int, price, ratio))
+                continue
+
+        # ---- Stock status: in_stock confirmed ----
+        stock_flipped_to_in = (prev_stock == "out_of_stock")
+        if stock_flipped_to_in:
+            product["stock_status"] = "in_stock"
+            product["stock_status_changed"] = today
+            logger.info("  [%s] STOCK: out_of_stock → in_stock (有貨了!)", pid)
+        else:
+            product["stock_status"] = "in_stock"
+
+        force_price_update = stock_flipped_to_in
+        checked_count += 1
+
+        if current_min_int is not None and price == current_min_int and not force_price_update:
+            # Price unchanged — only update last_checked
+            product["last_checked"] = today
+            logger.info("  [%s] unchanged at HK$%d — updated last_checked", pid, price)
+        elif is_tier2:
+            # Tier 2: only update price_min anchor + dates, NEVER touch price_max/price_display
+            if current_min_int != price:
+                logger.info(
+                    "  [%s] TIER2 anchor: HK$%d → HK$%d (manual review needed)",
+                    pid, current_min_int or 0, price,
+                )
+                product["price_min"] = price
+                product["updated_date"] = today
+                product["last_checked"] = today
+                tier2_changed.append(pid)
+            else:
+                product["last_checked"] = today
+        else:
+            # Tier 1: update all price fields
+            logger.info(
+                "  [%s] TIER1 price: HK$%s → HK$%d",
+                pid, current_min_int or "?", price,
+            )
+            product["price_min"] = price
+            product["price_max"] = price
+            product["price_display"] = f"HK${price:,}"
+            product["updated_date"] = today
+            product["last_checked"] = today
+            tier1_changed.append(pid)
+
+    # ---------------------------------------------------------------------------
+    # Safety check — must not lose any products
+    # ---------------------------------------------------------------------------
+    assert len(data) == original_count, (
+        f"SAFETY FAIL: product count changed! original={original_count} current={len(data)}"
+    )
+    if len(data) != original_count:
+        logger.error(
+            "SAFETY FAIL: product count changed! original=%d current=%d — ABORTING write.",
+            original_count, len(data),
+        )
+        sys.exit(1)
+
+    # Write back products.json
+    PRODUCTS_JSON.write_text(
+        json.dumps(data, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    logger.info("Wrote %s (%d products)", PRODUCTS_JSON, len(data))
+
+    # Rebuild standalone HTML
+    rebuild_script = Path(__file__).resolve().parent / "rebuild_html.py"
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("rebuild_html", rebuild_script)
+    rebuild_mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(rebuild_mod)
+    rebuild_mod.rebuild()
+
+    # ---------------------------------------------------------------------------
+    # Summary
+    # ---------------------------------------------------------------------------
+    print()
+    print("=" * 60)
+    print("Price Check Summary")
+    print("=" * 60)
+    print(f"Checked: {checked_count} products")
+    print()
+    print(f"Tier 1 changed ({len(tier1_changed)}) — auto-updated:")
+    if tier1_changed:
+        for pid in tier1_changed:
+            print(f"  - {pid}")
+    else:
+        print("  (none)")
+    print()
+    print(f"Tier 2 anchor changed ({len(tier2_changed)}) — manual review needed:")
+    if tier2_changed:
+        for pid in tier2_changed:
+            print(f"  - {pid}  *** manual review needed ***")
+    else:
+        print("  (none)")
+    print()
+    print(f"Failed/skipped ({len(failed_skipped)}):")
+    if failed_skipped:
+        for pid, reason in failed_skipped:
+            print(f"  - {pid}: {reason}")
+    else:
+        print("  (none)")
+    print()
+    print(f"SUSPICIOUS — price change too large (>±25%), skipped for safety ({len(suspicious)}):")
+    if suspicious:
+        for pid, old_p, new_p, ratio in suspicious:
+            print(f"  - {pid}: HK${old_p:,} → HK${new_p:,} ({ratio:.2f}x) *** manual review needed ***")
+    else:
+        print("  (none)")
+    print()
+    print(f"REJECTED — duplicate prices within same domain (parser hallucination, {len(rejected_duplicates)}):")
+    if rejected_duplicates:
+        for pid, domain, price in rejected_duplicates:
+            print(f"  - {pid}: {domain} returned HK${price:,} (same as 3+ products on same site) *** SKIPPED ***")
+    else:
+        print("  (none)")
+    print("=" * 60)
+
+
+if __name__ == "__main__":
+    main()
