@@ -24,16 +24,16 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Check DASHSCOPE_API_KEY is set
+      - name: Check DEEPSEEK_API_KEY is set
         run: |
-          if [ -z "$DASHSCOPE_API_KEY" ]; then
-            echo "ERROR: DASHSCOPE_API_KEY secret is not set."
+          if [ -z "$DEEPSEEK_API_KEY" ]; then
+            echo "ERROR: DEEPSEEK_API_KEY secret is not set."
             echo "Please add it at: https://github.com/${{ github.repository }}/settings/secrets/actions"
             exit 1
           fi
-          echo "DASHSCOPE_API_KEY is present (length: ${#DASHSCOPE_API_KEY})"
+          echo "DEEPSEEK_API_KEY is present (length: ${#DEEPSEEK_API_KEY})"
         env:
-          DASHSCOPE_API_KEY: ${{ secrets.DASHSCOPE_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
 
       - name: Set up Python 3.11
         uses: actions/setup-python@v5
@@ -52,7 +52,7 @@ jobs:
         run: python scripts/price_checker.py
         env:
           PYTHONPATH: ${{ github.workspace }}
-          DASHSCOPE_API_KEY: ${{ secrets.DASHSCOPE_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
 
       - name: Check for changes in products.json
         id: check_changes
@@ -86,4 +86,4 @@ jobs:
 
       - name: Dry run notice
         if: github.event.inputs.dry_run == 'true'
-        run: echo "DRY RUN — no commits made.
+        run: echo "DRY RUN — no commits made."
