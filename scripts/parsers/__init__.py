@@ -94,7 +94,28 @@ def _extract_healthyliving(soup) -> Optional[int]:
 
 
 def _extract_justmed(soup) -> Optional[int]:
-    """justmed.com.hk: First .product-price on detail page is main product price."""
+    """justmed.com.hk has multiple .product-price elements after JS render:
+
+    1. #price > .product-price (desktop layout, JS-injected) - MAIN price, sale price if discounted
+    2. figcaption .product-price (first one) - MAIN price in mobile card layout
+    3. figcaption .product-price (subsequent) - carousel of OTHER products (wrong price)
+
+    Strategy: prefer #price (most reliable when present), else first figcaption.
+    Note: justmed requires Playwright JS rendering (see js_fetch.py).
+    """
+    # Layer 1: #price div (desktop layout, injected by JS after render)
+    el = soup.select_one("#price .product-price")
+    if el:
+        text = el.get_text(strip=True)
+        # The discounted format is "HK$ 1,880.00HK$ 2,400.00" - sale price comes first
+        price = _parse_price_text(text)
+        if price:
+            return price
+    # Layer 2: first figcaption .product-price (mobile card layout)
+    el = soup.select_one("figcaption .product-price")
+    if el:
+        return _parse_price_text(el.get_text(strip=True))
+    # Last resort: any .product-price (legacy behaviour)
     el = soup.select_one(".product-price")
     if el:
         return _parse_price_text(el.get_text(strip=True))
