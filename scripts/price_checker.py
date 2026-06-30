@@ -160,16 +160,20 @@ def _validate_price(price) -> int | None:
 # ---------------------------------------------------------------------------
 # LAYER 1: Per-product sanity check — reject implausible price changes
 # ---------------------------------------------------------------------------
-# Tightened 2026-06-22 after parser hallucinated wrong prices for 33 products
-# Old threshold (0.33x-3.0x) was too loose: e.g. $2,400→$1,980 (0.825x) passed
-# even though it was wrong. New threshold: ±25% (0.75x-1.33x).
-# Real supplier price changes within a week rarely exceed ±25%.
+# History:
+# - Original 0.33x-3.0x (±200%): too loose, missed obvious parser errors.
+# - 2026-06-22: tightened to 0.75x-1.33x (±25%) after parser hallucination bug.
+# - 2026-07-01: relaxed to 0.50x-1.50x (±50%) so real supplier discounts
+#   (5-7 折 / 50-70% off) don't get blocked as suspicious. Hardware suppliers
+#   occasionally run 半價 promos; the previous ±25% window blocked them.
+#   ±50% still catches extreme parser errors (e.g. $2,400 → $100) while
+#   letting genuine discounts and seasonal pricing through.
 def _is_sane_change(old_price: int, new_price: int) -> bool:
-    """Reject changes where new price is < 75% or > 133% of old price (likely parser error)."""
+    """Reject changes where new price is < 50% or > 150% of old price (likely parser error)."""
     if old_price <= 0:
         return True  # No previous price to compare
     ratio = new_price / old_price
-    return 0.75 <= ratio <= 1.33
+    return 0.50 <= ratio <= 1.50
 
 
 # ---------------------------------------------------------------------------
@@ -508,7 +512,7 @@ def main():
     else:
         print("  (none)")
     print()
-    print(f"SUSPICIOUS — price change too large (>±25%), skipped for safety ({len(suspicious)}):")
+    print(f"SUSPICIOUS — price change too large (>±50%), skipped for safety ({len(suspicious)}):")
     if suspicious:
         for pid, old_p, new_p, ratio in suspicious:
             print(f"  - {pid}: HK${old_p:,} → HK${new_p:,} ({ratio:.2f}x) *** manual review needed ***")
