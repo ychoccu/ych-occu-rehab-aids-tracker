@@ -169,7 +169,7 @@ def _is_sane_change(old_price: int, new_price: int) -> bool:
     if old_price <= 0:
         return True  # No previous price to compare
     ratio = new_price / old_price
-    return 0.75 <= ratio <= 1.33
+    return 0.50 <= ratio <= 1.50
 
 
 # ---------------------------------------------------------------------------
@@ -203,6 +203,10 @@ def fetch_html(session: requests.Session, url: str) -> str | None:
     Falls back to verify=False if SSL verification fails (some suppliers have
     broken cert chains but otherwise serve normally).
     """
+    from js_fetch import needs_js_render, fetch_html_with_browser
+    if needs_js_render(url):
+        return fetch_html_with_browser(url)
+
     try:
         resp = session.get(url, timeout=TIMEOUT, allow_redirects=True)
         resp.raise_for_status()
