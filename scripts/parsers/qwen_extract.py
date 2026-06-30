@@ -23,8 +23,8 @@ logger = logging.getLogger(__name__)
 # Fallback: qwen-turbo (cheapest, fastest)
 # qwen-plus exhausted 2026-06-22. qwen-plus-latest = same quality, separate 1M quota.
 # qwen-max too conservative (misses listed prices). Keep as fallback in case plus-latest exhausts.
-PRIMARY_MODEL = "qwen3.6-plus"
-FALLBACK_MODEL = "qwen3.7-max-2026-06-08"
+PRIMARY_MODEL = "qwen-plus"
+FALLBACK_MODEL = "qwen-max"
 
 # Singapore endpoint = International region with free quota
 # Hong Kong endpoint exists too but no free quota
