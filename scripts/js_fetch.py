@@ -39,6 +39,17 @@ def fetch_html_with_browser(url: str, timeout_ms: int = 30000) -> Optional[str]:
             page = context.new_page()
             try:
                 page.goto(url, timeout=timeout_ms, wait_until="domcontentloaded")
+                # Wait for JS-injected #price div (justmed.com.hk).
+                # If it appears, return immediately; else fall through to fixed wait.
+                try:
+                    page.wait_for_function(
+                        "() => { const el = document.querySelector('#price .product-price'); "
+                        "return el && el.innerText.trim().length > 0; }",
+                        timeout=6000,
+                    )
+                except Exception:
+                    pass
+                # Extra buffer so other lazy content (e.g. carousels) settles.
                 page.wait_for_timeout(2000)
                 html = page.content()
                 logger.info("BROWSER FETCH OK [%s]: %d chars", url, len(html))
