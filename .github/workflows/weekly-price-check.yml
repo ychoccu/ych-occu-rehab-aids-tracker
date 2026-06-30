@@ -2,8 +2,8 @@ name: Weekly Price Check
 
 on:
   schedule:
-    # Saturday 9am HKT = Saturday 1am UTC
-    - cron: "0 1 * * 6"
+    # Monday 8am HKT = Monday 0:00 UTC
+    - cron: "0 0 * * 1"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -59,23 +59,31 @@ jobs:
         run: |
           if git diff --quiet products.json ych_rehab_aids_standalone.html 2>/dev/null; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "No price changes detected."
+            echo "No price changes detected — will still commit last_checked timestamps."
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
             echo "Price changes detected — will commit."
           fi
 
       - name: Commit and push changes
-        if: steps.check_changes.outputs.changed == 'true' && github.event.inputs.dry_run != 'true'
+        if: github.event.inputs.dry_run != 'true'
         run: |
+          if git diff --quiet products.json ych_rehab_aids_standalone.html 2>/dev/null; then
+            echo "Nothing to commit."
+            exit 0
+          fi
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git add products.json ych_rehab_aids_standalone.html
-          git commit -m "Weekly auto price check (GitHub Actions)"
+          if [ "${{ steps.check_changes.outputs.changed }}" = "true" ]; then
+            git commit -m "Weekly auto price check: price changes detected"
+          else
+            git commit -m "Weekly auto price check: no price changes, updated last_checked"
+          fi
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Dry run notice
-        if: github.event.inputs.dry_run == 'true' && steps.check_changes.outputs.changed == 'true'
-        run: echo "DRY RUN — changes detected but not committed."
+        if: github.event.inputs.dry_run == 'true'
+        run: echo "DRY RUN — no commits made.
