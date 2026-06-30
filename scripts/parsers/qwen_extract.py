@@ -1,14 +1,12 @@
 """
-Qwen (Alibaba Model Studio) based price extractor.
-Replaces previous attempts (all blocked in HK or rate-limited):
-- Gemini -> HK geo-blocked
-- Perplexity -> requires $5 credit-card prepay
-- OpenRouter -> free tier only 50 req/day
-- Groq -> HK geo-blocked (Forbidden)
-- Cerebras -> HK geo-blocked (Cloudflare)
+DeepSeek based price extractor.
 
-Qwen is HK-friendly (Alibaba is a Chinese company; has dedicated HK endpoint).
-New accounts on Singapore endpoint get 1M tokens free per model, 90 days.
+Replaces Qwen (Alibaba) — DeepSeek advantages:
+- HK-friendly (no geo block)
+- Accepts PayPal (Alibaba doesn't accept Alipay HK)
+- DeepSeek-V3 quality on par with Qwen-Max
+- Extremely cheap: ~USD $0.005 per workflow run
+- OpenAI-compatible API
 """
 import os
 import re
@@ -19,18 +17,12 @@ import requests
 
 logger = logging.getLogger(__name__)
 
-# Primary: qwen-plus (balanced cost/quality, strong instruction-following)
-# Fallback: qwen-turbo (cheapest, fastest)
-# qwen-plus exhausted 2026-06-22. qwen-plus-latest = same quality, separate 1M quota.
-# qwen-max too conservative (misses listed prices). Keep as fallback in case plus-latest exhausts.
-PRIMARY_MODEL = "qwen-plus"
-FALLBACK_MODEL = "qwen-max"
+PRIMARY_MODEL = "deepseek-chat"
+FALLBACK_MODEL = "deepseek-chat"
 
-# Singapore endpoint = International region with free quota
-# Hong Kong endpoint exists too but no free quota
-API_URL = "https://dashscope-intl.aliyuncs.com/compatible-mode/v1/chat/completions"
+API_URL = "https://api.deepseek.com/chat/completions"
 
-_api_key = os.environ.get("DASHSCOPE_API_KEY")
+_api_key = os.environ.get("DEEPSEEK_API_KEY")
 
 
 def _truncate_html(html: str, max_chars: int = 30000) -> str:
@@ -83,8 +75,8 @@ HTML content:
 """
 
 
-def _call_qwen(prompt: str, model: str) -> Optional[str]:
-    """Single Qwen API call via OpenAI-compatible endpoint. Returns response text or None."""
+def _call_deepseek(prompt: str, model: str) -> Optional[str]:
+    """Single DeepSeek API call via OpenAI-compatible endpoint. Returns response text or None."""
     payload = {
         "model": model,
         "messages": [
@@ -117,27 +109,26 @@ def _call_qwen(prompt: str, model: str) -> Optional[str]:
         resp.raise_for_status()
         data = resp.json()
         if not data.get("choices"):
-            logger.warning("Qwen empty choices (model=%s): %s", model, data.get("error", {}))
+            logger.warning("DeepSeek empty choices (model=%s): %s", model, data.get("error", {}))
             return None
         return data["choices"][0]["message"]["content"].strip()
     except requests.RequestException as e:
-        logger.warning("Qwen API error (model=%s): %s", model, e)
+        logger.warning("DeepSeek API error (model=%s): %s", model, e)
         return None
     except (KeyError, IndexError, ValueError) as e:
-        logger.warning("Qwen unexpected response (model=%s): %s", model, e)
+        logger.warning("DeepSeek unexpected response (model=%s): %s", model, e)
         return None
 
 
 def extract_price(html: str, url: str, tier: int = 1, product_hint: str = "") -> Optional[int]:
     """
-    Use Qwen to extract main product price (Tier 1) or lowest variant price (Tier 2).
-    Tries PRIMARY_MODEL first, falls back to FALLBACK_MODEL if empty/error.
+    Use DeepSeek to extract main product price (Tier 1) or lowest variant price (Tier 2).
     `product_hint` is the product name / model number to help locate the main product
     among navigation/sidebar noise (e.g. "取物器 FHA-HE-1626").
     Returns int or None.
     """
     if not _api_key:
-        logger.error("DASHSCOPE_API_KEY not set — cannot extract prices")
+        logger.error("DEEPSEEK_API_KEY not set — cannot extract prices")
         return None
 
     clean_html = _truncate_html(html)
@@ -154,21 +145,19 @@ def extract_price(html: str, url: str, tier: int = 1, product_hint: str = "") ->
     template = TIER2_PROMPT_TEMPLATE if tier == 2 else TIER1_PROMPT_TEMPLATE
     prompt = template.format(hint_section=hint_section) + clean_html
 
-    text = _call_qwen(prompt, PRIMARY_MODEL)
+    text = _call_deepseek(prompt, PRIMARY_MODEL)
 
     if text is None:
-        logger.info("Falling back to %s for %s", FALLBACK_MODEL, url)
-        text = _call_qwen(prompt, FALLBACK_MODEL)
-        if text is None:
-            return None
+        return None
 
     if text.upper() == "UNKNOWN" or not text:
         return None
 
     m = re.search(r'\d+', text)
     if not m:
-        logger.warning("Qwen returned non-numeric for %s: %r", url, text[:100])
+        logger.warning("DeepSeek returned non-numeric for %s: %r", url, text[:100])
         return None
 
     return int(m.group(0))
+
 
