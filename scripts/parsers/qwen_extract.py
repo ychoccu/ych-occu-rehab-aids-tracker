@@ -17,7 +17,7 @@ import requests
 
 logger = logging.getLogger(__name__)
 
-PRIMARY_MODEL = "deepseek-chat"
+PRIMARY_MODEL = "deepseek-reasoner"
 FALLBACK_MODEL = "deepseek-chat"
 
 API_URL = "https://api.deepseek.com/chat/completions"
