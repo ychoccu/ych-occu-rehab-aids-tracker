@@ -1128,7 +1128,7 @@
     "phone": "2413 7867",
     "note": "產品頁由相片 QR code 確認, 網頁未列價, 請致電查詢",
     "updated_date": "2026-06-15",
-    "last_checked": "2026-06-22",
+    "last_checked": "2026-06-30",
     "product_name_en": "Foldable Aluminium U-shape Shower Chair (Light Blue)",
     "specs_en": [
       "Max load: 100 kg"
@@ -1659,14 +1659,14 @@
     "phone": "2552 3385",
     "note": "",
     "updated_date": "2026-06-15",
-    "last_checked": "2026-06-22",
+    "last_checked": "2026-06-30",
     "product_name_en": "Reinforced Plastic Bath Board",
     "specs_en": [
       "Dimensions: 685 x 230 x 140 mm",
       "Max load: 159 kg"
     ],
     "price_display_en": "HK$480 – HK$550",
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "features": [
       "強化塑膠洗澡板 (26吋 / 27吋 / 28吋)：HK$480",
       "高級強化塑膠洗澡板 (26吋 / 27吋 / 28吋)：HK$550",
@@ -1677,7 +1677,7 @@
       "Premium Reinforced Plastic Bath Board (26\" / 27\" / 28\"): HK$550",
       "Price varies by size"
     ],
-    "stock_status_changed": "2026-06-22"
+    "stock_status_changed": "2026-06-30"
   },
   {
     "id": "rmp1",
@@ -1743,7 +1743,7 @@
     "phone": "2413 7867",
     "note": "請致電查詢",
     "updated_date": "2026-06-11",
-    "last_checked": "2026-06-15",
+    "last_checked": "2026-06-30",
     "product_name_en": "Japan Dunlop Lightweight Fiberglass Ramp",
     "specs_en": [
       "Length: 2.5' / 70 cm",
