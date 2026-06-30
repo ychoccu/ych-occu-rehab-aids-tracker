@@ -83,7 +83,7 @@ def _call_deepseek(prompt: str, model: str) -> Optional[str]:
             {"role": "user", "content": prompt},
         ],
         "temperature": 0.0,
-        "max_tokens": 50,
+        "max_tokens": 2000,
     }
     headers = {
         "Authorization": f"Bearer {_api_key}",
