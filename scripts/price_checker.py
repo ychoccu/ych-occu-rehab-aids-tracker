@@ -173,7 +173,7 @@ def _is_sane_change(old_price: int, new_price: int) -> bool:
     if old_price <= 0:
         return True  # No previous price to compare
     ratio = new_price / old_price
-    return 0.50 <= ratio <= 1.50
+    return 0.50 < ratio < 1.50
 
 
 # ---------------------------------------------------------------------------
