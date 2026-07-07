@@ -914,7 +914,7 @@ function setFontSize(size) {
 /* ===== Per-product field getters (language-aware) ===== */
 function fieldName(p)   { return currentLang === 'en' ? (p.product_name_en || p.product_name || t('no_product')) : (p.product_name || t('no_product')); }
 function fieldPrice(p)  { return currentLang === 'en' ? (p.price_display_en || p.price_display || 'HK$ N/A') : (p.price_display || 'HK$ N/A'); }
-function isOutOfStock(p) { return p.stock_status === 'out_of_stock'; }
+function isOutOfStock(p) { return false; }
 function priceBlockHTML(p) {
   if (isOutOfStock(p)) {
     const last = escapeHTML(fieldPrice(p));
@@ -1158,7 +1158,7 @@ function showCompare() {
     }],
     [t('label_updated'),  p => escapeHTML(p.updated_date || '-')],
     [t('label_checked'),  p => escapeHTML(p.last_checked || p.updated_date || '-')],
-    [t('label_stock'),    p => isOutOfStock(p) ? `<span style="color:#b91c1c;font-weight:600">${t('stock_out')}</span>` : t('stock_in')],
+    // [t('label_stock'),    p => isOutOfStock(p) ? `<span style="color:#b91c1c;font-weight:600">${t('stock_out')}</span>` : t('stock_in')],
   ];
   let html = `<tr><th>${t('label_item')}</th>` + items.map(p=>`<th>${escapeHTML(fieldName(p))||'-'}</th>`).join('') + '</tr>';
   rows.forEach(([label, fn]) => {
