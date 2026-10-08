@@ -159,7 +159,6 @@
     }
     .rental-toolbar .rt-search input:focus { outline: none; border-color: #0284c7; }
     .rental-toolbar .rt-search button { position: absolute; right: 6px; top: 50%; transform: translateY(-50%); border: 0; background: #e5e7eb; border-radius: 50%; width: 26px; height: 26px; cursor: pointer; font-weight: 800; color: #374151; }
-    .rental-toolbar .rt-jump a { color: #075985; font-weight: 800; text-decoration: underline; white-space: nowrap; }
     .rental-section-title { color: white; font-size: 1.35em; font-weight: 800; margin: 6px 0 10px; text-shadow: 0 1px 2px rgba(0,0,0,0.25); }
     .rental-cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 14px; margin-bottom: 18px; align-items: start; }
     @media (max-width: 700px) { .rental-cat-grid { grid-template-columns: 1fr; } }
@@ -167,11 +166,19 @@
       background: linear-gradient(180deg, #f0f9ff, #ffffff); border: 2px solid #7dd3fc; border-radius: 14px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.12); color: #1a1a1a; overflow: hidden;
     }
+    .rental-cat-card .rc-img { background: #f8fafc; height: 130px; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #e5e7eb; }
+    .rental-cat-card .rc-img img { max-height: 118px; max-width: 90%; object-fit: contain; }
+    .rental-table .rt-item { display: flex; align-items: center; gap: 8px; }
+    .rental-table .rt-thumb { width: 44px; height: 44px; object-fit: contain; background: #f8fafc; border-radius: 6px; border: 1px solid #e5e7eb; flex-shrink: 0; }
+    .rental-img-note { color: rgba(255,255,255,0.92); font-size: 0.85em; margin: 4px 2px 10px; }
     .rental-cat-card .rc-head { background: #0284c7; color: white; font-weight: 800; font-size: 1.15em; padding: 10px 14px; display: flex; justify-content: space-between; align-items: center; }
     .rental-cat-card .rc-count { background: rgba(255,255,255,0.25); border-radius: 999px; padding: 1px 10px; font-size: 0.85em; }
     .rental-cat-card .rc-list { list-style: none; margin: 0; padding: 4px 14px 10px; }
     .rental-cat-card .rc-item { padding: 9px 0; border-bottom: 1px dashed #cbd5e1; line-height: 1.45; }
     .rental-cat-card .rc-item:last-child { border-bottom: 0; }
+    .rental-cat-card .rc-item.has-img { display: flex; gap: 10px; align-items: flex-start; }
+    .rental-cat-card .rc-thumb { width: 56px; height: 56px; object-fit: contain; background: #fff; border: 1px solid #e5e7eb; border-radius: 6px; flex-shrink: 0; }
+    .rental-cat-card .rc-body { flex: 1; min-width: 0; }
     .rental-cat-card .rc-top { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
     .rental-cat-card .rc-item-name { font-weight: 800; color: #0c4a6e; }
     .rental-cat-card .rc-org { color: #075985; font-weight: 700; text-decoration: underline; font-size: 0.92em; }
@@ -180,16 +187,7 @@
     .rental-cat-card .rc-unit, .rental-cat-card .rc-dep-label, .rental-cat-card .rc-sep { color: #6b7280; font-size: 0.9em; }
     .rental-cat-card .rc-dep { font-weight: 700; color: #374151; }
     .rental-cat-card .ask { color: #6b7280; font-weight: 600; }
-    .rental-cat-card .rc-tel { margin-left: auto; background: #15803d; color: white; border-radius: 8px; padding: 2px 9px; text-decoration: none; font-weight: 800; font-size: 0.92em; white-space: nowrap; }
-    .bath-section { margin-top: 10px; }
-    .bath-intro h2 { color: #0f766e; }
-    .bath-group-title { color: white; font-size: 1.15em; font-weight: 800; margin: 14px 0 8px; text-shadow: 0 1px 2px rgba(0,0,0,0.25); }
-    .rental-card.bath-card { border-left-color: #0f766e; }
-    .rental-card.bath-card h3 { color: #0f766e; }
-    .rental-card.bath-card .k { min-width: 6em; }
-    .bath-fee { color: #b91c1c; font-weight: 700; }
-    .bath-phones a { max-width: 100%; }
-    .bath-phones a .pl { white-space: normal; }
+    .rental-cat-card .rc-tel { margin-left: auto; border-radius: 8px; padding: 3px 10px; text-decoration: none; font-weight: 700; font-size: 0.92em; white-space: nowrap; }
     #rental-view { max-width: 1100px; margin: 0 auto; padding: 0 14px 10px; }
     .rental-intro {
       background: rgba(255,255,255,0.95); border-radius: 14px; padding: 18px 22px;
@@ -203,36 +201,59 @@
       padding: 6px 14px; text-decoration: none; font-weight: 700; font-size: 0.95em;
     }
     .rental-toc a:hover { background: #bae6fd; }
+    .rental-org-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(420px, 1fr)); gap: 14px; align-items: start; margin-bottom: 18px; }
+    @media (max-width: 900px) { .rental-org-grid { grid-template-columns: 1fr; } }
     .rental-card {
-      background: white; border-radius: 14px; padding: 20px 22px; margin-bottom: 16px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.12); color: #1a1a1a; line-height: 1.6;
-      border-left: 6px solid #0284c7;
+      background: white; border-radius: 14px; padding: 18px 18px 16px; margin-bottom: 0;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.12); color: #1a1a1a; line-height: 1.5;
+      display: flex; flex-direction: column; gap: 8px;
     }
-    .rental-card h3 { color: #075985; font-size: 1.3em; margin-bottom: 10px; line-height: 1.35; }
-    .rental-card .rental-row { display: flex; gap: 8px; margin: 6px 0; flex-wrap: wrap; }
+    .rental-card h3 { color: #2c3e50; font-size: 1.15em; font-weight: 800; line-height: 1.35; margin: 0; }
+    .rental-en-name { color: #6b7280; font-size: 0.8em; letter-spacing: 0.06em; margin-top: -4px; }
+    .rental-addr { color: #555; font-size: 0.88em; }
+    .rental-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+    .rental-chips .chip { background: #f0f9ff; color: #075985; border: 1px solid #bae6fd; border-radius: 999px; padding: 2px 10px; font-size: 0.82em; font-weight: 700; }
+    .rental-card .rental-row { display: flex; gap: 8px; margin: 4px 0; flex-wrap: wrap; font-size: 0.92em; }
     .rental-card .rental-row .k { font-weight: 800; color: #374151; min-width: 5.5em; flex-shrink: 0; }
     .rental-card .rental-row .v { flex: 1; min-width: 200px; }
-    .rental-phones { display: flex; flex-wrap: wrap; gap: 8px; }
-    .rental-phones a {
-      display: inline-flex; flex-direction: column; background: #15803d; color: white;
-      border-radius: 10px; padding: 6px 12px; text-decoration: none; line-height: 1.25;
-    }
-    .rental-phones a .pl { font-size: 0.8em; opacity: 0.9; }
-    .rental-phones a .pn { font-size: 1.15em; font-weight: 800; letter-spacing: 0.03em; }
-    .rental-phones a.wa { background: #16a34a; }
     .rental-card a.rental-link { color: #0369a1; font-weight: 700; word-break: break-all; }
-    .rental-intro-eq { margin: 12px 0 8px; }
     .rental-table-wrap { overflow-x: auto; }
-    .rental-table { width: 100%; border-collapse: collapse; font-size: 0.97em; }
-    .rental-table th, .rental-table td { border: 1px solid #d1d5db; padding: 7px 10px; text-align: left; vertical-align: top; }
-    .rental-table th { background: #f0f9ff; color: #075985; font-weight: 800; }
-    .rental-table td:nth-child(n+2) { font-weight: 700; color: #b91c1c; }
+    .rental-table { width: 100%; border-collapse: collapse; font-size: 0.9em; }
+    .rental-table th, .rental-table td { border-bottom: 1px solid #e5e7eb; padding: 6px 8px; text-align: left; vertical-align: top; }
+    .rental-table th { color: #2c3e50; font-weight: 800; border-bottom: 2px solid #cbd5e1; background: none; }
+    .rental-table th:nth-child(n+2), .rental-table td:nth-child(n+2) { text-align: right; }
+    .rental-table td:nth-child(n+2) { font-weight: 800; color: #e74c3c; font-size: 1.08em; }
+    .rental-table td:nth-child(3), .rental-table td:nth-child(4) { color: #374151; font-weight: 700; font-size: 1em; }
+    .rental-table td.ask { color: #6b7280; font-weight: 600; }
+    .rental-table tr.grp td { background: #f8fafc; color: #475569; font-weight: 800; font-size: 0.92em; padding-top: 8px; text-align: left; }
     .rental-table td:first-child { min-width: 7.5em; }
     @media (min-width: 701px) { .rental-table td:nth-child(n+2) { white-space: nowrap; } }
-    .rental-table td.ask { color: #6b7280; font-weight: 600; }
-    .rental-notes { margin: 12px 0 0 1.2em; }
-    .rental-notes li { margin: 4px 0; }
-    .rental-source { font-size: 0.88em; color: #6b7280; margin-top: 12px; border-top: 1px dashed #d1d5db; padding-top: 8px; }
+    .rental-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 2px; }
+    .rental-actions a, .rental-phone-list a {
+      flex: 1 1 auto; text-align: center; padding: 8px 10px; border-radius: 8px; text-decoration: none;
+      font-size: 0.9em; font-weight: 600; transition: opacity 0.2s; white-space: nowrap;
+    }
+    .rental-actions a:active { opacity: 0.7; }
+    .btn-call { background: #27ae60; color: white; }
+    .btn-wa   { background: #128c7e; color: white; }
+    .btn-web  { background: #3498db; color: white; }
+    .btn-mail { background: #f1f5f9; color: #334155; border: 1px solid #cbd5e1; }
+    .rental-phone-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+    .rental-phone-list li { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 0.92em; }
+    .rental-phone-list a { flex: 0 0 auto; padding: 5px 10px; font-size: 0.95em; }
+    .rental-more { border-top: 1px dashed #e5e7eb; padding-top: 6px; }
+    .rental-more-toggle {
+      display: flex; align-items: center; gap: 4px; width: 100%; background: none; border: none; padding: 2px 0; cursor: pointer;
+      font-size: 0.78em; color: #94a3b8; font-weight: 600; letter-spacing: 0.04em; font-family: inherit; text-align: left;
+    }
+    .rental-more-toggle:hover { color: #475569; }
+    .rental-more-toggle .arrow { display: inline-block; transition: transform 0.2s ease; font-size: 0.9em; }
+    .rental-more-toggle.open .arrow { transform: rotate(90deg); }
+    .rental-more-body { display: none; padding-top: 6px; }
+    .rental-more-body.open { display: block; }
+    .rental-notes { margin: 6px 0 0 1.2em; font-size: 0.9em; }
+    .rental-notes li { margin: 3px 0; }
+    .rental-source { font-size: 0.82em; color: #6b7280; margin-top: 8px; }
     .rental-back { text-align: center; margin: 6px 0 14px; }
     .rental-back a { color: white; font-weight: 700; text-decoration: underline; }
     @media (max-width: 700px) {
@@ -240,10 +261,10 @@
       .rental-card .rental-row .k { min-width: 100%; }
       .rental-table { font-size: 0.92em; }
       .rental-toolbar .rt-group { width: 100%; }
+      .rental-table .rt-thumb { width: 36px; height: 36px; }
       .rental-toolbar .rt-label { white-space: nowrap; }
       .rental-toolbar .seg { flex: 1; }
       .rental-toolbar .seg-btn { flex: 1; padding: 8px 6px; font-size: 0.92em; }
-      .rental-card.bath-card .k { min-width: 100%; }
       .rental-table th, .rental-table td { padding: 6px 7px; }
     }
 
@@ -856,8 +877,8 @@ const I18N = {
     notice_backrest_title: '用途：',
     notice_backrest_1: '如不使用電動床，可用靠背架承托上半身，方便在床上進食、閱讀或休息',
     rental_entry_title: '租用輔助工具',
-    rental_entry_sub: '復康器材租借服務 ＋ 上門沖涼／助浴服務：六間租借機構的租金、按金及聯絡資料',
-    rental_title: '租用輔助工具及上門沖涼服務',
+    rental_entry_sub: '六間機構的租金、按金及聯絡電話',
+    rental_title: '租用輔助工具',
     rental_date_label: '資料核對日期：',
     rental_jump: '跳至機構：',
     rental_k_address: '地址：',
@@ -875,14 +896,13 @@ const I18N = {
     rental_view_label: '顯示方式：',
     rental_view_cat: '按輔助工具類別',
     rental_view_org: '按機構',
-    rental_search_ph: '搜尋器材、機構或服務（例如：輪椅、紅十字會、沖涼）',
+    rental_search_ph: '搜尋器材或機構（例如：輪椅、紅十字會）',
     rental_no_match: '找不到相關器材、機構或服務。',
     rental_deposit: '按金',
-    rental_jump_bath: '跳至上門沖涼／助浴服務 ↓',
-    bath_k_who: '服務對象：',
-    bath_k_apply: '申請方法：',
-    bath_k_fee: '收費：',
-    bath_k_wait: '等候時間：',
+    rental_btn_web: '網頁',
+    rental_btn_email: '電郵',
+    rental_more: '其他資料',
+    rental_k_fees: '收費說明：',
   },
   en: {
     title_app: 'Common Assistive Devices Reference',
@@ -970,8 +990,8 @@ const I18N = {
     notice_backrest_title: 'Purpose:',
     notice_backrest_1: 'If an electric bed is not used, a bed backrest can support the upper body for eating, reading or resting in bed.',
     rental_entry_title: 'Rent Assistive Equipment',
-    rental_entry_sub: 'Equipment rental + home bathing services: rents, deposits and contacts of six non-profit rental services',
-    rental_title: 'Rent Assistive Equipment & Home Bathing Services',
+    rental_entry_sub: 'Rents, deposits and phone numbers of six organisations',
+    rental_title: 'Rent Assistive Equipment',
     rental_date_label: 'Information checked on: ',
     rental_jump: 'Jump to: ',
     rental_k_address: 'Address: ',
@@ -989,14 +1009,13 @@ const I18N = {
     rental_view_label: 'View: ',
     rental_view_cat: 'By equipment type',
     rental_view_org: 'By organisation',
-    rental_search_ph: 'Search equipment, organisation or service (e.g. wheelchair, Red Cross, bathing)',
+    rental_search_ph: 'Search equipment or organisation (e.g. wheelchair, Red Cross)',
     rental_no_match: 'No matching equipment, organisation or service.',
     rental_deposit: 'Deposit',
-    rental_jump_bath: 'Jump to home bathing services ↓',
-    bath_k_who: 'Who: ',
-    bath_k_apply: 'How to apply: ',
-    bath_k_fee: 'Fees: ',
-    bath_k_wait: 'Waiting time: ',
+    rental_btn_web: 'Website',
+    rental_btn_email: 'Email',
+    rental_more: 'More details',
+    rental_k_fees: 'Fees: ',
   }
 };
 
@@ -1568,8 +1587,7 @@ function renderHomePage() {
     rt.href = '#/rental';
     rt.innerHTML = `
       <div class="tile-label">${escapeHTML(t('rental_entry_title'))}</div>
-      <div class="tile-sub">${escapeHTML(t('rental_entry_sub'))}</div>
-    `;
+      <div class="tile-sub">${escapeHTML(t('rental_entry_sub'))}</div>`;
     grid.appendChild(rt);
   }
 }
@@ -1639,43 +1657,75 @@ function gotoRentalOrg(id) {
 }
 
 /* -- Shared pieces -- */
-function rentalPhonesHTML(list, whatsapp) {
-  const phones = (list || []).map(ph =>
-    `<a href="${telHref(ph.number)}"><span class="pl">${escapeHTML(rl(ph, 'label'))}</span><span class="pn">${escapeHTML(ph.number)}</span></a>`).join('');
-  const wa = whatsapp ? `<a class="wa" href="https://wa.me/852${String(whatsapp).replace(/\D/g, '')}" target="_blank" rel="noopener"><span class="pl">${escapeHTML(t('rental_whatsapp'))}</span><span class="pn">${escapeHTML(whatsapp)}</span></a>` : '';
-  return phones + wa;
-}
 const RENTAL_ASK = /請|Ask|Please|^—$/;
+function rentalActionsHTML(phones, whatsapp, website, websiteLabel, email) {
+  let h = '';
+  (phones || []).forEach(ph => { h += `<a class="btn-call" href="${telHref(ph.number)}" title="${escapeHTML(rl(ph, 'label'))}">📞 ${escapeHTML(ph.number)}</a>`; });
+  if (whatsapp) h += `<a class="btn-wa" href="https://wa.me/852${String(whatsapp).replace(/\D/g, '')}" target="_blank" rel="noopener">💬 ${escapeHTML(whatsapp)}</a>`;
+  if (website) h += `<a class="btn-web" href="${escapeHTML(website)}" target="_blank" rel="noopener">🌐 ${escapeHTML(t('rental_btn_web'))}</a>`;
+  if (email) h += `<a class="btn-mail" href="mailto:${escapeHTML(email)}">✉ ${escapeHTML(t('rental_btn_email'))}</a>`;
+  return `<div class="rental-actions">${h}</div>`;
+}
+function rentalMoreHTML(label, innerHTML) {
+  if (!innerHTML) return '';
+  return `<div class="rental-more"><button type="button" class="rental-more-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')"><span class="arrow">▶</span><span>${escapeHTML(label)}</span></button><div class="rental-more-body">${innerHTML}</div></div>`;
+}
+function rentalChipsHTML(list) {
+  if (!list || !list.length) return '';
+  return `<div class="rental-chips">${list.map(x => `<span class="chip">${escapeHTML(x)}</span>`).join('')}</div>`;
+}
+function rentalCatImage(data, catId) {
+  const c = (data.categories || []).find(x => x.id === catId);
+  return c && c.image ? c.image : '';
+}
+function feeGroupLabel(data, gid) {
+  const g = (data.fee_groups || []).find(x => x.id === gid);
+  return g ? rl(g, 'label') : '';
+}
 
-/* -- Organisation card (org view) -- */
+/* -- Organisation card (org view) — follows the printed leaflet: name, address, fee table, enquiry buttons -- */
 function rentalOrgCardHTML(o, q) {
+  const data = rentalData;
   const cols = (currentLang === 'en' && o.fee_columns_en) ? o.fee_columns_en : (o.fee_columns || []);
-  const orgHit = rentalMatch(q, rl(o, 'name'), rl(o, 'short'), o.address, o.address_en);
+  const orgHit = rentalMatch(q, rl(o, 'name'), o.name, o.name_en, rl(o, 'short'), o.address, o.address_en);
   const fees = (o.fees || []).filter(f => orgHit || rentalMatch(q, rl(f, 'item'), f.item, f.item_en));
   if (q && !orgHit && fees.length === 0) return '';
-  const rows = fees.map(f => {
-    const rent = rl(f, 'rent'), dep = rl(f, 'deposit'), extra = rl(f, 'extra');
-    let tds = `<td>${escapeHTML(rl(f, 'item'))}</td><td class="${RENTAL_ASK.test(rent) ? 'ask' : ''}">${escapeHTML(rent)}</td><td class="${RENTAL_ASK.test(dep) ? 'ask' : ''}">${escapeHTML(dep)}</td>`;
-    if (cols.length > 3) tds += `<td>${escapeHTML(extra)}</td>`;
-    return `<tr>${tds}</tr>`;
-  }).join('');
+  // group rows by equipment group, keeping fee_groups order
+  const order = (data.fee_groups || []).map(g => g.id);
+  const groups = {};
+  fees.forEach(f => { (groups[f.group || 'service'] = groups[f.group || 'service'] || []).push(f); });
+  const gids = Object.keys(groups).sort((x, y) => order.indexOf(x) - order.indexOf(y));
+  const showGroupHead = gids.length > 1;
+  let rows = '';
+  gids.forEach(gid => {
+    if (showGroupHead) rows += `<tr class="grp"><td colspan="${cols.length}">${escapeHTML(feeGroupLabel(data, gid))}</td></tr>`;
+    groups[gid].forEach(f => {
+      const rent = rl(f, 'rent'), dep = rl(f, 'deposit'), extra = rl(f, 'extra');
+      const fc = feeCats(f)[0];
+      const thumb = f.image || '';
+      rows += `<tr><td><div class="rt-item">${thumb ? `<img class="rt-thumb" src="${escapeHTML(thumb)}" alt="" loading="lazy" onerror="this.style.display='none'">` : ''}<span>${escapeHTML(rl(f, 'item'))}</span></div></td><td class="${RENTAL_ASK.test(rent) ? 'ask' : ''}">${escapeHTML(rent)}</td><td class="${RENTAL_ASK.test(dep) ? 'ask' : ''}">${escapeHTML(dep)}</td>${cols.length > 3 ? `<td>${escapeHTML(extra)}</td>` : ''}</tr>`;
+    });
+  });
   const notes = ((currentLang === 'en' && o.notes_en) ? o.notes_en : (o.notes || [])).map(n => `<li>${escapeHTML(n)}</li>`).join('');
+  const more = `
+      <div class="rental-row"><span class="k">${escapeHTML(t('rental_k_elig'))}</span><span class="v">${escapeHTML(rl(o, 'eligibility'))}</span></div>
+      <div class="rental-row"><span class="k">${escapeHTML(t('rental_k_fees'))}</span><span class="v">${escapeHTML(rl(o, 'equipment_intro'))}</span></div>
+      ${notes ? `<ul class="rental-notes">${notes}</ul>` : ''}
+      ${o.fax ? `<div class="rental-row"><span class="k">${escapeHTML(t('rental_k_fax'))}</span><span class="v">${escapeHTML(o.fax)}</span></div>` : ''}
+      ${o.email ? `<div class="rental-row"><span class="k">${escapeHTML(t('rental_k_email'))}</span><span class="v">${escapeHTML(o.email)}</span></div>` : ''}
+      <div class="rental-source">${escapeHTML(t('rental_source'))}<a class="rental-link" href="${escapeHTML(o.source_url)}" target="_blank" rel="noopener">${escapeHTML(rl(o, 'source_label') || o.source_url)}</a></div>`;
   return `
     <div class="rental-card" id="rental-${escapeHTML(o.id)}">
-      <h3>${escapeHTML(rl(o, 'name'))}</h3>
-      <div class="rental-row"><span class="k">${escapeHTML(t('rental_k_address'))}</span><span class="v">${escapeHTML(rl(o, 'address'))}</span></div>
-      <div class="rental-row"><span class="k">${escapeHTML(t('rental_k_phone'))}</span><span class="v rental-phones">${rentalPhonesHTML(o.phones, o.whatsapp)}</span></div>
-      ${o.fax ? `<div class="rental-row"><span class="k">${escapeHTML(t('rental_k_fax'))}</span><span class="v">${escapeHTML(o.fax)}</span></div>` : ''}
-      ${o.email ? `<div class="rental-row"><span class="k">${escapeHTML(t('rental_k_email'))}</span><span class="v"><a class="rental-link" href="mailto:${escapeHTML(o.email)}">${escapeHTML(o.email)}</a></span></div>` : ''}
-      ${o.website ? `<div class="rental-row"><span class="k">${escapeHTML(t('rental_k_web'))}</span><span class="v"><a class="rental-link" href="${escapeHTML(o.website)}" target="_blank" rel="noopener">${escapeHTML(o.website_label || o.website)}</a></span></div>` : ''}
-      <div class="rental-row"><span class="k">${escapeHTML(t('rental_k_elig'))}</span><span class="v">${escapeHTML(rl(o, 'eligibility'))}</span></div>
-      <div class="rental-intro-eq">${escapeHTML(rl(o, 'equipment_intro'))}</div>
+      <h3>${escapeHTML(currentLang === 'en' ? (o.name_en || o.name) : o.name)}</h3>
+      ${currentLang !== 'en' && o.name_en ? `<div class="rental-en-name">${escapeHTML(o.name_en)}</div>` : ''}
+      ${rentalActionsHTML(o.phones, o.whatsapp, o.website, o.website_label, o.email)}
+      <div class="rental-addr">📍 ${escapeHTML(rl(o, 'address'))}</div>
+      ${rentalChipsHTML(currentLang === 'en' ? (o.facts_en || o.facts) : o.facts)}
       <div class="rental-table-wrap"><table class="rental-table">
         <thead><tr>${cols.map(c => `<th>${escapeHTML(c)}</th>`).join('')}</tr></thead>
         <tbody>${rows}</tbody>
       </table></div>
-      ${notes ? `<div style="margin-top:12px;font-weight:800;color:#374151">${escapeHTML(t('rental_k_notes'))}</div><ul class="rental-notes">${notes}</ul>` : ''}
-      <div class="rental-source">${escapeHTML(t('rental_source'))}<a class="rental-link" href="${escapeHTML(o.source_url)}" target="_blank" rel="noopener">${escapeHTML(rl(o, 'source_label') || o.source_url)}</a></div>
+      ${rentalMoreHTML(t('rental_more'), more)}
     </div>`;
 }
 
@@ -1699,50 +1749,22 @@ function rentalCatCardsHTML(data, q) {
     const items = rows.map(({ o, f }) => {
       const rent = rl(f, 'rent'), dep = rl(f, 'deposit');
       const ph = (o.phones && o.phones[0]) ? o.phones[0].number : '';
-      return `<li class="rc-item">
-          <div class="rc-top"><span class="rc-item-name">${escapeHTML(rl(f, 'item'))}</span>
-            <a href="#/rental" class="rc-org" onclick="event.preventDefault();gotoRentalOrg('${escapeHTML(o.id)}')">${escapeHTML(rl(o, 'short') || rl(o, 'name'))}</a></div>
+      return `<li class="rc-item${f.image ? ' has-img' : ''}">
+          ${f.image ? `<img class="rc-thumb" src="${escapeHTML(f.image)}" alt="" loading="lazy" onerror="this.style.display='none'">` : ''}
+          <div class="rc-body"><div class="rc-top"><span class="rc-item-name">${escapeHTML(rl(f, 'item'))}</span>
+            <a href="#/rental" class="rc-org" onclick="event.preventDefault();gotoRentalOrg('${escapeHTML(o.id)}')">${escapeHTML(rl(o, 'short') || rl(o, 'name'))} ›</a></div>
           <div class="rc-fee"><span class="${RENTAL_ASK.test(rent) ? 'ask' : 'rc-rent'}">${escapeHTML(rent)}</span>${RENTAL_ASK.test(rent) ? '' : ` <span class="rc-unit">${escapeHTML(rl(o, 'rent_unit'))}</span>`}
             <span class="rc-sep">·</span> <span class="rc-dep-label">${escapeHTML(t('rental_deposit'))}</span> <span class="${RENTAL_ASK.test(dep) ? 'ask' : 'rc-dep'}">${escapeHTML(dep)}</span>
-            ${ph ? `<a class="rc-tel" href="${telHref(ph)}">☎ ${escapeHTML(ph)}</a>` : ''}</div>
+            ${ph ? `<a class="btn-call rc-tel" href="${telHref(ph)}">📞 ${escapeHTML(ph)}</a>` : ''}</div></div>
         </li>`;
     }).join('');
     html += `<div class="rental-cat-card" id="rental-cat-${escapeHTML(c.id)}">
         <div class="rc-head">${escapeHTML(label)} <span class="rc-count">${rows.length}</span></div>
+        ${c.image ? `<div class="rc-img"><img src="${escapeHTML(c.image)}" alt="${escapeHTML(label)}" loading="lazy" onerror="this.parentNode.style.display='none'"></div>` : ''}
         <ul class="rc-list">${items}</ul>
       </div>`;
   });
   return html ? `<div class="rental-cat-grid">${html}</div>` : '';
-}
-
-/* -- Home bathing services section -- */
-function rentalBathingHTML(data, q) {
-  const b = data.bathing;
-  if (!b) return '';
-  let groupsHTML = '';
-  (b.groups || []).forEach(g => {
-    const gLabel = rl(g, 'label');
-    const gHit = rentalMatch(q, gLabel, g.label, g.label_en, '沖涼', '助浴', 'bath', '洗澡', '沐浴');
-    const svcs = (g.services || []).filter(sv => gHit || rentalMatch(q, rl(sv, 'name'), sv.name, sv.name_en, rl(sv, 'who'), rl(sv, 'apply'), rl(sv, 'fee'), (sv.contacts || []).map(c => rl(c, 'label') + ' ' + c.number).join(' ')));
-    if (svcs.length === 0) return;
-    const cards = svcs.map(sv => `
-      <div class="rental-card bath-card" id="rental-bath-${escapeHTML(sv.id)}">
-        <h3>${escapeHTML(rl(sv, 'name'))}</h3>
-        <div class="rental-row"><span class="k">${escapeHTML(t('bath_k_who'))}</span><span class="v">${escapeHTML(rl(sv, 'who'))}</span></div>
-        <div class="rental-row"><span class="k">${escapeHTML(t('bath_k_apply'))}</span><span class="v">${escapeHTML(rl(sv, 'apply'))}</span></div>
-        <div class="rental-row"><span class="k">${escapeHTML(t('bath_k_fee'))}</span><span class="v bath-fee">${escapeHTML(rl(sv, 'fee'))}</span></div>
-        ${rl(sv, 'wait') ? `<div class="rental-row"><span class="k">${escapeHTML(t('bath_k_wait'))}</span><span class="v">${escapeHTML(rl(sv, 'wait'))}</span></div>` : ''}
-        <div class="rental-row"><span class="k">${escapeHTML(t('rental_k_phone'))}</span><span class="v rental-phones bath-phones">${rentalPhonesHTML(sv.contacts, sv.whatsapp)}</span></div>
-        ${sv.website ? `<div class="rental-row"><span class="k">${escapeHTML(t('rental_k_web'))}</span><span class="v"><a class="rental-link" href="${escapeHTML(sv.website)}" target="_blank" rel="noopener">${escapeHTML(sv.website_label || sv.website)}</a></span></div>` : ''}
-        <div class="rental-source">${escapeHTML(t('rental_source'))}<a class="rental-link" href="${escapeHTML(sv.source_url)}" target="_blank" rel="noopener">${escapeHTML(rl(sv, 'source_label') || sv.source_url)}</a></div>
-      </div>`).join('');
-    groupsHTML += `<div class="bath-group"><h3 class="bath-group-title">${escapeHTML(gLabel)}</h3>${cards}</div>`;
-  });
-  if (!groupsHTML) return '';
-  return `<div class="bath-section" id="rental-bathing">
-      <div class="rental-intro bath-intro"><h2>${escapeHTML(rl(b, 'title'))}</h2><div>${escapeHTML(rl(b, 'intro'))}</div></div>
-      ${groupsHTML}
-    </div>`;
 }
 
 function renderRentalBody() {
@@ -1751,13 +1773,10 @@ function renderRentalBody() {
   const q = rentalQuery;
   document.querySelectorAll('.rental-toolbar .seg-btn[data-rview]').forEach(b => b.classList.toggle('active', b.dataset.rview === rentalViewMode));
   const clearBtn = document.getElementById('rental-search-clear'); if (clearBtn) clearBtn.style.display = q ? 'inline-block' : 'none';
-  let eq = rentalViewMode === 'cat' ? rentalCatCardsHTML(rentalData, q)
-                                    : (rentalData.organisations || []).map(o => rentalOrgCardHTML(o, q)).join('');
-  const bath = rentalBathingHTML(rentalData, q);
-  let html = '';
-  if (eq) html += `<h2 class="rental-section-title">${escapeHTML(t('rental_eq_title'))}</h2>` + eq;
-  html += bath;
-  if (!eq && !bath) html = `<div class="rental-intro"><div id="status">${escapeHTML(t('rental_no_match'))}</div></div>`;
+  let html = rentalViewMode === 'cat' ? rentalCatCardsHTML(rentalData, q)
+                                      : (() => { const h = (rentalData.organisations || []).map(o => rentalOrgCardHTML(o, q)).join(''); return h ? `<div class="rental-org-grid">${h}</div>` : ''; })();
+  if (!html) html = `<div class="rental-intro"><div id="status">${escapeHTML(t('rental_no_match'))}</div></div>`;
+  else if (rl(rentalData, 'image_note')) html += `<div class="rental-img-note">${escapeHTML(rl(rentalData, 'image_note'))}</div>`;
   html += `<div class="rental-back"><a href="#/">${escapeHTML(t('rental_back_home'))}</a></div>`;
   body.innerHTML = html;
 }
@@ -1769,10 +1788,12 @@ async function renderRentalView() {
   let data;
   try { data = await loadRental(); }
   catch (e) { view.innerHTML = '<div class="rental-intro">' + escapeHTML(t('rental_load_fail')) + escapeHTML(e.message) + '</div>'; return; }
+  const title = t('rental_title');
+  const intro = (data.intro || {})[currentLang] || (data.intro || {}).zh || '';
   view.innerHTML = `
     <div class="rental-intro">
-      <h2>${escapeHTML(t('rental_title'))}</h2>
-      <div>${escapeHTML((data.intro || {})[currentLang] || (data.intro || {}).zh || '')}</div>
+      <h2>${escapeHTML(title)}</h2>
+      <div>${escapeHTML(intro)}</div>
       <div class="rental-date">${escapeHTML(t('rental_date_label'))}${escapeHTML(data.data_date || '')}</div>
     </div>
     <div class="rental-toolbar">
@@ -1786,9 +1807,6 @@ async function renderRentalView() {
       <div class="rt-group rt-search">
         <input type="search" id="rental-search" placeholder="${escapeHTML(t('rental_search_ph'))}" value="${escapeHTML(rentalQuery)}" oninput="onRentalSearch(this.value)" aria-label="${escapeHTML(t('rental_search_ph'))}">
         <button type="button" id="rental-search-clear" onclick="clearRentalSearch()" style="display:none">✕</button>
-      </div>
-      <div class="rt-group rt-jump">
-        <a href="#/rental" onclick="event.preventDefault();document.getElementById('rental-bathing')?.scrollIntoView({behavior:'smooth',block:'start'})">${escapeHTML(t('rental_jump_bath'))}</a>
       </div>
     </div>
     <div id="rental-body"></div>`;
