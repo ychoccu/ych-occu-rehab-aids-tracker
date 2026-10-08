@@ -1,0 +1,1012 @@
+{
+  "data_date": "2026-10-08",
+  "intro": {
+    "zh": "以下為本港提供復康器材租借服務的非牟利機構資料，供有需要短期使用器材的病人及家屬參考。租借前請自行向機構查詢現貨供應、實際價格、按金及運費。職業治療師的推薦不涉及任何利益關係。",
+    "en": "Non-profit organisations in Hong Kong that rent out rehabilitation equipment, for patients and families who need equipment for a short period. Please contact the organisation directly to confirm availability, current fees, deposits and delivery charges before renting. Recommendations by occupational therapists involve no commercial interest."
+  },
+  "categories": [
+    {
+      "id": "wheelchair",
+      "label": "輪椅",
+      "label_en": "Wheelchair"
+    },
+    {
+      "id": "ewheelchair",
+      "label": "電動輪椅",
+      "label_en": "Powered wheelchair"
+    },
+    {
+      "id": "highbackchair",
+      "label": "高背椅",
+      "label_en": "High-back chair"
+    },
+    {
+      "id": "commode",
+      "label": "便椅／沐浴椅",
+      "label_en": "Commode / shower chair"
+    },
+    {
+      "id": "bed",
+      "label": "電動床／護理床",
+      "label_en": "Electric / nursing bed"
+    },
+    {
+      "id": "mattress",
+      "label": "氣墊床褥／防壓瘡床褥",
+      "label_en": "Air / pressure-relief mattress"
+    },
+    {
+      "id": "backrest",
+      "label": "靠背架",
+      "label_en": "Bed backrest"
+    },
+    {
+      "id": "bedrail",
+      "label": "床欄／扶手",
+      "label_en": "Bed rails / grab rails"
+    },
+    {
+      "id": "ramp",
+      "label": "斜台板",
+      "label_en": "Ramp"
+    },
+    {
+      "id": "hoist",
+      "label": "移位機",
+      "label_en": "Hoist"
+    },
+    {
+      "id": "walking",
+      "label": "助行架／拐杖",
+      "label_en": "Walking frame / crutches"
+    },
+    {
+      "id": "others",
+      "label": "其他器材",
+      "label_en": "Other equipment"
+    }
+  ],
+  "organisations": [
+    {
+      "id": "ageathome",
+      "name": "賽馬會「a 家」樂齡科技教育及租賃服務（香港社會服務聯會）",
+      "name_en": "The Jockey Club \"age at home\" Gerontech Education and Rental Service (HKCSS)",
+      "address": "新界沙田小瀝源牛皮沙街 2 號愉翠商場 M 樓 2 號舖（租賃服務中心）",
+      "address_en": "Shop 2, M/F, Yu Chui Shopping Centre, 2 Ngau Pei Sha Street, Siu Lek Yuen, Sha Tin, N.T. (Rental Service Centre)",
+      "phones": [
+        {
+          "label": "查詢",
+          "label_en": "Enquiry",
+          "number": "3153 5252"
+        },
+        {
+          "label": "荃灣／葵青／屯門／元朗／沙田等區",
+          "label_en": "Tsuen Wan / Kwai Tsing / Tuen Mun / Yuen Long / Sha Tin etc.",
+          "number": "3153 5255"
+        },
+        {
+          "label": "港島／深水埗／油尖旺／觀塘／西貢",
+          "label_en": "HK Island / Sham Shui Po / Yau Tsim Mong / Kwun Tong / Sai Kung",
+          "number": "2596 2554"
+        }
+      ],
+      "email": "ersc@ageathome.hk",
+      "website": "https://ageathome.hk/zh/rental-service-flow/",
+      "website_label": "ageathome.hk",
+      "eligibility": "指定地區（包括荃灣、葵青、沙田、深水埗等 17 區）18 歲或以上人士",
+      "eligibility_en": "Residents aged 18 or above living in designated districts (17 districts including Tsuen Wan, Kwai Tsing, Sha Tin and Sham Shui Po)",
+      "equipment_intro": "每件器材有固定月租；正領取綜援／高額傷殘津貼（資助類別甲）或長者生活津貼／普通傷殘津貼（資助類別乙）人士可享減免租金。下表為 2026 年 9 月價目表的標準月租範圍：",
+      "equipment_intro_en": "Each item has a fixed monthly rent. Recipients of CSSA / Higher Disability Allowance (Subsidy A) or Old Age Living Allowance / Normal Disability Allowance (Subsidy B) pay a reduced rent. Standard monthly rents from the September 2026 price list:",
+      "fee_columns": [
+        "器材",
+        "每月租金（標準）",
+        "按金"
+      ],
+      "fee_columns_en": [
+        "Equipment",
+        "Monthly rent (standard)",
+        "Deposit"
+      ],
+      "fees": [
+        {
+          "item": "特別功能輪椅",
+          "item_en": "Special-function wheelchair",
+          "rent": "$614 – $880",
+          "deposit": "請向職員查詢",
+          "deposit_en": "Ask staff",
+          "cat": "wheelchair"
+        },
+        {
+          "item": "電動輪椅",
+          "item_en": "Powered wheelchair",
+          "rent": "$940 – $2,472",
+          "deposit": "請向職員查詢",
+          "deposit_en": "Ask staff",
+          "cat": "ewheelchair"
+        },
+        {
+          "item": "沐浴椅／便椅",
+          "item_en": "Shower chair / commode",
+          "rent": "$483 – $1,106",
+          "deposit": "請向職員查詢",
+          "deposit_en": "Ask staff",
+          "cat": "commode"
+        },
+        {
+          "item": "醫療護理床",
+          "item_en": "Nursing bed",
+          "rent": "$1,261 – $3,220",
+          "deposit": "請向職員查詢",
+          "deposit_en": "Ask staff",
+          "cat": "bed"
+        },
+        {
+          "item": "特別功能床褥／氣墊床褥",
+          "item_en": "Pressure-relief / air mattress",
+          "rent": "$289 – $1,239",
+          "deposit": "請向職員查詢",
+          "deposit_en": "Ask staff",
+          "cat": "mattress"
+        },
+        {
+          "item": "移位機",
+          "item_en": "Hoist",
+          "rent": "$2,076 – $2,609",
+          "deposit": "請向職員查詢",
+          "deposit_en": "Ask staff",
+          "cat": "hoist"
+        },
+        {
+          "item": "扶手／床欄",
+          "item_en": "Grab rails / bed rails",
+          "rent": "$338 – $1,566",
+          "deposit": "請向職員查詢",
+          "deposit_en": "Ask staff",
+          "cat": "bedrail"
+        },
+        {
+          "item": "斜台（組合式／折疊式）",
+          "item_en": "Ramp (modular / folding)",
+          "rent": "$185 – $917",
+          "deposit": "請向職員查詢",
+          "deposit_en": "Ask staff",
+          "cat": "ramp"
+        },
+        {
+          "item": "輔助餵食機",
+          "item_en": "Assistive feeding device",
+          "rent": "$3,206 – $3,261",
+          "deposit": "請向職員查詢",
+          "deposit_en": "Ask staff",
+          "cat": "others"
+        }
+      ],
+      "notes": [
+        "租金已包括器材及一次上門安裝及教學；送貨及回收每程 $300（租賃超過 3 個月可豁免回收運費）",
+        "可選用職業治療師評估服務：上門 $1,300／中心 $800（資助類別甲 $80、乙 $480）",
+        "其他器材（助行器、洗頭機、助聽器等）請參閱官方價目表"
+      ],
+      "notes_en": [
+        "Rent includes the equipment plus one home installation and training visit; delivery and collection $300 per trip (collection fee waived for rentals over 3 months)",
+        "Optional occupational therapist assessment: home visit $1,300 / at centre $800 (Subsidy A $80, Subsidy B $480)",
+        "Other equipment (walking aids, hair-washing devices, hearing aids, etc.) — see the official price list"
+      ],
+      "source_url": "https://ageathome.hk/wp-content/uploads/2024/09/20260901_%E5%99%A8%E6%9D%90%E6%9C%88%E7%A7%9F%E5%83%B9%E7%9B%AE%E8%A1%A8_compressed.pdf",
+      "source_label": "器材租金價目表（2026 年 9 月版）",
+      "source_label_en": "Equipment rental price list (Sept 2026 edition)",
+      "short": "a家",
+      "short_en": "age at home",
+      "rent_unit": "每月",
+      "rent_unit_en": "per month"
+    },
+    {
+      "id": "ychfyy",
+      "name": "仁濟醫院方若愚長者鄰舍中心",
+      "name_en": "Yan Chai Hospital Fong Yock Yee Neighbourhood Elderly Centre",
+      "address": "正址：荃灣仁濟街 18 號仁濟醫院綜合服務大樓地下；副址：荃灣青山道 99-113 號荃灣浸信會大樓 5 樓",
+      "address_en": "Main: G/F, Yan Chai Hospital Multi-services Complex, 18 Yan Chai Street, Tsuen Wan; Sub-base: 5/F, Tsuen Wan Baptist Church Building, 99-113 Castle Peak Road, Tsuen Wan",
+      "phones": [
+        {
+          "label": "正址",
+          "label_en": "Main centre",
+          "number": "2439 6776"
+        },
+        {
+          "label": "副址",
+          "label_en": "Sub-base",
+          "number": "2419 9831"
+        }
+      ],
+      "fax": "2439 6766",
+      "email": "fyy@ychss.org.hk",
+      "website": "https://www.ychss.org.hk/elder/elderly-nec/fyy",
+      "website_label": "ychss.org.hk",
+      "eligibility": "居於區內年滿 60 歲或以上人士可成為中心會員（會員年費 $21）",
+      "eligibility_en": "Residents of the district aged 60 or above may join as members (annual fee $21)",
+      "equipment_intro": "提供復康用品租借服務，租借期最長四星期。",
+      "equipment_intro_en": "Rehabilitation aids rental; maximum rental period four weeks.",
+      "fee_columns": [
+        "器材",
+        "每星期租金",
+        "按金"
+      ],
+      "fee_columns_en": [
+        "Equipment",
+        "Weekly rent",
+        "Deposit"
+      ],
+      "fees": [
+        {
+          "item": "輪椅（會員）",
+          "item_en": "Wheelchair (member)",
+          "rent": "$10",
+          "deposit": "請致電查詢",
+          "deposit_en": "Please call",
+          "cat": "wheelchair"
+        },
+        {
+          "item": "輪椅（非會員）",
+          "item_en": "Wheelchair (non-member)",
+          "rent": "$20",
+          "deposit": "請致電查詢",
+          "deposit_en": "Please call",
+          "cat": "wheelchair"
+        }
+      ],
+      "notes": [
+        "租金為 2022 年 12 月資料，請致電中心確認最新收費及可供租借的器材"
+      ],
+      "notes_en": [
+        "Fees shown are from December 2022; please call the centre to confirm current fees and available equipment"
+      ],
+      "source_url": "https://www.ychss.org.hk/elder/elderly-nec/fyy/192-2026-07-17-03-20-45",
+      "source_label": "中心網頁（關於我們）",
+      "source_label_en": "Centre website (About us)",
+      "short": "方若愚中心",
+      "short_en": "Fong Yock Yee NEC",
+      "rent_unit": "每星期",
+      "rent_unit_en": "per week"
+    },
+    {
+      "id": "plk",
+      "name": "保良局「一站照護」Wellness One（原名「康復一站通」）",
+      "name_en": "Po Leung Kuk Wellness One (formerly \"Rehab One\")",
+      "address": "新界葵涌打磚坪街 49-53 號華基工業大廈第一期 5 樓 B 室（陳列室，參觀請先預約）",
+      "address_en": "Flat B, 5/F, Phase 1, Wah Kei Industrial Building, 49-53 Ta Chuen Ping Street, Kwai Chung, N.T. (showroom, by appointment)",
+      "phones": [
+        {
+          "label": "復康及護理用品專線",
+          "label_en": "Rehab & nursing products hotline",
+          "number": "2422 1233"
+        }
+      ],
+      "whatsapp": "9126 9690",
+      "fax": "2757 3225",
+      "email": "wellnessone@poleungkuk.org.hk",
+      "website": "https://www.poleungkuk.org.hk/service/social/other-services/social-entreprise-and-vocational-rehabilitation-services-centre/wellness-one",
+      "website_label": "poleungkuk.org.hk",
+      "eligibility": "任何有需要人士",
+      "eligibility_en": "Anyone in need",
+      "equipment_intro": "全新／二手復康器材代購及租用，包括輪椅、高背椅、便椅、移位機、電動醫護床、助行架。",
+      "equipment_intro_en": "Purchase (new / second-hand) and rental of rehabilitation equipment: wheelchairs, high-back chairs, commodes, hoists, electric nursing beds, walking frames.",
+      "fee_columns": [
+        "器材",
+        "每月租金",
+        "按金"
+      ],
+      "fee_columns_en": [
+        "Equipment",
+        "Monthly rent",
+        "Deposit"
+      ],
+      "fees": [
+        {
+          "item": "一般輪椅",
+          "item_en": "Standard wheelchair",
+          "rent": "$120",
+          "deposit": "請致電查詢",
+          "deposit_en": "Please call",
+          "cat": "wheelchair"
+        },
+        {
+          "item": "電動醫護床",
+          "item_en": "Electric nursing bed",
+          "rent": "$700 起",
+          "rent_en": "from $700",
+          "deposit": "請致電查詢",
+          "deposit_en": "Please call",
+          "cat": "bed"
+        },
+        {
+          "item": "高背椅／移位機／助行架",
+          "item_en": "High-back chair / hoist / walking frame",
+          "rent": "請致電查詢",
+          "rent_en": "Please call",
+          "deposit": "請致電查詢",
+          "deposit_en": "Please call",
+          "cat": "highbackchair",
+          "cats": [
+            "highbackchair",
+            "hoist",
+            "walking"
+          ]
+        }
+      ],
+      "notes": [
+        "亦可購買二手器材，例如輪椅 $400–$2,000、電動醫護床 $5,000 起、便椅 $300 起（便椅暫不租借）",
+        "按金及租期細節請致電或 WhatsApp 查詢"
+      ],
+      "notes_en": [
+        "Second-hand equipment is also for sale, e.g. wheelchair $400–$2,000, electric nursing bed from $5,000, commode from $300 (commodes currently not for rent)",
+        "Please call or WhatsApp for deposit and rental period details"
+      ],
+      "source_url": "https://www.poleungkuk.org.hk/service/social/other-services/social-entreprise-and-vocational-rehabilitation-services-centre/wellness-one",
+      "source_label": "保良局一站照護網頁及查詢表格",
+      "source_label_en": "Po Leung Kuk Wellness One webpage and enquiry form",
+      "short": "保良局一站照護",
+      "short_en": "PLK Wellness One",
+      "rent_unit": "每月",
+      "rent_unit_en": "per month"
+    },
+    {
+      "id": "hkra",
+      "name": "香港復康諮詢協會 — 復康器材借用及租借服務",
+      "name_en": "Hong Kong Rehabilitation A & E Association — Rehabilitation Equipment Borrowing and Lending",
+      "address": "九龍深水埗東沙島街 188 號樂年花園 B3 地下",
+      "address_en": "B3, G/F, Lok Nin Garden, 188 Tonkin Street, Sham Shui Po, Kowloon",
+      "phones": [
+        {
+          "label": "查詢",
+          "label_en": "Enquiry",
+          "number": "2388 9915"
+        }
+      ],
+      "fax": "2388 9916",
+      "email": "info@hkrehabright.org",
+      "website": "https://www.hkrehabright.org/",
+      "website_label": "hkrehabright.org",
+      "eligibility": "全港傷病患者；需自行安排運輸工具到協會提取及歸還器材",
+      "eligibility_en": "Patients and persons with disabilities in Hong Kong; borrowers arrange their own transport to collect and return equipment",
+      "equipment_intro": "普通器材可免費借用首 2 個月、電機及重型器材首 3 個月，其後按月收取租金（最多租用 6 個月）。借用前須以現金繳付按金及一次性清潔費；租金會在按金內扣減。",
+      "equipment_intro_en": "General equipment is free for the first 2 months and electrical / large equipment for the first 3 months; monthly rent applies afterwards (up to 6 months). A cash deposit and one-off cleaning fee are paid before borrowing; rent is deducted from the deposit.",
+      "fee_columns": [
+        "器材",
+        "每月租金（免費期後）",
+        "按金",
+        "清潔費"
+      ],
+      "fee_columns_en": [
+        "Equipment",
+        "Monthly rent (after free period)",
+        "Deposit",
+        "Cleaning fee"
+      ],
+      "fees": [
+        {
+          "item": "輪椅（大輪／中輪／細輪）",
+          "item_en": "Wheelchair (large / medium / small wheels)",
+          "rent": "$90",
+          "deposit": "$500",
+          "extra": "$50",
+          "cat": "wheelchair"
+        },
+        {
+          "item": "高背托腳輪椅",
+          "item_en": "High-back wheelchair with leg rest",
+          "rent": "$120",
+          "deposit": "$800",
+          "extra": "$100",
+          "cat": "wheelchair"
+        },
+        {
+          "item": "高背椅（有轆）",
+          "item_en": "High-back chair with wheels",
+          "rent": "$200",
+          "deposit": "$3,000",
+          "extra": "$100",
+          "cat": "highbackchair"
+        },
+        {
+          "item": "沖涼椅（有扶手）",
+          "item_en": "Shower chair with armrests",
+          "rent": "$50",
+          "deposit": "$250",
+          "extra": "$50",
+          "cat": "commode"
+        },
+        {
+          "item": "沖涼便椅（有轆／無轆）",
+          "item_en": "Shower commode (with / without wheels)",
+          "rent": "$60",
+          "deposit": "$500",
+          "extra": "$100",
+          "cat": "commode"
+        },
+        {
+          "item": "防壓瘡床褥（4 吋）",
+          "item_en": "Anti-pressure-sore mattress (4\")",
+          "rent": "$200",
+          "deposit": "$2,000",
+          "extra": "$150",
+          "cat": "mattress"
+        },
+        {
+          "item": "電動氣墊床",
+          "item_en": "Electric alternating-pressure mattress",
+          "rent": "$200",
+          "deposit": "$1,000",
+          "extra": "$150",
+          "cat": "mattress"
+        },
+        {
+          "item": "電動靠背",
+          "item_en": "Electric backrest",
+          "rent": "$200",
+          "deposit": "$1,500",
+          "extra": "$100",
+          "cat": "backrest"
+        },
+        {
+          "item": "手動靠背",
+          "item_en": "Manual backrest",
+          "rent": "$60",
+          "deposit": "$300",
+          "extra": "$50",
+          "cat": "backrest"
+        },
+        {
+          "item": "床欄（L 形）",
+          "item_en": "Bed rails (L-shaped)",
+          "rent": "$60",
+          "deposit": "$300",
+          "extra": "$50",
+          "cat": "bedrail"
+        },
+        {
+          "item": "坐墊（啫喱）",
+          "item_en": "Gel cushion",
+          "rent": "$80",
+          "deposit": "$600",
+          "extra": "$50",
+          "cat": "others"
+        },
+        {
+          "item": "助行架（無轆／有轆）",
+          "item_en": "Walking frame (without / with wheels)",
+          "rent": "$30 / $60",
+          "deposit": "$250 / $400",
+          "extra": "$50",
+          "cat": "walking"
+        },
+        {
+          "item": "穿手拐杖／腋下拐杖",
+          "item_en": "Elbow / axillary crutches",
+          "rent": "$50",
+          "deposit": "$180",
+          "extra": "$50",
+          "cat": "walking"
+        },
+        {
+          "item": "四爪拐杖",
+          "item_en": "Quadripod",
+          "rent": "$30",
+          "deposit": "$120",
+          "extra": "$50",
+          "cat": "walking"
+        },
+        {
+          "item": "鹽水架",
+          "item_en": "Drip stand",
+          "rent": "$60",
+          "deposit": "$300",
+          "extra": "$50",
+          "cat": "others"
+        },
+        {
+          "item": "病床餐枱",
+          "item_en": "Over-bed table",
+          "rent": "$50",
+          "deposit": "$250",
+          "extra": "$50",
+          "cat": "others"
+        },
+        {
+          "item": "翻身輔助器",
+          "item_en": "Turning aid",
+          "rent": "$30",
+          "deposit": "$120",
+          "extra": "$50",
+          "cat": "others"
+        }
+      ],
+      "notes": [
+        "借還時間：星期一至五 上午 9:30–12:30、下午 2:30–5:00（星期六、日及公眾假期休息）",
+        "整段借用期普通器材不可超過 8 個月、電機及重型器材不可超過 9 個月；器材損毀按維修費在按金內扣減",
+        "申請表格可於協會網頁下載或填寫網上表格"
+      ],
+      "notes_en": [
+        "Collection / return: Mon–Fri 9:30am–12:30pm and 2:30–5:00pm (closed Sat, Sun and public holidays)",
+        "Total period cannot exceed 8 months (general) or 9 months (electrical / large); repair costs for damage are deducted from the deposit",
+        "Application form available on the association's website (download or online form)"
+      ],
+      "source_url": "https://www.hkrehabright.org/_files/ugd/fb7b96_9dd068738e1349a0b96adffb401fb891.pdf",
+      "source_label": "復康器材租借價目表（協會網頁）",
+      "source_label_en": "Rehabilitation equipment lending fee list (association website)",
+      "short": "復康諮詢協會",
+      "short_en": "HK Rehab A&E Assn",
+      "rent_unit": "每月（免費期後）",
+      "rent_unit_en": "per month (after free period)"
+    },
+    {
+      "id": "redcross",
+      "name": "香港紅十字會 — 輔助行動器材租借服務",
+      "name_en": "Hong Kong Red Cross — Mobility Equipment Loan Service",
+      "address": "大窩口交收中心：葵涌大窩口邨富雅樓 2 號地下（星期一至五 10:30–12:30、14:30–16:30）。另設總部（西九龍海庭道 19 號）、沙田、灣仔及瑪嘉烈、威爾斯、屯門、東區、瑪麗醫院交收中心",
+      "address_en": "Tai Wo Hau Centre: G/F, No. 2 Fu Nga House, Tai Wo Hau Estate, Kwai Chung (Mon–Fri 10:30am–12:30pm, 2:30–4:30pm). Other centres: Headquarters (19 Hoi Ting Road, West Kowloon), Sha Tin, Wan Chai, and Princess Margaret, Prince of Wales, Tuen Mun, Pamela Youde Eastern and Queen Mary Hospitals",
+      "phones": [
+        {
+          "label": "大窩口交收中心／總部／器材到戶服務",
+          "label_en": "Tai Wo Hau Centre / HQ / home delivery",
+          "number": "2610 0515"
+        },
+        {
+          "label": "瑪嘉烈醫院交收中心",
+          "label_en": "Princess Margaret Hospital Centre",
+          "number": "2990 3819"
+        },
+        {
+          "label": "屯門醫院交收中心",
+          "label_en": "Tuen Mun Hospital Centre",
+          "number": "2455 7608"
+        }
+      ],
+      "fax": "3103 4010",
+      "email": "mel@redcross.org.hk",
+      "website": "https://www.redcross.org.hk/tc/community_healthcare/mobility_equip/intro_me.html",
+      "website_label": "redcross.org.hk",
+      "eligibility": "行動不便的傷病者或需短暫租借輔助行動器材人士；由年滿 18 歲的使用者或保證人辦理，須先致電交收中心預約",
+      "eligibility_en": "Persons with mobility impairment or needing short-term mobility equipment; applications by a user or guarantor aged 18 or above, by telephone appointment with a centre",
+      "equipment_intro": "基本租借期最少一個月，可延長；已繳租金不獲發還。標示 * 的器材必須由醫護人員轉介。",
+      "equipment_intro_en": "Minimum rental period one month, extendable; rent paid is non-refundable. Items marked * require referral by a healthcare professional.",
+      "fee_columns": [
+        "器材",
+        "每月租金",
+        "按金（本地居民）"
+      ],
+      "fee_columns_en": [
+        "Equipment",
+        "Monthly rent",
+        "Deposit (local residents)"
+      ],
+      "fees": [
+        {
+          "item": "輪椅",
+          "item_en": "Wheelchair",
+          "rent": "$140",
+          "deposit": "$200",
+          "cat": "wheelchair"
+        },
+        {
+          "item": "高背輪椅 *",
+          "item_en": "High-back wheelchair *",
+          "rent": "$220",
+          "deposit": "$400",
+          "cat": "wheelchair"
+        },
+        {
+          "item": "高背傾斜及後躺輪椅 *",
+          "item_en": "Tilt-in-space and reclining wheelchair *",
+          "rent": "$630",
+          "deposit": "$1,000",
+          "cat": "wheelchair"
+        },
+        {
+          "item": "助行車",
+          "item_en": "Rollator",
+          "rent": "$140",
+          "deposit": "$200",
+          "cat": "walking"
+        },
+        {
+          "item": "步行架／四腳叉／穿手拐杖",
+          "item_en": "Walking frame / quadripod / elbow crutch",
+          "rent": "$60",
+          "deposit": "$100",
+          "cat": "walking"
+        },
+        {
+          "item": "有轆步行架 *",
+          "item_en": "Wheeled walking frame *",
+          "rent": "$80",
+          "deposit": "$100",
+          "cat": "walking"
+        },
+        {
+          "item": "沐浴椅",
+          "item_en": "Shower chair",
+          "rent": "$60",
+          "deposit": "$100",
+          "cat": "commode"
+        },
+        {
+          "item": "便椅",
+          "item_en": "Commode",
+          "rent": "$90",
+          "deposit": "$100",
+          "cat": "commode"
+        },
+        {
+          "item": "可傾斜沐浴便椅 *",
+          "item_en": "Tilting shower commode *",
+          "rent": "$430",
+          "deposit": "$1,000",
+          "cat": "commode"
+        },
+        {
+          "item": "輪椅活動枱板",
+          "item_en": "Wheelchair tray",
+          "rent": "$60",
+          "deposit": "$100",
+          "cat": "others"
+        },
+        {
+          "item": "手提斜台板",
+          "item_en": "Portable ramp",
+          "rent": "$280",
+          "deposit": "$500",
+          "cat": "ramp"
+        }
+      ],
+      "notes": [
+        "辦理手續時須出示租用者／保證人身份證、保證人住址證明，並繳付按金及租金；非本地居民按金為 $1,000–$2,000",
+        "部分器材只在總部及部分交收中心提供；可選擇付費器材到戶服務",
+        "綜援受助人可保留單據向社會福利署申請醫療復康用品津貼（由社署獨立審批）"
+      ],
+      "notes_en": [
+        "Bring the user's / guarantor's HKID, the guarantor's proof of address, deposit and rent; deposit for non-local residents is $1,000–$2,000",
+        "Some items are available only at the headquarters and selected centres; paid home-delivery service is available",
+        "CSSA recipients may keep the receipt to apply for the SWD medical / rehabilitation appliance grant (assessed independently by SWD)"
+      ],
+      "source_url": "https://www.redcross.org.hk/tc/community_healthcare/mobility_equip/intro_me.html",
+      "source_label": "紅十字會輔助行動器材租借服務網頁",
+      "source_label_en": "Red Cross Mobility Equipment Loan Service webpage",
+      "short": "紅十字會",
+      "short_en": "Red Cross",
+      "rent_unit": "每月",
+      "rent_unit_en": "per month"
+    },
+    {
+      "id": "emv",
+      "name": "工程及醫療義務工作協會 — 電動輪椅一站通",
+      "name_en": "Association for Engineering and Medical Volunteer Services — Electric Wheelchair One-Stop Service",
+      "address": "新界葵涌健康街 1-7 號致華工業大廈 8 樓 B 室",
+      "address_en": "Unit B, 8/F, Che Wah Industrial Building, 1-7 Kin Hong Street, Kwai Chung, N.T.",
+      "phones": [
+        {
+          "label": "電動輪椅一站通",
+          "label_en": "Electric Wheelchair One-Stop",
+          "number": "2772 3080"
+        },
+        {
+          "label": "協會總部（石硤尾）",
+          "label_en": "Association office (Shek Kip Mei)",
+          "number": "2776 8569"
+        }
+      ],
+      "fax": "2772 3280",
+      "email": "ewc@emv.org.hk",
+      "website": "https://www.emv.org.hk/service/detail/11/",
+      "website_label": "emv.org.hk",
+      "eligibility": "電動輪椅使用者；租賃、維修及上門檢查服務可自行申請，其他服務須經社會服務機構、醫院或診所專職人員轉介",
+      "eligibility_en": "Electric wheelchair users; rental, repair and home-check services can be applied for directly, other services require referral by a social service agency, hospital or clinic professional",
+      "equipment_intro": "短期電動輪椅租賃（亦可於購買前試用），租期不超過 3 個月；租用者需預繳租金及來回運費。以下收費由 2025 年 10 月 1 日起生效：",
+      "equipment_intro_en": "Short-term electric wheelchair rental (also for trial before purchase), up to 3 months; rent and two-way transport are paid in advance. Fees effective 1 October 2025:",
+      "fee_columns": [
+        "服務",
+        "收費（每月／每次）",
+        "按金"
+      ],
+      "fee_columns_en": [
+        "Service",
+        "Fee (per month / per visit)",
+        "Deposit"
+      ],
+      "fees": [
+        {
+          "item": "電動輪椅租賃",
+          "item_en": "Electric wheelchair rental",
+          "rent": "$700 – $1,500（按型號）",
+          "rent_en": "$700 – $1,500 (by model)",
+          "deposit": "請致電查詢",
+          "deposit_en": "Please call",
+          "cat": "ewheelchair"
+        },
+        {
+          "item": "維修服務",
+          "item_en": "Repair service",
+          "rent": "每次 $400（更換零件另議）",
+          "rent_en": "$400 per visit (parts extra)",
+          "deposit": "—"
+        },
+        {
+          "item": "上門檢查",
+          "item_en": "Home inspection",
+          "rent": "每次 $400（自行到會 $200）",
+          "rent_en": "$400 per visit ($200 at centre)",
+          "deposit": "—"
+        },
+        {
+          "item": "電動輪椅駕駛學院",
+          "item_en": "Electric wheelchair driving school",
+          "rent": "每節 $500（45 分鐘）",
+          "rent_en": "$500 per 45-minute session",
+          "deposit": "—"
+        },
+        {
+          "item": "職業治療師電動輪椅處方服務",
+          "item_en": "OT electric wheelchair prescription",
+          "rent": "$1,000（上門評估及試車各一次）",
+          "rent_en": "$1,000 (one home assessment and one trial)",
+          "deposit": "—"
+        }
+      ],
+      "notes": [
+        "提早退租仍須繳付全期租金；續租須於期滿前一星期通知",
+        "逾期未通知交還，罰款每日 $60"
+      ],
+      "notes_en": [
+        "Early return does not refund the remaining rent; notify one week before expiry to extend",
+        "Late return without notice: $60 per day"
+      ],
+      "source_url": "https://www.emv.org.hk/service/detail/11/",
+      "source_label": "電動輪椅一站通服務及收費網頁",
+      "source_label_en": "Electric Wheelchair One-Stop service and fees webpage",
+      "short": "EMV 電動輪椅一站通",
+      "short_en": "EMV One-Stop",
+      "rent_unit": "每月",
+      "rent_unit_en": "per month"
+    }
+  ],
+  "bathing": {
+    "title": "上門沖涼／助浴服務",
+    "title_en": "Home bathing / bed-bath services",
+    "intro": "病人出院後如在家沖涼有困難，可考慮以下途徑。政府資助服務須先經社署「安老服務統一評估機制」評估及輪候，非即時；自費平台可較快安排，但須自行比較收費。以下資料核對日期為 2026-10-08，實際安排請直接向機構查詢。",
+    "intro_en": "If bathing at home is difficult after discharge, consider the options below. Government-subsidised services require a Standardised Care Need Assessment and a waiting period; self-financed platforms can usually start sooner but fees should be compared. Checked on 2026-10-08; please confirm arrangements directly with each organisation.",
+    "groups": [
+      {
+        "id": "gov",
+        "label": "政府資助家居照顧服務（須統一評估，輪候較長）",
+        "label_en": "Government-subsidised home care (assessment and waiting list required)",
+        "services": [
+          {
+            "id": "frail_hc",
+            "name": "體弱長者家居照顧服務（荃灣及葵青區服務隊）",
+            "name_en": "Home Care Service for Frail Elders (Tsuen Wan & Kwai Tsing teams)",
+            "who": "60 歲或以上、居於社區、經社署「安老服務統一評估機制」評估為適合社區照顧或院舍照顧的體弱長者。服務包括個人照顧（可包括協助沐浴）、基本及特別護理、復康運動、家居清潔、膳食、護送等，服務隊按個別需要訂定內容及次數。",
+            "who_en": "Community-dwelling frail elders aged 60+, assessed under the SWD Standardised Care Need Assessment as suitable for community or residential care. Services include personal care (may include bathing assistance), nursing, rehabilitation exercise, home cleaning, meals and escort; the team sets the content and frequency.",
+            "apply": "向醫務社會服務部（住院病人可找病房醫務社工）、長者地區中心／鄰舍中心或綜合家庭服務中心申請，由該單位安排統一評估及轉介。社署查詢熱線 2343 2255。2026 年 4 月 1 日起「綜合家居照顧服務（體弱個案）」及「改善家居及社區照顧服務」已合併為此服務。",
+            "apply_en": "Apply through the Medical Social Services Unit (in-patients: ward medical social worker), a District Elderly Community Centre / Neighbourhood Elderly Centre or an Integrated Family Service Centre, which arranges the assessment and referral. SWD hotline 2343 2255. From 1 April 2026 the former IHCS (frail cases) and EHCCS were merged into this service.",
+            "fee": "按服務使用者經濟狀況按比例收費，並可能每年調整；詳情向服務隊查詢。",
+            "fee_en": "Charged on a sliding scale according to the user's financial situation and may be revised annually; ask the team for details.",
+            "wait": "須經評估及輪候，輪候人數多，不適合救急。",
+            "wait_en": "Assessment and waiting list required; many people are waiting, so not suitable for urgent needs.",
+            "contacts": [
+              {
+                "label": "香港耆康老人福利會 荃葵青家居照顧及支援服務隊（葵涌大窩口邨富逸樓地下）",
+                "label_en": "HK Society for the Aged — Tsuen Kwai Tsing Home Care & Support Team (G/F Fu Yat House, Tai Wo Hau Estate)",
+                "number": "2425 1282"
+              },
+              {
+                "label": "香港家庭福利會 象山服務中心 荃灣家居照顧及支援服務隊（荃灣象山邨秀山樓地下 27-30 號）",
+                "label_en": "HK Family Welfare Society — Cheung Shan Centre, Tsuen Wan Home Care & Support Team",
+                "number": "2411 3052"
+              },
+              {
+                "label": "香港家庭福利會 大窩口服務中心 荃灣家居照顧服務隊（葵涌大窩口邨富安樓平台 114-115 號）",
+                "label_en": "HK Family Welfare Society — Tai Wo Hau Centre, Tsuen Wan Home Care Team",
+                "number": "2436 9062"
+              },
+              {
+                "label": "保良局 荃灣家居照顧服務隊（葵涌貨櫃碼頭路 77-81 號 Magnet Place 第 1 座 3 樓 03-04 室）",
+                "label_en": "Po Leung Kuk — Tsuen Wan Home Care Team (Magnet Place Tower 1, Kwai Chung)",
+                "number": "2614 1331"
+              },
+              {
+                "label": "香港聖公會葵青麥理浩夫人中心家居照顧服務 — 青衣辦事處（青衣長亨邨亨緻樓地下 1-6 號）",
+                "label_en": "SKH Lady MacLehose Centre Home Care — Tsing Yi office",
+                "number": "2420 9030"
+              },
+              {
+                "label": "香港聖公會葵青麥理浩夫人中心家居照顧服務 — 東／西葵涌辦事處（葵涌葵昌路 56 號貿易之都 10 樓 1005 室）",
+                "label_en": "SKH Lady MacLehose Centre Home Care — East/West Kwai Chung office",
+                "number": "2157 0540"
+              },
+              {
+                "label": "仁濟醫院陳馮曼玲睦鄰社區服務中心（長者日間中心及綜合家居照顧服務；荃灣仁濟街 18 號仁濟醫院綜合服務大樓地下）",
+                "label_en": "YCH Chan Feng Men-ling Neighbourhood Community Service Centre (day care & integrated home care; G/F YCH Multi-services Complex)",
+                "number": "2615 8211"
+              }
+            ],
+            "source_url": "https://www.swd.gov.hk/tc/pubsvc/elderly/cat_commcare/homebase_ccs/index.html",
+            "source_label": "社署「家居為本」社區照顧服務網頁及荃灣區服務單位名錄",
+            "source_label_en": "SWD home-based community care services page and Tsuen Wan district directory"
+          }
+        ]
+      },
+      {
+        "id": "ccsv",
+        "label": "長者社區照顧服務券（社區券）",
+        "label_en": "Community Care Service Voucher for the Elderly (CCSV)",
+        "services": [
+          {
+            "id": "ccsv",
+            "name": "社區券 — 向認可服務單位購買到戶個人照顧（包括協助沖涼）",
+            "name_en": "CCSV — buy home-based personal care (including bathing assistance) from recognised providers",
+            "who": "經統一評估為身體機能中度或嚴重缺損、正在資助長期護理服務中央輪候冊輪候而未接受院舍或資助社區照顧服務的長者。社署會按輪候冊次序發信邀請；收到邀請後可用紙本或「長者服務券資訊系統」（VISE）申請，一般 4 星期內審批。",
+            "who_en": "Elders assessed as moderately or severely impaired, on the Central Waiting List for subsidised long-term care and not yet receiving residential or subsidised community care. SWD invites eligible elders by letter; apply on paper or via the VISE online system, normally approved within 4 weeks.",
+            "apply": "社署社區照顧服務券辦事處：3107 3013（星期一至五 9:30–13:00、14:30–17:00），電郵 ccsv@swd.gov.hk。持券後可自選荃葵青區認可單位，例如：仁濟樂在家 2615 8202（到戶照顧，info@happyhome.org.hk）、仁濟醫院陳馮曼玲睦鄰社區服務中心 3126 9155（日間中心＋到戶）、長者家 2708 9060、安心醫護 Anycare 5175 8156。",
+            "apply_en": "SWD CCSV Office: 3107 3013 (Mon–Fri 9:30am–1pm, 2:30–5pm), ccsv@swd.gov.hk. Voucher holders choose any recognised unit serving Tsuen Wan / Kwai Tsing, e.g. Yan Chai Happy Home 2615 8202 (home-based, info@happyhome.org.hk), YCH Chan Feng Men-ling Centre 3126 9155 (day care + home-based), Home for the Aged 2708 9060, Anycare 5175 8156.",
+            "fee": "2026-27 年度服務組合面值每月 $4,526 – $10,824，長者按經濟狀況共同付款 5%／8%／12%／16%／25%／40%，餘額由政府支付。到戶起居照顧員收費例子（長者家 2026 年 4 月價目表）：1 小時 $252、2 小時 $440、3 小時 $510。",
+            "fee_en": "2026-27 package value $4,526 – $10,824 per month; the elder co-pays 5% / 8% / 12% / 16% / 25% / 40% by means test and the Government pays the rest. Example home PCW rates (Home for the Aged, April 2026 price list): 1 hour $252, 2 hours $440, 3 hours $510.",
+            "wait": "收到申請後一般 4 星期內審批；未有券者須先經評估及輪候冊邀請，需時較長。",
+            "wait_en": "Applications are normally approved within 4 weeks; without a voucher, assessment and a waiting-list invitation come first, which takes longer.",
+            "contacts": [
+              {
+                "label": "社署社區照顧服務券辦事處",
+                "label_en": "SWD CCSV Office",
+                "number": "3107 3013"
+              },
+              {
+                "label": "仁濟樂在家（到戶照顧及支援）",
+                "label_en": "Yan Chai Happy Home (home-based care)",
+                "number": "2615 8202"
+              },
+              {
+                "label": "仁濟醫院陳馮曼玲睦鄰社區服務中心",
+                "label_en": "YCH Chan Feng Men-ling Centre",
+                "number": "3126 9155"
+              }
+            ],
+            "source_url": "https://www.swd.gov.hk/tc/pubsvc/elderly/cat_commcare/psccsv/",
+            "source_label": "社署長者社區照顧服務券計劃網頁；仁濟醫院社會服務部社區券服務頁",
+            "source_label_en": "SWD CCSV scheme page; YCH Social Services CCSV page"
+          }
+        ]
+      },
+      {
+        "id": "private",
+        "label": "自費上門照顧平台（可較快安排）",
+        "label_en": "Self-financed home-care platforms (faster arrangement)",
+        "services": [
+          {
+            "id": "toby",
+            "name": "Toby 長者照顧（上門護理員／起居照顧員）",
+            "name_en": "Toby — elderly care (home carers / PCW)",
+            "who": "任何有需要人士，網上直接下單，毋須評估；服務包括協助沖涼、如廁、換片、扶抱等，需自備浴椅。",
+            "who_en": "Anyone; book directly online without assessment. Includes bathing, toileting, diaper change and transfers; please have a shower chair at home.",
+            "apply": "網上預約（hellotoby.com）或致電 3703 3250；最快 3 小時內配對，每次由 3 小時起。",
+            "apply_en": "Book online (hellotoby.com) or call 3703 3250; matching within about 3 hours, minimum 3 hours per booking.",
+            "fee": "起居照顧員 $103／小時起、保健員 $110／小時起（平均約 $160／小時）；非 9:00–18:00 時段每小時加 $20，星期日加 $5／小時，公眾假期每次加 $30。",
+            "fee_en": "PCW from $103/hr, health worker from $110/hr (average about $160/hr); +$20/hr outside 9am–6pm, +$5/hr on Sundays, +$30 per visit on public holidays.",
+            "wait": "網上下單後最快 3 小時內收到配對通知。",
+            "wait_en": "Matching notice within about 3 hours of booking online.",
+            "contacts": [
+              {
+                "label": "Toby 客服",
+                "label_en": "Toby hotline",
+                "number": "3703 3250"
+              }
+            ],
+            "website": "https://www.hellotoby.com/zh-hk/ds/%E9%95%B7%E8%80%85%E7%85%A7%E9%A1%A7",
+            "website_label": "hellotoby.com",
+            "source_url": "https://www.hellotoby.com/zh-hk/ds/%E9%95%B7%E8%80%85%E7%85%A7%E9%A1%A7",
+            "source_label": "Toby 長者照顧服務頁",
+            "source_label_en": "Toby elderly care service page"
+          },
+          {
+            "id": "caringelderly",
+            "name": "樂活易 Caring Elderly（社企配對平台）",
+            "name_en": "Caring Elderly (social enterprise matching platform)",
+            "who": "任何有需要人士（不限 65 歲以上），毋須政府評估；個人衛生清潔包括協助洗澡、換尿片。",
+            "who_en": "Anyone in need (not limited to 65+), no government assessment; personal hygiene includes bathing and diaper changes.",
+            "apply": "網上填表、WhatsApp 或致電 2117 6760，由個案主任評估及配對；配對完成前免費，上門前付款。",
+            "apply_en": "Online form, WhatsApp or call 2117 6760; a case officer assesses and matches. Free until matched; payment before the visit.",
+            "fee": "按醫護職級逐小時收費（網站顯示實際金額），連續時數越長每小時越平；晚間／凌晨及偏遠地區另加。",
+            "fee_en": "Hourly rates by staff grade (shown on the website); longer bookings cost less per hour; surcharges for night-time and remote areas.",
+            "wait": "最快 2 小時後上門，建議最少提前一天。",
+            "wait_en": "As fast as 2 hours; at least one day's notice recommended.",
+            "contacts": [
+              {
+                "label": "樂活易熱線",
+                "label_en": "Caring Elderly hotline",
+                "number": "2117 6760"
+              }
+            ],
+            "website": "https://caringelderly.hk/",
+            "website_label": "caringelderly.hk",
+            "source_url": "https://caringelderly.hk/%E4%B8%8A%E9%96%80%E7%85%A7%E9%A1%A7%E6%9C%8D%E5%8B%99/",
+            "source_label": "樂活易上門照顧服務頁",
+            "source_label_en": "Caring Elderly home care page"
+          },
+          {
+            "id": "anycare",
+            "name": "安心醫護 Anycare（醫護配對；社區券認可單位）",
+            "name_en": "Anycare (care staff matching; CCSV-recognised)",
+            "who": "任何有需要人士；可派起居照顧員、保健員、護士上門；亦接受社區券。",
+            "who_en": "Anyone; dispatches PCWs, health workers and nurses; also accepts CCSV.",
+            "apply": "致電 5175 8156 查詢及訂立個人護理方案。地址：九龍荔枝角青山道 479 號麗昌工廠大廈 803 室。",
+            "apply_en": "Call 5175 8156 to enquire and set up a care plan. Address: Room 803, Lai Cheong Factory Building, 479 Castle Peak Road, Lai Chi Kok.",
+            "fee": "按職級及時數報價，請致電查詢。",
+            "fee_en": "Quoted by staff grade and hours; please call.",
+            "contacts": [
+              {
+                "label": "Anycare 熱線",
+                "label_en": "Anycare hotline",
+                "number": "5175 8156"
+              }
+            ],
+            "website": "https://anycare.hk/ccsv/",
+            "website_label": "anycare.hk",
+            "source_url": "https://anycare.hk/ccsv/",
+            "source_label": "Anycare 社區券服務頁",
+            "source_label_en": "Anycare CCSV page"
+          },
+          {
+            "id": "hoe",
+            "name": "長者家 Home for the Aged（上門沖涼服務；社區券認可單位）",
+            "name_en": "Home for the Aged (home bathing service; CCSV-recognised)",
+            "who": "行動不便或臥床長者、剛出院人士；由護理員／保健員上門協助洗澡，有特殊護理需要可安排護士。",
+            "who_en": "Elders with limited mobility or bedridden, recently discharged; carers / health workers assist with bathing, nurses available for special needs.",
+            "apply": "致電 2708 9060 查詢及預約。",
+            "apply_en": "Call 2708 9060 to enquire and book.",
+            "fee": "市場參考：單次上門洗澡約 $300 – $600；護士級可逾 $800。社區券價目（2026 年 4 月）：起居照顧員 1 小時 $252、2 小時 $440、3 小時 $510。",
+            "fee_en": "Market reference: about $300 – $600 per bathing visit; over $800 for nurse level. CCSV price list (April 2026): PCW 1 hour $252, 2 hours $440, 3 hours $510.",
+            "contacts": [
+              {
+                "label": "長者家查詢",
+                "label_en": "Home for the Aged enquiry",
+                "number": "2708 9060"
+              }
+            ],
+            "website": "https://www.hoe.hk/care/186-elderly-home-shower-service",
+            "website_label": "hoe.hk",
+            "source_url": "https://www.hoe.hk/care/186-elderly-home-shower-service",
+            "source_label": "長者家上門沖涼服務介紹及社署認可單位價目表",
+            "source_label_en": "Home for the Aged bathing service page and SWD price list"
+          }
+        ]
+      },
+      {
+        "id": "charity",
+        "label": "免費慈善計劃（臥床／臨終人士）",
+        "label_en": "Free charity programme (bedridden / end-of-life)",
+        "services": [
+          {
+            "id": "ftn",
+            "name": "毋忘愛「沖滿愛」原床溫水助浴服務先導計劃",
+            "name_en": "Forget Thee Not — \"Bath of Love\" in-bed warm-water bathing pilot",
+            "who": "社區內行動不便、體弱長期臥床人士或長者，以及剛出院的長者。由註冊護士帶領兩名助浴員上門，在原床鋪設防水浴槽以溫水洗頭沖涼，每次約 30–45 分鐘。",
+            "who_en": "Community-dwelling bedridden or frail persons and recently discharged elders. A registered nurse and two bathing assistants bathe the person in their own bed using a waterproof bath trough with warm water, about 30–45 minutes per session.",
+            "apply": "致電 3488 4933 或 WhatsApp 9175 1433 查詢申請方法；先導計劃由 2025 年 9 月起推行，名額及每人服務次數有限。",
+            "apply_en": "Call 3488 4933 or WhatsApp 9175 1433 to ask how to apply. The pilot started in September 2025; places and sessions per person are limited.",
+            "fee": "先導計劃期間費用全免（施永青基金資助）。",
+            "fee_en": "Free during the pilot (funded by the Shih Wing Ching Foundation).",
+            "contacts": [
+              {
+                "label": "毋忘愛查詢",
+                "label_en": "Forget Thee Not enquiry",
+                "number": "3488 4933"
+              }
+            ],
+            "whatsapp": "9175 1433",
+            "website": "https://www.forgettheenot.org.hk/",
+            "website_label": "forgettheenot.org.hk",
+            "source_url": "https://www.am730.com.hk/article/1037301",
+            "source_label": "am730 報道（2025 年）及毋忘愛網頁",
+            "source_label_en": "am730 report (2025) and Forget Thee Not website"
+          }
+        ]
+      }
+    ]
+  }
+}

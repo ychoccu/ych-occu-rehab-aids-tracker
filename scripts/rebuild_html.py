@@ -15,6 +15,7 @@ REPO = Path(__file__).resolve().parents[1]
 IMAGES = REPO / "images"
 INDEX = REPO / "index.html"
 PJSON = REPO / "products.json"
+RJSON = REPO / "rental_services.json"
 OUTPUT = REPO / "ych_rehab_aids_standalone.html"
 
 MIME = {
@@ -66,9 +67,17 @@ def rebuild():
     # Inject embedded products + fetch override
     inject = f"""<script>
 window.__EMBEDDED_PRODUCTS__ = {json.dumps(products, ensure_ascii=False)};
+window.__EMBEDDED_RENTAL__ = {json.dumps(json.loads(RJSON.read_text(encoding="utf-8")) if RJSON.exists() else {}, ensure_ascii=False)};
 (function() {{
   var origFetch = window.fetch;
   window.fetch = function(url, opts) {{
+    if (typeof url === 'string' && url.indexOf('rental_services.json') !== -1) {{
+      return Promise.resolve({{
+        ok: true, status: 200,
+        json: function() {{ return Promise.resolve(window.__EMBEDDED_RENTAL__); }},
+        text: function() {{ return Promise.resolve(JSON.stringify(window.__EMBEDDED_RENTAL__)); }}
+      }});
+    }}
     if (typeof url === 'string' && url.indexOf('products.json') !== -1) {{
       return Promise.resolve({{
         ok: true, status: 200,

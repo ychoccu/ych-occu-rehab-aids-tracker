@@ -1497,12 +1497,11 @@
     "image_url": "images/sockaid_famica_easy66.jpg",
     "product_url": "https://www.easy66.com.hk/products/famica-socks-aid",
     "phone": "2102 7180",
-    "note": "原 QR 已失效, 已用 Google 搵到 official page, 暫時存貨不足",
     "updated_date": "2026-06-11",
     "last_checked": "2026-10-05",
     "product_name_en": "FAMICA Sock Aid (6-in-1 sock & shoe on/off)",
     "specs_en": [],
-    "price_display_en": "HK$220.00",
+    "price_display_en": "HK$380.00",
     "stock_status": "in_stock",
     "features": [
       "6 種功能: 穿襪 / 脫襪 / 取襪 / 穿鞋 / 脫鞋 / 取鞋",
@@ -1765,6 +1764,104 @@
       "Specs available on request"
     ],
     "price_note": "參考價錢"
+  },
+  {
+    "source": "easy66",
+    "source_name": "樂齡網 Easy66",
+    "category": "ramp",
+    "phone": "2102 7180",
+    "updated_date": "2026-10-08",
+    "last_checked": "2026-10-08",
+    "stock_status": "in_stock",
+    "price_display_en": "HK$890.00",
+    "id": "rmp5",
+    "product_name": "【RehaSense】攜帶摺合式斜坡板 MINI",
+    "model": "RS-MINI",
+    "price_min": 890.0,
+    "price_max": 890.0,
+    "price_display": "HK$890.00",
+    "specs": [
+      "闊度：76.5cm",
+      "長度：每片 40cm",
+      "適用門檻高度：3–7cm",
+      "重量：3.3kg",
+      "承重：350kg",
+      "物料：鋁合金"
+    ],
+    "image_url": "images/ramp_easy66_rehasense_mini.jpg",
+    "product_url": "https://www.easy66.com.hk/products/rs-ramp-mini",
+    "product_name_en": "RehaSense Portable Folding Threshold Ramp MINI",
+    "specs_en": [
+      "Width: 76.5 cm",
+      "Length: 40 cm per panel",
+      "Threshold height: 3–7 cm",
+      "Weight: 3.3 kg",
+      "Max load: 350 kg",
+      "Material: aluminium alloy"
+    ],
+    "features": [
+      "兩片對摺設計，易於收藏攜帶",
+      "底部防滑墊片，避免移位",
+      "室內／室外均可使用",
+      "CE 認證"
+    ],
+    "features_en": [
+      "Two-panel fold design, easy to carry and store",
+      "Anti-slip pads underneath",
+      "For indoor and outdoor use",
+      "CE certified"
+    ]
+  },
+  {
+    "source": "easy66",
+    "source_name": "樂齡網 Easy66",
+    "category": "ramp",
+    "phone": "2102 7180",
+    "updated_date": "2026-10-08",
+    "last_checked": "2026-10-08",
+    "stock_status": "in_stock",
+    "price_display_en": "HK$890.00",
+    "id": "rmp6",
+    "product_name": "【RehaSense】攜帶摺合式斜坡板 MICRO",
+    "model": "RS-MICRO",
+    "price_min": 890.0,
+    "price_max": 890.0,
+    "price_display": "HK$890.00",
+    "specs": [
+      "闊度：每片 25cm（一對兩片）",
+      "長度：打開後 42cm",
+      "適用門檻高度：3–7cm",
+      "重量：2.08kg（一對）",
+      "承重：每片 175kg（一對共 350kg）",
+      "物料：鋁合金",
+      "產地：波蘭"
+    ],
+    "image_url": "images/ramp_easy66_rehasense_micro.jpg",
+    "product_url": "https://www.easy66.com.hk/products/rs-ramp-micro",
+    "product_name_en": "RehaSense Portable Folding Threshold Ramp MICRO",
+    "specs_en": [
+      "Width: 25 cm per panel (pair)",
+      "Length: 42 cm when open",
+      "Threshold height: 3–7 cm",
+      "Weight: 2.08 kg (pair)",
+      "Max load: 175 kg per panel (350 kg per pair)",
+      "Material: aluminium alloy",
+      "Made in Poland"
+    ],
+    "features": [
+      "一對兩片，可按輪椅輪距分開擺放，應付不同門闊",
+      "附攜帶小袋",
+      "底部防滑墊片，避免移位",
+      "室內／室外均可使用",
+      "CE 認證"
+    ],
+    "features_en": [
+      "Pair of narrow panels, placed to match the wheel track for any door width",
+      "Carry bag included",
+      "Anti-slip pads underneath",
+      "For indoor and outdoor use",
+      "CE certified"
+    ]
   },
   {
     "id": "bed1",
