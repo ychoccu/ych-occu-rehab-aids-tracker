@@ -160,34 +160,34 @@
     .rental-toolbar .rt-search input:focus { outline: none; border-color: #0284c7; }
     .rental-toolbar .rt-search button { position: absolute; right: 6px; top: 50%; transform: translateY(-50%); border: 0; background: #e5e7eb; border-radius: 50%; width: 26px; height: 26px; cursor: pointer; font-weight: 800; color: #374151; }
     .rental-section-title { color: white; font-size: 1.35em; font-weight: 800; margin: 6px 0 10px; text-shadow: 0 1px 2px rgba(0,0,0,0.25); }
-    .rental-cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 14px; margin-bottom: 18px; align-items: start; }
-    @media (max-width: 700px) { .rental-cat-grid { grid-template-columns: 1fr; } }
+    .rental-cat-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 18px; }
     .rental-cat-card {
       background: linear-gradient(180deg, #f0f9ff, #ffffff); border: 2px solid #7dd3fc; border-radius: 14px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.12); color: #1a1a1a; overflow: hidden;
     }
-    .rental-cat-card .rc-img { background: #f8fafc; height: 130px; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #e5e7eb; }
-    .rental-cat-card .rc-img img { max-height: 118px; max-width: 90%; object-fit: contain; }
     .rental-table .rt-item { display: flex; align-items: center; gap: 8px; }
-    .rental-table .rt-thumb { width: 44px; height: 44px; object-fit: contain; background: #f8fafc; border-radius: 6px; border: 1px solid #e5e7eb; flex-shrink: 0; }
+    .rental-table .rt-thumb { width: 84px; height: 84px; object-fit: contain; background: #fff; border-radius: 8px; border: 1px solid #e5e7eb; flex-shrink: 0; }
     .rental-img-note { color: rgba(255,255,255,0.92); font-size: 0.85em; margin: 4px 2px 10px; }
     .rental-cat-card .rc-head { background: #0284c7; color: white; font-weight: 800; font-size: 1.15em; padding: 10px 14px; display: flex; justify-content: space-between; align-items: center; }
     .rental-cat-card .rc-count { background: rgba(255,255,255,0.25); border-radius: 999px; padding: 1px 10px; font-size: 0.85em; }
-    .rental-cat-card .rc-list { list-style: none; margin: 0; padding: 4px 14px 10px; }
-    .rental-cat-card .rc-item { padding: 9px 0; border-bottom: 1px dashed #cbd5e1; line-height: 1.45; }
-    .rental-cat-card .rc-item:last-child { border-bottom: 0; }
-    .rental-cat-card .rc-item.has-img { display: flex; gap: 10px; align-items: flex-start; }
-    .rental-cat-card .rc-thumb { width: 56px; height: 56px; object-fit: contain; background: #fff; border: 1px solid #e5e7eb; border-radius: 6px; flex-shrink: 0; }
-    .rental-cat-card .rc-body { flex: 1; min-width: 0; }
-    .rental-cat-card .rc-top { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
-    .rental-cat-card .rc-item-name { font-weight: 800; color: #0c4a6e; }
-    .rental-cat-card .rc-org { color: #075985; font-weight: 700; text-decoration: underline; font-size: 0.92em; }
-    .rental-cat-card .rc-fee { font-size: 0.95em; margin-top: 2px; display: flex; flex-wrap: wrap; gap: 4px 6px; align-items: center; }
-    .rental-cat-card .rc-rent { color: #b91c1c; font-weight: 800; }
-    .rental-cat-card .rc-unit, .rental-cat-card .rc-dep-label, .rental-cat-card .rc-sep { color: #6b7280; font-size: 0.9em; }
+    .rental-cat-card .rc-list { list-style: none; margin: 0; padding: 14px; display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 14px; }
+    .rental-cat-card .rc-item { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 10px 10px 12px; display: flex; flex-direction: column; gap: 4px; line-height: 1.4; text-align: center; }
+    .rental-cat-card .rc-pic { height: 170px; display: flex; align-items: center; justify-content: center; background: #fff; border-radius: 8px; margin-bottom: 4px; }
+    .rental-cat-card .rc-pic img { max-height: 100%; max-width: 100%; object-fit: contain; }
+    .rental-cat-card .rc-pic.none { background: #f1f5f9; color: #94a3b8; font-size: 0.9em; font-weight: 600; border: 1px dashed #cbd5e1; }
+    .rental-cat-card .rc-item-name { font-weight: 800; color: #0c4a6e; font-size: 1.05em; }
+    .rental-cat-card .rc-org { color: #075985; font-weight: 700; text-decoration: underline; font-size: 0.9em; }
+    .rental-cat-card .rc-fee { font-size: 0.95em; display: flex; flex-direction: column; align-items: center; gap: 2px; margin-top: 2px; }
+    .rental-cat-card .rc-rent { color: #b91c1c; font-weight: 800; font-size: 1.25em; }
+    .rental-cat-card .rc-unit, .rental-cat-card .rc-dep-label { color: #6b7280; font-size: 0.9em; }
     .rental-cat-card .rc-dep { font-weight: 700; color: #374151; }
     .rental-cat-card .ask { color: #6b7280; font-weight: 600; }
-    .rental-cat-card .rc-tel { margin-left: auto; border-radius: 8px; padding: 3px 10px; text-decoration: none; font-weight: 700; font-size: 0.92em; white-space: nowrap; }
+    .rental-cat-card .rc-tel { display: block; margin-top: 6px; border-radius: 8px; padding: 6px 8px; text-decoration: none; font-weight: 700; font-size: 0.95em; white-space: nowrap; }
+    @media (max-width: 700px) {
+      .rental-cat-card .rc-list { grid-template-columns: repeat(2, 1fr); gap: 10px; padding: 10px; }
+      .rental-cat-card .rc-pic { height: 130px; }
+      .rental-cat-card .rc-item { padding: 8px 8px 10px; }
+    }
     #rental-view { max-width: 1100px; margin: 0 auto; padding: 0 14px 10px; }
     .rental-intro {
       background: rgba(255,255,255,0.95); border-radius: 14px; padding: 18px 22px;
@@ -261,7 +261,7 @@
       .rental-card .rental-row .k { min-width: 100%; }
       .rental-table { font-size: 0.92em; }
       .rental-toolbar .rt-group { width: 100%; }
-      .rental-table .rt-thumb { width: 36px; height: 36px; }
+      .rental-table .rt-thumb { width: 60px; height: 60px; }
       .rental-toolbar .rt-label { white-space: nowrap; }
       .rental-toolbar .seg { flex: 1; }
       .rental-toolbar .seg-btn { flex: 1; padding: 8px 6px; font-size: 0.92em; }
@@ -899,7 +899,7 @@ const I18N = {
     rental_search_ph: '搜尋器材或機構（例如：輪椅、紅十字會）',
     rental_no_match: '找不到相關器材、機構或服務。',
     rental_deposit: '按金',
-    rental_btn_web: '網頁',
+    rental_btn_web: '網頁', rental_no_photo: '機構未提供相片',
     rental_btn_email: '電郵',
     rental_more: '其他資料',
     rental_k_fees: '收費說明：',
@@ -1012,7 +1012,7 @@ const I18N = {
     rental_search_ph: 'Search equipment or organisation (e.g. wheelchair, Red Cross)',
     rental_no_match: 'No matching equipment, organisation or service.',
     rental_deposit: 'Deposit',
-    rental_btn_web: 'Website',
+    rental_btn_web: 'Website', rental_no_photo: 'No photo from organisation',
     rental_btn_email: 'Email',
     rental_more: 'More details',
     rental_k_fees: 'Fees: ',
@@ -1746,21 +1746,23 @@ function rentalCatCardsHTML(data, q) {
       });
     });
     if (rows.length === 0) return;
+    rows.sort((a, b) => (b.f.image ? 1 : 0) - (a.f.image ? 1 : 0)); // photos first (stable sort keeps org order)
     const items = rows.map(({ o, f }) => {
       const rent = rl(f, 'rent'), dep = rl(f, 'deposit');
       const ph = (o.phones && o.phones[0]) ? o.phones[0].number : '';
-      return `<li class="rc-item${f.image ? ' has-img' : ''}">
-          ${f.image ? `<img class="rc-thumb" src="${escapeHTML(f.image)}" alt="" loading="lazy" onerror="this.style.display='none'">` : ''}
-          <div class="rc-body"><div class="rc-top"><span class="rc-item-name">${escapeHTML(rl(f, 'item'))}</span>
-            <a href="#/rental" class="rc-org" onclick="event.preventDefault();gotoRentalOrg('${escapeHTML(o.id)}')">${escapeHTML(rl(o, 'short') || rl(o, 'name'))} ›</a></div>
-          <div class="rc-fee"><span class="${RENTAL_ASK.test(rent) ? 'ask' : 'rc-rent'}">${escapeHTML(rent)}</span>${RENTAL_ASK.test(rent) ? '' : ` <span class="rc-unit">${escapeHTML(rl(o, 'rent_unit'))}</span>`}
-            <span class="rc-sep">·</span> <span class="rc-dep-label">${escapeHTML(t('rental_deposit'))}</span> <span class="${RENTAL_ASK.test(dep) ? 'ask' : 'rc-dep'}">${escapeHTML(dep)}</span>
-            ${ph ? `<a class="btn-call rc-tel" href="${telHref(ph)}">📞 ${escapeHTML(ph)}</a>` : ''}</div></div>
+      const picCell = f.image ? `<div class="rc-pic"><img src="${escapeHTML(f.image)}" alt="${escapeHTML(rl(f, 'item'))}" loading="lazy" onerror="this.parentNode.classList.add('none');this.remove();this.parentNode.textContent='${escapeHTML(t('rental_no_photo'))}'"></div>`
+                              : `<div class="rc-pic none">${escapeHTML(t('rental_no_photo'))}</div>`;
+      return `<li class="rc-item">
+          ${picCell}
+          <span class="rc-item-name">${escapeHTML(rl(f, 'item'))}</span>
+          <a href="#/rental" class="rc-org" onclick="event.preventDefault();gotoRentalOrg('${escapeHTML(o.id)}')">${escapeHTML(rl(o, 'short') || rl(o, 'name'))} ›</a>
+          <div class="rc-fee"><span><span class="${RENTAL_ASK.test(rent) ? 'ask' : 'rc-rent'}">${escapeHTML(rent)}</span>${RENTAL_ASK.test(rent) ? '' : ` <span class="rc-unit">${escapeHTML(rl(o, 'rent_unit'))}</span>`}</span>
+            <span><span class="rc-dep-label">${escapeHTML(t('rental_deposit'))}</span> <span class="${RENTAL_ASK.test(dep) ? 'ask' : 'rc-dep'}">${escapeHTML(dep)}</span></span></div>
+          ${ph ? `<a class="btn-call rc-tel" href="${telHref(ph)}">📞 ${escapeHTML(ph)}</a>` : ''}
         </li>`;
     }).join('');
     html += `<div class="rental-cat-card" id="rental-cat-${escapeHTML(c.id)}">
         <div class="rc-head">${escapeHTML(label)} <span class="rc-count">${rows.length}</span></div>
-        ${c.image ? `<div class="rc-img"><img src="${escapeHTML(c.image)}" alt="${escapeHTML(label)}" loading="lazy" onerror="this.parentNode.style.display='none'"></div>` : ''}
         <ul class="rc-list">${items}</ul>
       </div>`;
   });
