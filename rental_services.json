@@ -22,7 +22,9 @@
     {
       "id": "highbackchair",
       "label": "高背椅",
-      "label_en": "High-back chair"
+      "label_en": "High-back chair",
+      "image": "images/rental_highbackchair_hkra.jpg",
+      "image_credit": "香港復康諮詢協會網站"
     },
     {
       "id": "commode",
@@ -48,7 +50,9 @@
     {
       "id": "backrest",
       "label": "靠背架",
-      "label_en": "Bed backrest"
+      "label_en": "Bed backrest",
+      "image": "images/rental_ebackrest_hkra.jpg",
+      "image_credit": "香港復康諮詢協會網站"
     },
     {
       "id": "bedrail",
@@ -377,7 +381,9 @@
           "deposit": "請致電查詢",
           "deposit_en": "Please call",
           "cat": "wheelchair",
-          "group": "mobility"
+          "group": "mobility",
+          "image": "images/rental_wheelchair_plk.jpg",
+          "image_credit": "保良局「一站照護」網站（示意圖）"
         },
         {
           "item": "電動醫護床",
@@ -387,7 +393,9 @@
           "deposit": "請致電查詢",
           "deposit_en": "Please call",
           "cat": "bed",
-          "group": "posture"
+          "group": "posture",
+          "image": "images/rental_bed_plk.jpg",
+          "image_credit": "保良局「一站照護」網站（示意圖）"
         },
         {
           "item": "高背椅／移位機／助行架",
@@ -402,7 +410,9 @@
             "hoist",
             "walking"
           ],
-          "group": "mobility"
+          "group": "mobility",
+          "image": "images/rental_hoist_plk.jpg",
+          "image_credit": "保良局「一站照護」網站（示意圖）"
         }
       ],
       "notes": [
@@ -473,7 +483,9 @@
           "deposit": "$500",
           "extra": "$50",
           "cat": "wheelchair",
-          "group": "mobility"
+          "group": "mobility",
+          "image": "images/rental_wheelchair_hkra.jpg",
+          "image_credit": "香港復康諮詢協會網站"
         },
         {
           "item": "高背托腳輪椅",
@@ -482,7 +494,9 @@
           "deposit": "$800",
           "extra": "$100",
           "cat": "wheelchair",
-          "group": "mobility"
+          "group": "mobility",
+          "image": "images/rental_highbackwheelchair_hkra.jpg",
+          "image_credit": "香港復康諮詢協會網站"
         },
         {
           "item": "高背椅（有轆）",
@@ -491,7 +505,9 @@
           "deposit": "$3,000",
           "extra": "$100",
           "cat": "highbackchair",
-          "group": "mobility"
+          "group": "mobility",
+          "image": "images/rental_highbackchair_hkra.jpg",
+          "image_credit": "香港復康諮詢協會網站"
         },
         {
           "item": "沖涼椅（有扶手）",
@@ -500,7 +516,9 @@
           "deposit": "$250",
           "extra": "$50",
           "cat": "commode",
-          "group": "bathroom"
+          "group": "bathroom",
+          "image": "images/rental_bathchair_hkra.jpg",
+          "image_credit": "香港復康諮詢協會網站"
         },
         {
           "item": "沖涼便椅（有轆／無轆）",
@@ -509,7 +527,9 @@
           "deposit": "$500",
           "extra": "$100",
           "cat": "commode",
-          "group": "bathroom"
+          "group": "bathroom",
+          "image": "images/rental_commode_hkra.jpg",
+          "image_credit": "香港復康諮詢協會網站"
         },
         {
           "item": "防壓瘡床褥（4 吋）",
@@ -518,7 +538,9 @@
           "deposit": "$2,000",
           "extra": "$150",
           "cat": "mattress",
-          "group": "posture"
+          "group": "posture",
+          "image": "images/rental_mattress_hkra.jpg",
+          "image_credit": "香港復康諮詢協會網站"
         },
         {
           "item": "電動氣墊床",
@@ -527,7 +549,9 @@
           "deposit": "$1,000",
           "extra": "$150",
           "cat": "mattress",
-          "group": "posture"
+          "group": "posture",
+          "image": "images/rental_airmattress_hkra.jpg",
+          "image_credit": "香港復康諮詢協會網站"
         },
         {
           "item": "電動靠背",
@@ -536,7 +560,9 @@
           "deposit": "$1,500",
           "extra": "$100",
           "cat": "backrest",
-          "group": "posture"
+          "group": "posture",
+          "image": "images/rental_ebackrest_hkra.jpg",
+          "image_credit": "香港復康諮詢協會網站"
         },
         {
           "item": "手動靠背",
@@ -545,7 +571,9 @@
           "deposit": "$300",
           "extra": "$50",
           "cat": "backrest",
-          "group": "posture"
+          "group": "posture",
+          "image": "images/rental_backrest_hkra.jpg",
+          "image_credit": "香港復康諮詢協會網站"
         },
         {
           "item": "床欄（L 形）",
@@ -554,7 +582,9 @@
           "deposit": "$300",
           "extra": "$50",
           "cat": "bedrail",
-          "group": "daily"
+          "group": "daily",
+          "image": "images/rental_bedrail_hkra.jpg",
+          "image_credit": "香港復康諮詢協會網站"
         },
         {
           "item": "坐墊（啫喱）",
@@ -563,7 +593,9 @@
           "deposit": "$600",
           "extra": "$50",
           "cat": "others",
-          "group": "daily"
+          "group": "daily",
+          "image": "images/rental_cushion_hkra.jpg",
+          "image_credit": "香港復康諮詢協會網站"
         },
         {
           "item": "助行架（無轆／有轆）",
@@ -572,7 +604,9 @@
           "deposit": "$250 / $400",
           "extra": "$50",
           "cat": "walking",
-          "group": "mobility"
+          "group": "mobility",
+          "image": "images/rental_walkingframe_hkra.jpg",
+          "image_credit": "香港復康諮詢協會網站"
         },
         {
           "item": "穿手拐杖／腋下拐杖",
@@ -581,7 +615,9 @@
           "deposit": "$180",
           "extra": "$50",
           "cat": "walking",
-          "group": "mobility"
+          "group": "mobility",
+          "image": "images/rental_elbowcrutch_hkra.jpg",
+          "image_credit": "香港復康諮詢協會網站"
         },
         {
           "item": "四爪拐杖",
@@ -590,7 +626,9 @@
           "deposit": "$120",
           "extra": "$50",
           "cat": "walking",
-          "group": "mobility"
+          "group": "mobility",
+          "image": "images/rental_quadcane_hkra.jpg",
+          "image_credit": "香港復康諮詢協會網站"
         },
         {
           "item": "鹽水架",
@@ -599,7 +637,9 @@
           "deposit": "$300",
           "extra": "$50",
           "cat": "others",
-          "group": "daily"
+          "group": "daily",
+          "image": "images/rental_ivstand_hkra.jpg",
+          "image_credit": "香港復康諮詢協會網站"
         },
         {
           "item": "病床餐枱",
@@ -608,7 +648,9 @@
           "deposit": "$250",
           "extra": "$50",
           "cat": "others",
-          "group": "daily"
+          "group": "daily",
+          "image": "images/rental_tray_hkra.jpg",
+          "image_credit": "香港復康諮詢協會網站"
         },
         {
           "item": "翻身輔助器",
@@ -617,7 +659,9 @@
           "deposit": "$120",
           "extra": "$50",
           "cat": "others",
-          "group": "daily"
+          "group": "daily",
+          "image": "images/rental_turner_hkra.jpg",
+          "image_credit": "香港復康諮詢協會網站"
         }
       ],
       "notes": [
@@ -971,6 +1015,6 @@
       "label_en": "Other services"
     }
   ],
-  "image_note": "器材圖片取自各租借機構網站（a家、香港紅十字會、EMV），僅供參考；實際出租的型號、顏色及配置以該機構為準。沒有圖片的機構，其網站未有提供器材相片。",
-  "image_note_en": "Equipment photos are taken from the rental organisations' own websites (age at home, Hong Kong Red Cross, EMV) for reference only; actual models, colours and configurations are subject to each organisation. Organisations without photos do not provide equipment images on their websites."
+  "image_note": "器材圖片取自各租借機構網站（a家、香港紅十字會、香港復康諮詢協會、保良局、EMV），僅供參考；實際出租的型號、顏色及配置以該機構為準。沒有圖片的項目，其機構網站未有提供相片。",
+  "image_note_en": "Equipment photos are taken from each rental organisation's own website (age at home, Hong Kong Red Cross, Hong Kong Rehabilitation Right Association, Po Leung Kuk, EMV) for reference only; actual models, colours and configurations are subject to the organisation. Items without a photo have none on the organisation's website."
 }
