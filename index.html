@@ -175,7 +175,11 @@
     .rental-cat-card .rc-pic { height: 170px; display: flex; align-items: center; justify-content: center; background: #fff; border-radius: 8px; margin-bottom: 4px; }
     .rental-cat-card .rc-pic img { max-height: 100%; max-width: 100%; object-fit: contain; }
     .rental-cat-card .rc-pic.none { background: #f1f5f9; color: #94a3b8; font-size: 0.9em; font-weight: 600; border: 1px dashed #cbd5e1; }
-    .rental-cat-card .rc-item-name { font-weight: 800; color: #0c4a6e; font-size: 1.05em; }
+    .rental-cat-card .rc-item-name { font-weight: 800; color: #0c4a6e; font-size: 1.05em; display: block; }
+    .rental-cat-card .rc-link { color: inherit; text-decoration: none; display: block; border-radius: 8px; }
+    .rental-cat-card .rc-link:hover .rc-pic { background: #f0f9ff; }
+    .rental-cat-card .rc-link:hover .rc-item-name { text-decoration: underline; }
+    .rental-cat-card .rc-src { display: block; color: #64748b; font-size: 0.78em; font-weight: 600; margin-top: 2px; }
     .rental-cat-card .rc-org { color: #075985; font-weight: 700; text-decoration: underline; font-size: 0.9em; }
     .rental-cat-card .rc-fee { font-size: 0.95em; display: flex; flex-direction: column; align-items: center; gap: 2px; margin-top: 2px; }
     .rental-cat-card .rc-rent { color: #b91c1c; font-weight: 800; font-size: 1.25em; }
@@ -899,7 +903,7 @@ const I18N = {
     rental_search_ph: '搜尋器材或機構（例如：輪椅、紅十字會）',
     rental_no_match: '找不到相關器材、機構或服務。',
     rental_deposit: '按金',
-    rental_btn_web: '網頁', rental_no_photo: '機構未提供相片',
+    rental_btn_web: '網頁', rental_no_photo: '機構未提供相片', rental_open_source: '機構網頁',
     rental_btn_email: '電郵',
     rental_more: '其他資料',
     rental_k_fees: '收費說明：',
@@ -1012,7 +1016,7 @@ const I18N = {
     rental_search_ph: 'Search equipment or organisation (e.g. wheelchair, Red Cross)',
     rental_no_match: 'No matching equipment, organisation or service.',
     rental_deposit: 'Deposit',
-    rental_btn_web: 'Website', rental_no_photo: 'No photo from organisation',
+    rental_btn_web: 'Website', rental_no_photo: 'No photo from organisation', rental_open_source: 'Organisation page',
     rental_btn_email: 'Email',
     rental_more: 'More details',
     rental_k_fees: 'Fees: ',
@@ -1703,7 +1707,9 @@ function rentalOrgCardHTML(o, q) {
       const rent = rl(f, 'rent'), dep = rl(f, 'deposit'), extra = rl(f, 'extra');
       const fc = feeCats(f)[0];
       const thumb = f.image || '';
-      rows += `<tr><td><div class="rt-item">${thumb ? `<img class="rt-thumb" src="${escapeHTML(thumb)}" alt="" loading="lazy" onerror="this.style.display='none'">` : ''}<span>${escapeHTML(rl(f, 'item'))}</span></div></td><td class="${RENTAL_ASK.test(rent) ? 'ask' : ''}">${escapeHTML(rent)}</td><td class="${RENTAL_ASK.test(dep) ? 'ask' : ''}">${escapeHTML(dep)}</td>${cols.length > 3 ? `<td>${escapeHTML(extra)}</td>` : ''}</tr>`;
+      const tsrc = f.image_source || '';
+      const thumbEl = thumb ? `<img class="rt-thumb" src="${escapeHTML(thumb)}" alt="" loading="lazy" onerror="this.style.display='none'">` : '';
+      rows += `<tr><td><div class="rt-item">${thumb && tsrc ? `<a href="${escapeHTML(tsrc)}" target="_blank" rel="noopener" title="${escapeHTML(t('rental_open_source'))}">${thumbEl}</a>` : thumbEl}<span>${escapeHTML(rl(f, 'item'))}</span></div></td><td class="${RENTAL_ASK.test(rent) ? 'ask' : ''}">${escapeHTML(rent)}</td><td class="${RENTAL_ASK.test(dep) ? 'ask' : ''}">${escapeHTML(dep)}</td>${cols.length > 3 ? `<td>${escapeHTML(extra)}</td>` : ''}</tr>`;
     });
   });
   const notes = ((currentLang === 'en' && o.notes_en) ? o.notes_en : (o.notes || [])).map(n => `<li>${escapeHTML(n)}</li>`).join('');
@@ -1752,9 +1758,11 @@ function rentalCatCardsHTML(data, q) {
       const ph = (o.phones && o.phones[0]) ? o.phones[0].number : '';
       const picCell = f.image ? `<div class="rc-pic"><img src="${escapeHTML(f.image)}" alt="${escapeHTML(rl(f, 'item'))}" loading="lazy" onerror="this.parentNode.classList.add('none');this.remove();this.parentNode.textContent='${escapeHTML(t('rental_no_photo'))}'"></div>`
                               : `<div class="rc-pic none">${escapeHTML(t('rental_no_photo'))}</div>`;
+      const src = f.image_source || o.website || '';
+      const nameCell = `<span class="rc-item-name">${escapeHTML(rl(f, 'item'))}</span>`;
+      const linked = src ? `<a class="rc-link" href="${escapeHTML(src)}" target="_blank" rel="noopener" title="${escapeHTML(t('rental_open_source'))}">${picCell}${nameCell}<span class="rc-src">🌐 ${escapeHTML(t('rental_open_source'))}</span></a>` : picCell + nameCell;
       return `<li class="rc-item">
-          ${picCell}
-          <span class="rc-item-name">${escapeHTML(rl(f, 'item'))}</span>
+          ${linked}
           <a href="#/rental" class="rc-org" onclick="event.preventDefault();gotoRentalOrg('${escapeHTML(o.id)}')">${escapeHTML(rl(o, 'short') || rl(o, 'name'))} ›</a>
           <div class="rc-fee"><span><span class="${RENTAL_ASK.test(rent) ? 'ask' : 'rc-rent'}">${escapeHTML(rent)}</span>${RENTAL_ASK.test(rent) ? '' : ` <span class="rc-unit">${escapeHTML(rl(o, 'rent_unit'))}</span>`}</span>
             <span><span class="rc-dep-label">${escapeHTML(t('rental_deposit'))}</span> <span class="${RENTAL_ASK.test(dep) ? 'ask' : 'rc-dep'}">${escapeHTML(dep)}</span></span></div>

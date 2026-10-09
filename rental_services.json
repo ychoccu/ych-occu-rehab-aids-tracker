@@ -141,7 +141,8 @@
           "cat": "wheelchair",
           "group": "mobility",
           "image": "images/rental_highback_ageathome_km.jpg",
-          "image_credit": "a家網站"
+          "image_credit": "a家網站",
+          "image_source": "https://ageathome.hk/zh/rental-products-mobility/page/2/"
         },
         {
           "item": "電動輪椅",
@@ -152,7 +153,8 @@
           "cat": "ewheelchair",
           "group": "mobility",
           "image": "images/rental_ewheelchair_ageathome_lw.jpg",
-          "image_credit": "a家網站"
+          "image_credit": "a家網站",
+          "image_source": "https://ageathome.hk/zh/rental-products-mobility/"
         },
         {
           "item": "沐浴椅／便椅",
@@ -163,7 +165,8 @@
           "cat": "commode",
           "group": "bathroom",
           "image": "images/rental_commode_ageathome_rb.jpg",
-          "image_credit": "a家網站"
+          "image_credit": "a家網站",
+          "image_source": "https://ageathome.hk/zh/rental-products-aids_for_daily_living/page/7/"
         },
         {
           "item": "醫療護理床",
@@ -174,7 +177,8 @@
           "cat": "bed",
           "group": "posture",
           "image": "images/rental_bed_ageathome_mfb.jpg",
-          "image_credit": "a家網站"
+          "image_credit": "a家網站",
+          "image_source": "https://ageathome.hk/wp-content/uploads/2024/09/20260901_%E5%99%A8%E6%9D%90%E6%9C%88%E7%A7%9F%E5%83%B9%E7%9B%AE%E8%A1%A8_compressed.pdf"
         },
         {
           "item": "特別功能床褥／氣墊床褥",
@@ -185,7 +189,8 @@
           "cat": "mattress",
           "group": "posture",
           "image": "images/rental_mattress_ageathome_am.jpg",
-          "image_credit": "a家網站"
+          "image_credit": "a家網站",
+          "image_source": "https://ageathome.hk/zh/rental-products-aids_for_daily_living/"
         },
         {
           "item": "移位機",
@@ -196,7 +201,8 @@
           "cat": "hoist",
           "group": "posture",
           "image": "images/rental_hoist_ageathome_ee.jpg",
-          "image_credit": "a家網站"
+          "image_credit": "a家網站",
+          "image_source": "https://ageathome.hk/zh/rental-products-aids_for_daily_living/page/8/"
         },
         {
           "item": "扶手／床欄",
@@ -207,7 +213,8 @@
           "cat": "bedrail",
           "group": "daily",
           "image": "images/rental_bedrail_ageathome_sp.jpg",
-          "image_credit": "a家網站"
+          "image_credit": "a家網站",
+          "image_source": "https://ageathome.hk/wp-content/uploads/2024/09/20260901_%E5%99%A8%E6%9D%90%E6%9C%88%E7%A7%9F%E5%83%B9%E7%9B%AE%E8%A1%A8_compressed.pdf"
         },
         {
           "item": "斜台（組合式／折疊式）",
@@ -218,7 +225,8 @@
           "cat": "ramp",
           "group": "daily",
           "image": "images/rental_ramp_ageathome_ds.jpg",
-          "image_credit": "a家網站"
+          "image_credit": "a家網站",
+          "image_source": "https://ageathome.hk/wp-content/uploads/2024/09/20260901_%E5%99%A8%E6%9D%90%E6%9C%88%E7%A7%9F%E5%83%B9%E7%9B%AE%E8%A1%A8_compressed.pdf"
         },
         {
           "item": "輔助餵食機",
@@ -229,7 +237,8 @@
           "cat": "others",
           "group": "daily",
           "image": "images/rental_feeder_ageathome_b.jpg",
-          "image_credit": "a家網站"
+          "image_credit": "a家網站",
+          "image_source": "https://ageathome.hk/zh/rental-products-aids_for_daily_living/page/9/"
         }
       ],
       "notes": [
@@ -383,7 +392,8 @@
           "cat": "wheelchair",
           "group": "mobility",
           "image": "images/rental_wheelchair_plk.jpg",
-          "image_credit": "保良局「一站照護」網站（示意圖）"
+          "image_credit": "保良局「一站照護」網站（示意圖）",
+          "image_source": "https://www.poleungkuk.org.hk/service/social/other-services/social-entreprise-and-vocational-rehabilitation-services-centre/wellness-one"
         },
         {
           "item": "電動醫護床",
@@ -395,7 +405,8 @@
           "cat": "bed",
           "group": "posture",
           "image": "images/rental_bed_plk.jpg",
-          "image_credit": "保良局「一站照護」網站（示意圖）"
+          "image_credit": "保良局「一站照護」網站（示意圖）",
+          "image_source": "https://www.poleungkuk.org.hk/service/social/other-services/social-entreprise-and-vocational-rehabilitation-services-centre/wellness-one"
         },
         {
           "item": "高背椅／移位機／助行架",
@@ -412,7 +423,8 @@
           ],
           "group": "mobility",
           "image": "images/rental_hoist_plk.jpg",
-          "image_credit": "保良局「一站照護」網站（示意圖）"
+          "image_credit": "保良局「一站照護」網站（示意圖）",
+          "image_source": "https://www.poleungkuk.org.hk/service/social/other-services/social-entreprise-and-vocational-rehabilitation-services-centre/wellness-one"
         }
       ],
       "notes": [
@@ -485,7 +497,8 @@
           "cat": "wheelchair",
           "group": "mobility",
           "image": "images/rental_wheelchair_hkra.jpg",
-          "image_credit": "香港復康諮詢協會網站"
+          "image_credit": "香港復康諮詢協會網站",
+          "image_source": "https://www.hkrehabright.org/recycling"
         },
         {
           "item": "高背托腳輪椅",
@@ -496,7 +509,8 @@
           "cat": "wheelchair",
           "group": "mobility",
           "image": "images/rental_highbackwheelchair_hkra.jpg",
-          "image_credit": "香港復康諮詢協會網站"
+          "image_credit": "香港復康諮詢協會網站",
+          "image_source": "https://www.hkrehabright.org/recycling"
         },
         {
           "item": "高背椅（有轆）",
@@ -507,7 +521,8 @@
           "cat": "highbackchair",
           "group": "mobility",
           "image": "images/rental_highbackchair_hkra.jpg",
-          "image_credit": "香港復康諮詢協會網站"
+          "image_credit": "香港復康諮詢協會網站",
+          "image_source": "https://www.hkrehabright.org/recycling"
         },
         {
           "item": "沖涼椅（有扶手）",
@@ -518,7 +533,8 @@
           "cat": "commode",
           "group": "bathroom",
           "image": "images/rental_bathchair_hkra.jpg",
-          "image_credit": "香港復康諮詢協會網站"
+          "image_credit": "香港復康諮詢協會網站",
+          "image_source": "https://www.hkrehabright.org/recycling"
         },
         {
           "item": "沖涼便椅（有轆／無轆）",
@@ -529,7 +545,8 @@
           "cat": "commode",
           "group": "bathroom",
           "image": "images/rental_commode_hkra.jpg",
-          "image_credit": "香港復康諮詢協會網站"
+          "image_credit": "香港復康諮詢協會網站",
+          "image_source": "https://www.hkrehabright.org/recycling"
         },
         {
           "item": "防壓瘡床褥（4 吋）",
@@ -540,7 +557,8 @@
           "cat": "mattress",
           "group": "posture",
           "image": "images/rental_mattress_hkra.jpg",
-          "image_credit": "香港復康諮詢協會網站"
+          "image_credit": "香港復康諮詢協會網站",
+          "image_source": "https://www.hkrehabright.org/recycling"
         },
         {
           "item": "電動氣墊床",
@@ -551,7 +569,8 @@
           "cat": "mattress",
           "group": "posture",
           "image": "images/rental_airmattress_hkra.jpg",
-          "image_credit": "香港復康諮詢協會網站"
+          "image_credit": "香港復康諮詢協會網站",
+          "image_source": "https://www.hkrehabright.org/recycling"
         },
         {
           "item": "電動靠背",
@@ -562,7 +581,8 @@
           "cat": "backrest",
           "group": "posture",
           "image": "images/rental_ebackrest_hkra.jpg",
-          "image_credit": "香港復康諮詢協會網站"
+          "image_credit": "香港復康諮詢協會網站",
+          "image_source": "https://www.hkrehabright.org/recycling"
         },
         {
           "item": "手動靠背",
@@ -573,7 +593,8 @@
           "cat": "backrest",
           "group": "posture",
           "image": "images/rental_backrest_hkra.jpg",
-          "image_credit": "香港復康諮詢協會網站"
+          "image_credit": "香港復康諮詢協會網站",
+          "image_source": "https://www.hkrehabright.org/recycling"
         },
         {
           "item": "床欄（L 形）",
@@ -584,7 +605,8 @@
           "cat": "bedrail",
           "group": "daily",
           "image": "images/rental_bedrail_hkra.jpg",
-          "image_credit": "香港復康諮詢協會網站"
+          "image_credit": "香港復康諮詢協會網站",
+          "image_source": "https://www.hkrehabright.org/recycling"
         },
         {
           "item": "坐墊（啫喱）",
@@ -595,7 +617,8 @@
           "cat": "others",
           "group": "daily",
           "image": "images/rental_cushion_hkra.jpg",
-          "image_credit": "香港復康諮詢協會網站"
+          "image_credit": "香港復康諮詢協會網站",
+          "image_source": "https://www.hkrehabright.org/recycling"
         },
         {
           "item": "助行架（無轆／有轆）",
@@ -606,7 +629,8 @@
           "cat": "walking",
           "group": "mobility",
           "image": "images/rental_walkingframe_hkra.jpg",
-          "image_credit": "香港復康諮詢協會網站"
+          "image_credit": "香港復康諮詢協會網站",
+          "image_source": "https://www.hkrehabright.org/recycling"
         },
         {
           "item": "穿手拐杖／腋下拐杖",
@@ -617,7 +641,8 @@
           "cat": "walking",
           "group": "mobility",
           "image": "images/rental_elbowcrutch_hkra.jpg",
-          "image_credit": "香港復康諮詢協會網站"
+          "image_credit": "香港復康諮詢協會網站",
+          "image_source": "https://www.hkrehabright.org/recycling"
         },
         {
           "item": "四爪拐杖",
@@ -628,7 +653,8 @@
           "cat": "walking",
           "group": "mobility",
           "image": "images/rental_quadcane_hkra.jpg",
-          "image_credit": "香港復康諮詢協會網站"
+          "image_credit": "香港復康諮詢協會網站",
+          "image_source": "https://www.hkrehabright.org/recycling"
         },
         {
           "item": "鹽水架",
@@ -639,7 +665,8 @@
           "cat": "others",
           "group": "daily",
           "image": "images/rental_ivstand_hkra.jpg",
-          "image_credit": "香港復康諮詢協會網站"
+          "image_credit": "香港復康諮詢協會網站",
+          "image_source": "https://www.hkrehabright.org/recycling"
         },
         {
           "item": "病床餐枱",
@@ -650,7 +677,8 @@
           "cat": "others",
           "group": "daily",
           "image": "images/rental_tray_hkra.jpg",
-          "image_credit": "香港復康諮詢協會網站"
+          "image_credit": "香港復康諮詢協會網站",
+          "image_source": "https://www.hkrehabright.org/recycling"
         },
         {
           "item": "翻身輔助器",
@@ -661,7 +689,8 @@
           "cat": "others",
           "group": "daily",
           "image": "images/rental_turner_hkra.jpg",
-          "image_credit": "香港復康諮詢協會網站"
+          "image_credit": "香港復康諮詢協會網站",
+          "image_source": "https://www.hkrehabright.org/recycling"
         }
       ],
       "notes": [
@@ -742,7 +771,8 @@
           "cat": "wheelchair",
           "group": "mobility",
           "image": "images/rental_wheelchair_redcross.jpg",
-          "image_credit": "香港紅十字會網站"
+          "image_credit": "香港紅十字會網站",
+          "image_source": "https://www.redcross.org.hk/tc/community_healthcare/mobility_equip/intro_me.html"
         },
         {
           "item": "高背輪椅 *",
@@ -752,7 +782,8 @@
           "cat": "wheelchair",
           "group": "mobility",
           "image": "images/rental_highbackwheelchair_redcross.jpg",
-          "image_credit": "香港紅十字會網站"
+          "image_credit": "香港紅十字會網站",
+          "image_source": "https://www.redcross.org.hk/tc/community_healthcare/mobility_equip/intro_me.html"
         },
         {
           "item": "高背傾斜及後躺輪椅 *",
@@ -762,7 +793,8 @@
           "cat": "wheelchair",
           "group": "mobility",
           "image": "images/rental_reclinewheelchair_redcross.jpg",
-          "image_credit": "香港紅十字會網站"
+          "image_credit": "香港紅十字會網站",
+          "image_source": "https://www.redcross.org.hk/tc/community_healthcare/mobility_equip/intro_me.html"
         },
         {
           "item": "助行車",
@@ -772,7 +804,8 @@
           "cat": "walking",
           "group": "mobility",
           "image": "images/rental_rollator_redcross.jpg",
-          "image_credit": "香港紅十字會網站"
+          "image_credit": "香港紅十字會網站",
+          "image_source": "https://www.redcross.org.hk/tc/community_healthcare/mobility_equip/intro_me.html"
         },
         {
           "item": "步行架／四腳叉／穿手拐杖",
@@ -782,7 +815,8 @@
           "cat": "walking",
           "group": "mobility",
           "image": "images/rental_walkingframe_redcross.jpg",
-          "image_credit": "香港紅十字會網站"
+          "image_credit": "香港紅十字會網站",
+          "image_source": "https://www.redcross.org.hk/tc/community_healthcare/mobility_equip/intro_me.html"
         },
         {
           "item": "有轆步行架 *",
@@ -792,7 +826,8 @@
           "cat": "walking",
           "group": "mobility",
           "image": "images/rental_wheeledframe_redcross.jpg",
-          "image_credit": "香港紅十字會網站"
+          "image_credit": "香港紅十字會網站",
+          "image_source": "https://www.redcross.org.hk/tc/community_healthcare/mobility_equip/intro_me.html"
         },
         {
           "item": "沐浴椅",
@@ -802,7 +837,8 @@
           "cat": "commode",
           "group": "bathroom",
           "image": "images/rental_bathchair_redcross.jpg",
-          "image_credit": "香港紅十字會網站"
+          "image_credit": "香港紅十字會網站",
+          "image_source": "https://www.redcross.org.hk/tc/community_healthcare/mobility_equip/intro_me.html"
         },
         {
           "item": "便椅",
@@ -812,7 +848,8 @@
           "cat": "commode",
           "group": "bathroom",
           "image": "images/rental_commode_redcross.jpg",
-          "image_credit": "香港紅十字會網站"
+          "image_credit": "香港紅十字會網站",
+          "image_source": "https://www.redcross.org.hk/tc/community_healthcare/mobility_equip/intro_me.html"
         },
         {
           "item": "可傾斜沐浴便椅 *",
@@ -822,7 +859,8 @@
           "cat": "commode",
           "group": "bathroom",
           "image": "images/rental_tiltcommode_redcross.jpg",
-          "image_credit": "香港紅十字會網站"
+          "image_credit": "香港紅十字會網站",
+          "image_source": "https://www.redcross.org.hk/tc/community_healthcare/mobility_equip/intro_me.html"
         },
         {
           "item": "輪椅活動枱板",
@@ -832,7 +870,8 @@
           "cat": "others",
           "group": "daily",
           "image": "images/rental_tray_redcross.jpg",
-          "image_credit": "香港紅十字會網站"
+          "image_credit": "香港紅十字會網站",
+          "image_source": "https://www.redcross.org.hk/tc/community_healthcare/mobility_equip/intro_me.html"
         },
         {
           "item": "手提斜台板",
@@ -842,7 +881,8 @@
           "cat": "ramp",
           "group": "daily",
           "image": "images/rental_ramp_redcross.jpg",
-          "image_credit": "香港紅十字會網站"
+          "image_credit": "香港紅十字會網站",
+          "image_source": "https://www.redcross.org.hk/tc/community_healthcare/mobility_equip/intro_me.html"
         }
       ],
       "notes": [
@@ -924,7 +964,8 @@
           "cat": "ewheelchair",
           "group": "mobility",
           "image": "images/rental_ewheelchair_emv_models.jpg",
-          "image_credit": "EMV 網站"
+          "image_credit": "EMV 網站",
+          "image_source": "https://www.emv.org.hk/service/detail/11/"
         },
         {
           "item": "維修服務",
@@ -934,7 +975,8 @@
           "deposit": "—",
           "group": "service",
           "image": "images/rental_repair_emv_workshop.jpg",
-          "image_credit": "EMV 網站"
+          "image_credit": "EMV 網站",
+          "image_source": "https://www.emv.org.hk/service/detail/11/"
         },
         {
           "item": "上門檢查",
