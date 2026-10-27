@@ -2132,8 +2132,8 @@
     "image_url": "images/bed_medicare_ehb00055.jpg",
     "product_url": "https://medicare.com.hk/zh-hant/care/247/",
     "phone": "2687 6380",
-    "note": "2026-10-16 核對: 官網已列價 HKD 12,000, 圖片換為官網 EHB00055 K 產品圖",
-    "updated_date": "2026-10-16",
+    "note": "2026-10-27 供應商確認: HKD 12,000 已包括手拉架 (monkey pull)、鹽水架及床褥",
+    "updated_date": "2026-10-27",
     "last_checked": "2026-10-26",
     "product_name_en": "3 ft Electric 3-action Steel Care Bed",
     "specs_en": [
@@ -2144,25 +2144,25 @@
       "Knee bend: 0° – 40°"
     ],
     "price_display_en": "HK$12,000",
-    "note_en": "Price HKD 12,000 listed on website (checked 2026-10-16)",
+    "note_en": "Supplier confirmed 2026-10-27: price includes monkey pull, IV pole and mattress",
     "stock_status": "in_stock",
     "features": [
+      "價錢已包括手拉架 (monkey pull)、鹽水架及床褥（已向供應商確認）",
       "丹麥 Linak 電動床摩打，附儲電池",
       "四功能手控器",
       "有孔鋼床面板，摺疊式鋁合金床欄一對",
       "可拆式 ABS 強化塑膠床頭尾板",
       "4 個鹽水架孔 + 2 個手拉架孔",
-      "5 吋豪華萬向全鎖轆 × 4",
-      "網頁圖庫另有手拉架 (EHB00509) 及床褥 (PFM00040) 相片，是否包括在套裝內請致電查詢"
+      "5 吋豪華萬向全鎖轆 × 4"
     ],
     "features_en": [
+      "Price includes monkey pull, IV pole and mattress (confirmed with supplier)",
       "Denmark LINAK motor with battery backup",
       "4-function handset",
       "Perforated steel deck; pair of folding aluminium siderails",
       "Detachable reinforced ABS head/foot boards",
       "4× IV pole holes + 2× grip handle holes",
-      "Four 5\" deluxe locking castors",
-      "Product gallery also shows a grip handle (EHB00509) and mattress (PFM00040); please call to confirm whether they are included"
+      "Four 5\" deluxe locking castors"
     ]
   },
   {
