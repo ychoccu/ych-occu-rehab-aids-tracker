@@ -3468,5 +3468,130 @@
     "stock_status": "in_stock",
     "updated_date": "2026-10-08",
     "last_checked": "2026-11-23"
+  },
+  {
+    "id": "wg1",
+    "source": "gethealth",
+    "source_name": "健康家居 GetHealth",
+    "phone": "2432 2028",
+    "category": "wedge",
+    "product_name": "三角翻身枕 (承托力高，防水透氣)",
+    "product_name_en": "Turning Wedge Cushion (firm support, waterproof and breathable)",
+    "model": "GHM-NBA-50A",
+    "price_min": 500,
+    "price_max": 500,
+    "price_display": "HK$500",
+    "price_display_en": "HK$500",
+    "specs": [
+      "尺寸：60 (長) × 28 (深) × 17cm (高)",
+      "物料：100% 阻燃高密度海綿、防水透氣防滑 PU 外套"
+    ],
+    "specs_en": [
+      "Size: 60 (L) × 28 (D) × 17 cm (H)",
+      "Material: 100% flame-retardant high-density foam, waterproof breathable non-slip PU cover"
+    ],
+    "features": [
+      "有助照顧者為用家翻身及維持翻身角度，從而減低壓瘡風險",
+      "高密度海綿，承托充足",
+      "有效於床上穩定身體，保持傾斜",
+      "符合 BS7175:1989 阻燃標準"
+    ],
+    "features_en": [
+      "Helps the carer turn the user and keep the turning angle, lowering pressure injury risk",
+      "High-density foam gives firm support",
+      "Keeps the body stable and tilted in bed",
+      "Meets BS7175:1989 flame-retardant standard"
+    ],
+    "image_url": "images/wedge_gethealth_nba50a.jpg",
+    "product_url": "https://www.gethealth.com.hk/商品/三角翻身枕-承托力高-防水透氣/",
+    "stock_status": "in_stock",
+    "updated_date": "2026-11-25",
+    "last_checked": "2026-11-25"
+  },
+  {
+    "id": "wg2",
+    "source": "healthyliving",
+    "source_name": "盈康 Healthy Living",
+    "phone": "3426 9090",
+    "category": "wedge",
+    "product_name": "HLM R形三角墊 / 翻身枕",
+    "product_name_en": "HLM R-shaped Wedge / Turning Pillow",
+    "model": "DMNS-0041",
+    "price_min": 300,
+    "price_max": 300,
+    "price_display": "HK$300.00",
+    "price_display_en": "HK$300.00",
+    "specs": [
+      "尺寸：長 60 × 闊 15.5 × 高 25cm (R形位長 16cm × 高 5cm)",
+      "角度：側臥位 30°",
+      "重量：0.47kg",
+      "物料：高彈力海棉、防水內套、棉質外套、麂皮絨布、鉸鏈式拉鏈"
+    ],
+    "specs_en": [
+      "Size: L 60 × W 15.5 × H 25 cm (R-curve 16 cm long × 5 cm high)",
+      "Angle: 30° side-lying",
+      "Weight: 0.47 kg",
+      "Material: high-resilience foam, waterproof inner cover, cotton outer cover, suede fabric, hinged zip"
+    ],
+    "features": [
+      "提供及維持側臥位 30° 的體位支撐，減輕受壓處的壓力與摩擦力",
+      "R 型曲線弧度貼合脊椎的生理彎曲",
+      "麂皮絨布外套柔軟透氣，可拆出清洗",
+      "防水內套保護海綿",
+      "使用方法：放於脊背側身 30 度軀體下"
+    ],
+    "features_en": [
+      "Supports and keeps a 30° side-lying position, reducing pressure and friction on loaded areas",
+      "R-shaped curve follows the natural curve of the spine",
+      "Soft breathable suede cover, removable for washing",
+      "Waterproof inner cover protects the foam",
+      "How to use: place behind the back with the body turned 30° to the side"
+    ],
+    "image_url": "images/wedge_healthyliving_dmns0041.jpg",
+    "product_url": "https://www.healthyliving.com.hk/shop/hlm-r形三角墊-翻身枕/",
+    "stock_status": "in_stock",
+    "updated_date": "2026-11-25",
+    "last_checked": "2026-11-25"
+  },
+  {
+    "id": "wg3",
+    "source": "supreme",
+    "source_name": "卓越醫療器材",
+    "phone": "3690 1468",
+    "category": "wedge",
+    "product_name": "三角定位墊 Positioning Wedge (30°)",
+    "product_name_en": "Positioning Wedge (30°)",
+    "model": "KC1101",
+    "price_min": 0,
+    "price_max": 0,
+    "price_display": "價錢請致電查詢",
+    "price_display_en": "Price on request",
+    "specs": [
+      "尺寸：7\" (高) × 12\" (深) × 24\" (長)",
+      "角度：30°",
+      "物料：高密度海綿、PU 外套"
+    ],
+    "specs_en": [
+      "Size: 7\" (H) × 12\" (D) × 24\" (L)",
+      "Angle: 30°",
+      "Material: high-density foam, PU cover"
+    ],
+    "features": [
+      "PU 外套，有助感染控制",
+      "底部防滑，三角墊不易移位",
+      "符合 BS7177:2008 中度防火標準"
+    ],
+    "features_en": [
+      "PU cover for higher levels of infection control",
+      "Non-slip bottom keeps the wedge securely in place",
+      "Complies with BS7177:2008 Medium Hazard fire-retardant standard"
+    ],
+    "image_url": "images/wedge_supreme_kc1101.jpg",
+    "product_url": "https://www.suprememed.com.hk/tc/products_detail.php?c1id=139&c2id=175&id=685",
+    "stock_status": "in_stock",
+    "price_note": "參考價錢",
+    "price_ref": true,
+    "updated_date": "2026-11-25",
+    "last_checked": "2026-11-25"
   }
 ]
